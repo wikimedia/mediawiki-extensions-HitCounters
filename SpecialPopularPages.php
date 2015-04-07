@@ -83,7 +83,7 @@ class SpecialPopularPages extends QueryPage {
 
 		return $this->getLanguage()->specialList(
 			$link,
-			$this->msg( 'nviews' )->numParams( $result->value )->escaped()
+			$this->msg( 'hitcounters-nviews' )->numParams( $result->value )->escaped()
 		);
 	}
 

@@ -35,10 +35,10 @@ class Hooks {
 
 	public static function onSpecialStatsAddExtra( array &$extraStats, RequestContext $statsPage ) {
 		$totalViews = HitCounters::views();
-		$extraStats['statistics-header-views']['statistics-views-total'] = $totalViews;
-		$extraStats['statistics-header-views']['statistics-views-peredit'] =
+		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
+		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
 			$totalViews / SiteStats::edits();
-		$extraStats['statistics-mostpopular'] = self::getMostViewedPages( $statsPage );
+		$extraStats['hitcounters-statistics-mostpopular'] = self::getMostViewedPages( $statsPage );
 		return true;
 	}
 
@@ -58,7 +58,7 @@ class Hooks {
 				if ( $title instanceof Title ) {
 					$ret[ $title->getPrefixedText() ]['number'] = $row->value;
 					$ret[ $title->getPrefixedText() ]['name'] =
-						$statsPage->msg( 'hitcounter-page-label',
+						$statsPage->msg( 'hitcounters-page-label',
 							$title->getText() )->title( $statsPage->getTitle() );
 				}
 			}
