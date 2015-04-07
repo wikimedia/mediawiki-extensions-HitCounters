@@ -4,13 +4,15 @@
 			"Mark A. Hershberger"
 		]
 	},
-	"nviews": "This message is used on [[Special:PopularPages]] to say how many times each page has been viewed.\n\nPreceded by the page title, like: Page title ($1 views)\n\nParameters:\n* $1 - the number of views",
-	"statistics-header-views": "Used in [[Special:Statistics]]",
-	"statistics-views-total": "Used in [[Special:Statistics]]",
-	"statistics-views-total-desc": "This message follows the message {{msg-mw|statistics-views-total}}, in [[Special:Statistics]].",
-	"statistics-views-peredit": "Used in [[Special:Statistics]]",
-	"statistics-mostpopular": "Used in [[Special:Statistics]]",
-	"popularpages": "{{doc-special|PopularPages}}",
-	"popularpages-summary": "{{doc-specialpagesummary|popularpages}}",
-	"pageinfo-views": "The number of times the page has been viewed."
+	"hitcounters-name": "{{optional}}",
+	"hitcounters-desc": "{{desc|name=HitCounters|url=https://www.mediawiki.org/wiki/Extension:HitCounters}}",
+	"hitcounters-nviews": "This message is used on [[Special:PopularPages]] to say how many times each page has been viewed.\n\nPreceded by the page title, like: Page title ($1 views)\n\nParameters:\n* $1 - the number of views",
+	"hitcounters-popularpages": "{{doc-special|PopularPages}}",
+	"hitcounters-popularpages-summary": "{{doc-specialpagesummary|popularpages}}",
+	"hitcounters-pageinfo-views": "The number of times the page has been viewed.",
+	"hitcounters-statistics-header-views": "Used in [[Special:Statistics]]",
+	"hitcounters-statistics-views-total": "Used in [[Special:Statistics]]",
+	"hitcounters-statistics-views-total-desc": "This message follows the message {{msg-mw|statistics-views-total}}, in [[Special:Statistics]].",
+	"hitcounters-statistics-views-peredit": "Used in [[Special:Statistics]]",
+	"hitcounters-statistics-mostpopular": "Used in [[Special:Statistics]]"
 }
