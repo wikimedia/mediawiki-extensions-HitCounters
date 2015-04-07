@@ -1,0 +1,58 @@
+{
+	"name": "HitCounters",
+	"namemsg": "hitcounter-name",
+	"version": "0.1",
+	"author": [
+		"[//mwstake.org Mark A. Hershberger]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:HitCounters",
+	"descriptionmsg": "hitcounter-desc",
+	"type": "variable",
+	"license-name": "GPL-3.0+",
+	"MessagesDirs": {
+		"HitCounters": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"HitCountersMagic": "HitCounters.i18n.magic.php"
+	},
+	"Hooks": {
+		"SpecialPage_initList": [
+			"HitCounters\\Hooks::onSpecialPage_initList"
+		],
+		"SpecialStatsAddExtra": [
+			"HitCounters\\Hooks::onSpecialStatsAddExtra"
+		],
+		"LoadExtensionSchemaUpdates": [
+			"HitCounters\\Hooks::onLoadExtensionSchemaUpdates"
+		],
+		"MagicWordwgVariableIDs": [
+			"HitCounters\\Hooks::onMagicWordwgVariableIDs"
+		],
+		"ParserGetVariableValueSwitch": [
+			"HitCounters\\Hooks::onParserGetVariableValueSwitch"
+		],
+		"ParserFirstCallInit": [
+			"HitCounters\\Hooks::onParserFirstCallInit"
+		],
+		"PageViewUpdates": [
+			"HitCounters\\Hooks::onPageViewUpdates"
+		],
+		"SkinTemplateOutputPageBeforeExec": [
+			"HitCounters\\Hooks::onSkinTemplateOutputPageBeforeExec"
+		]
+	},
+	"AutoloadClasses": {
+		"HitCounters\\Hooks": "Hooks.php",
+		"HitCounters\\HitCounters": "HitCounters.body.php",
+		"ViewCountUpdate": "ViewCountUpdate.php",
+		"HitCounters\\SpecialPopularPages": "SpecialPopularPages.php",
+		"HitCounters\\HCUpdater": "HCUpdater.php"
+	},
+	"config": {
+		"HitcounterUpdateFreq": 1,
+		"DisableCounters": false
+	},
+	"manifest_version": 1
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mark A. Hershberger"
+		]
+	},
+	"nviews": "$1 {{PLURAL:$1|view|views}}",
+	"statistics-header-views": "View statistics",
+	"statistics-views-total": "Views total",
+	"statistics-views-total-desc": "Views to non-existing pages and special pages are not included",
+	"statistics-views-peredit": "Views per edit",
+	"statistics-mostpopular": "Most viewed pages",
+	"popularpages": "Popular pages",
+	"popularpages-summary": "",
+	"pageinfo-views": "Number of views",
+	"hitcounter-name": "Hit Counter",
+	"hitcounter-page-label": "[[$1|$1]]",
+	"hitcounter-desc": "An extension to provide the page views functionality that was removed in MediaWiki 1.25"
+}
