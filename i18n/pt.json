@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente"
+		]
+	},
+	"hitcounters-desc": "Fornece estatísticas de visualização por página",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visualização|visualizações}}",
+	"hitcounters-popularpages": "Páginas populares",
+	"hitcounters-pageinfo-views": "Número de visualizações",
+	"hitcounters-statistics-header-views": "Ver estatísticas",
+	"hitcounters-statistics-views-total": "Total de visualizações",
+	"hitcounters-statistics-views-peredit": "Visualizações por edição",
+	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas"
+}
