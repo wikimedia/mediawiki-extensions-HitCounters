@@ -4,5 +4,12 @@
 			"Banjo"
 		]
 	},
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visualización|visualizacións}}",
+	"hitcounters-popularpages": "Páxinas populares",
+	"hitcounters-pageinfo-views": "Numero de visualizacións",
+	"hitcounters-statistics-header-views": "Estatísticas de visualización",
+	"hitcounters-statistics-views-total": "Visualizacións totais",
+	"hitcounters-statistics-views-total-desc": "As visualizacións de páxinas non existentes e páxinas especiais non se inclúen",
+	"hitcounters-statistics-views-peredit": "Visualizacións por edición",
 	"hitcounters-statistics-mostpopular": "Páxinas máis visitadas"
 }

@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"2nd-player"
+		]
+	},
+	"hitcounters-nviews": "$1回の閲覧",
+	"hitcounters-pageinfo-views": "閲覧数",
+	"hitcounters-statistics-header-views": "閲覧に関する統計",
+	"hitcounters-statistics-views-total": "総閲覧回数",
+	"hitcounters-statistics-views-total-desc": "存在しないページと特別ページに対する閲覧は含まれていません",
+	"hitcounters-statistics-views-peredit": "1編集あたりの閲覧回数",
+	"hitcounters-statistics-mostpopular": "最も閲覧されているページ"
+}
