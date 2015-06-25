@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alexmar983"
+		]
+	},
+	"hitcounters-desc": "Fornisce statistiche per ogni vizualizzazione di pagina",
+	"hitcounters-popularpages": "Pagine più visitate",
+	"hitcounters-statistics-header-views": "Vedi statistiche",
+	"hitcounters-statistics-views-total-desc": "Le visite a pagine non esistenti e pagine speciali non sono incluse",
+	"hitcounters-statistics-views-peredit": "Visite per modifica"
+}

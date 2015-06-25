@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"hitcounters-desc": "提供每个页面的查看统计",
+	"hitcounters-nviews": "$1次{{PLURAL:$1|查看}}",
+	"hitcounters-popularpages": "受欢迎的页面",
+	"hitcounters-pageinfo-views": "查看次数",
+	"hitcounters-statistics-header-views": "查看统计",
+	"hitcounters-statistics-views-total": "总计查看",
+	"hitcounters-statistics-views-total-desc": "未包括对不存在页面和特殊页面的查看次数",
+	"hitcounters-statistics-views-peredit": "每次编辑查看",
+	"hitcounters-statistics-mostpopular": "最多查看页面"
+}

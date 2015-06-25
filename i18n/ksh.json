@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"hitcounters-name": "Aanzahl Träffer",
+	"hitcounters-desc": "Brängk Schtateßteke pä Sigg.",
+	"hitcounters-nviews": "{{PLURAL:$1|Ene Affrohf|$1 Affrohfe|Kein Affrohfe}}",
+	"hitcounters-popularpages": "Jähn affjerohfe Sigge",
+	"hitcounters-pageinfo-views": "De Aanzahl Affrohfe",
+	"hitcounters-statistics-header-views": "De Schtateßteke belohre",
+	"hitcounters-statistics-views-total": "Alle Affrohfe",
+	"hitcounters-statistics-views-total-desc": "Affrohfe vun Sigge, di_j_et nit jitt un Affrohfe vun {{int:specialpages}} in nit derbei.",
+	"hitcounters-statistics-views-peredit": "Affrohre per Änderong em Schnett",
+	"hitcounters-statistics-mostpopular": "De mihts aanjelohrte Sigge"
+}

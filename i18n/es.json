@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"hitcounters-desc": "Proporciona estadísticas de visualizaciones por página",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visualización|visualizaciones}}",
+	"hitcounters-popularpages": "Páginas populares",
+	"hitcounters-pageinfo-views": "Número de visualizaciones",
+	"hitcounters-statistics-header-views": "Ver estadísticas",
+	"hitcounters-statistics-views-total": "Total de visualizaciones",
+	"hitcounters-statistics-views-total-desc": "No se incluyen las visualizaciones a páginas que no existan ni a las páginas especiales",
+	"hitcounters-statistics-views-peredit": "Visualizaciones por edición",
+	"hitcounters-statistics-mostpopular": "Páginas más vistas"
+}
