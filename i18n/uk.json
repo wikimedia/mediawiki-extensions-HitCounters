@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"hitcounters-desc": "Забезпечує статистику переглядів посторінково",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|перегляд|перегляди|переглядів}}",
+	"hitcounters-popularpages": "Популярні сторінки",
+	"hitcounters-pageinfo-views": "Кількість переглядів",
+	"hitcounters-statistics-header-views": "Статистика переглядів",
+	"hitcounters-statistics-views-total": "Усього переглядів",
+	"hitcounters-statistics-views-total-desc": "Перегляди неіснуючих сторінок та спеціальних сторінок не враховано",
+	"hitcounters-statistics-views-peredit": "Переглядів на редагування",
+	"hitcounters-statistics-mostpopular": "Сторінки, які найчастіше переглядають"
+}
