@@ -52,9 +52,12 @@ class ViewCountUpdate implements DeferrableUpdate {
 			$method = __METHOD__;
 			$dbw->onTransactionIdle( function () use ( $dbw, $pageId, $method ) {
 				try {
-					$dbw->update( 'hit_counter',
+					$dbw->upsert( 'hit_counter',
+						// Perform this INSERT if page_id not found
+						array( 'page_id' => $pageId, 'page_counter' => 1 ),
+						array( 'page_id' ),
+						// Perform this SET if page_id found
 						array( 'page_counter = page_counter + 1' ),
-						array( 'page_id' => $pageId ),
 						$method
 					);
 				} catch ( DBError $e ) {
