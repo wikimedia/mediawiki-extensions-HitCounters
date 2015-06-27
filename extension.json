@@ -15,7 +15,8 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"HitCountersMagic": "HitCounters.i18n.magic.php"
+		"HitCountersMagic": "HitCounters.i18n.magic.php",
+		"HitCountersAlias": "HitCounters.i18n.alias.php"
 	},
 	"Hooks": {
 		"SpecialPage_initList": [
