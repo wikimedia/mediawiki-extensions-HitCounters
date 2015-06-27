@@ -6,7 +6,7 @@
 	},
 	"hitcounters-desc": "ページ別の閲覧に関する統計を提供する",
 	"hitcounters-nviews": "$1回の閲覧",
-	"hitcounters-popularpages": "人気のページ",
+	"popularpages": "人気のページ",
 	"hitcounters-pageinfo-views": "閲覧数",
 	"hitcounters-statistics-header-views": "閲覧に関する統計",
 	"hitcounters-statistics-views-total": "総閲覧回数",

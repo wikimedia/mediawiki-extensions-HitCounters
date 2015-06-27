@@ -6,7 +6,7 @@
 	},
 	"hitcounters-desc": "Proporciona estadísticas de visualizaciones por página",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualización|visualizaciones}}",
-	"hitcounters-popularpages": "Páginas populares",
+	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizaciones",
 	"hitcounters-statistics-header-views": "Ver estadísticas",
 	"hitcounters-statistics-views-total": "Total de visualizaciones",
