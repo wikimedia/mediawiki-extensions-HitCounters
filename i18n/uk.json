@@ -6,7 +6,7 @@
 	},
 	"hitcounters-desc": "Забезпечує статистику переглядів посторінково",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|перегляд|перегляди|переглядів}}",
-	"hitcounters-popularpages": "Популярні сторінки",
+	"popularpages": "Популярні сторінки",
 	"hitcounters-pageinfo-views": "Кількість переглядів",
 	"hitcounters-statistics-header-views": "Статистика переглядів",
 	"hitcounters-statistics-views-total": "Усього переглядів",

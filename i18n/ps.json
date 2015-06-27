@@ -5,7 +5,7 @@
 		]
 	},
 	"hitcounters-nviews": "$1 {{PLURAL:$1|کتنه|کتنې}}",
-	"hitcounters-popularpages": "نامتو مخونه",
+	"popularpages": "نامتو مخونه",
 	"hitcounters-pageinfo-views": "د کتنو شمېر",
 	"hitcounters-statistics-header-views": "شمارنې کتل",
 	"hitcounters-statistics-views-total": "ټولټال کتنې",

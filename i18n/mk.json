@@ -7,7 +7,7 @@
 	"hitcounters-name": "Бројач на посети",
 	"hitcounters-desc": "Дава статистики за посети на страници",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|посета|посети}}",
-	"hitcounters-popularpages": "Најпосетувани страници",
+	"popularpages": "Најпосетувани страници",
 	"hitcounters-pageinfo-views": "Посети",
 	"hitcounters-statistics-header-views": "Дај статистики",
 	"hitcounters-statistics-views-total": "Вкупно посети",
