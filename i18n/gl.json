@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Banjo"
+			"Banjo",
+			"Prevert"
 		]
 	},
 	"hitcounters-desc": "Proporciona estatísticas de visualización por páxina",
