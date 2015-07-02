@@ -1,16 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Metalhead64"
+			"Metalhead64",
+			"Kghbln"
 		]
 	},
-	"hitcounters-desc": "Bietet Abrufstatistiken pro Seite",
+	"hitcounters-desc": "Bietet Seitenaufrufstatistiken",
 	"hitcounters-nviews": "{{PLURAL:$1|Ein Aufruf|$1 Aufrufe}}",
 	"popularpages": "Beliebte Seiten",
 	"hitcounters-pageinfo-views": "Anzahl der Aufrufe",
 	"hitcounters-statistics-header-views": "Statistiken ansehen",
 	"hitcounters-statistics-views-total": "Gesamtaufrufe",
-	"hitcounters-statistics-views-total-desc": "Aufrufe von nicht vorhandenen Seiten und Spezialseiten sind nicht inbegriffen",
+	"hitcounters-statistics-views-total-desc": "Aufrufe nicht vorhandener Seiten sowie von Spezialseiten sind nicht inbegriffen",
 	"hitcounters-statistics-views-peredit": "Aufrufe pro Bearbeitung",
 	"hitcounters-statistics-mostpopular": "Meistbetrachtete Seiten"
 }

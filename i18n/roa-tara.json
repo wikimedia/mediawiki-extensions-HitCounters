@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"hitcounters-desc": "Dèje le statisteche de visite pe pàgene",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visite}}",
+	"popularpages": "Pàggene cchiù canusciute",
+	"hitcounters-pageinfo-views": "Numere de visite",
+	"hitcounters-statistics-header-views": "'Ndruche le statisteche",
+	"hitcounters-statistics-views-total": "Visite totale",
+	"hitcounters-statistics-views-total-desc": "Le visite sus a le pàggene ca non g'esistone e le pàggene speciale non ge sò cundate",
+	"hitcounters-statistics-views-peredit": "Visite pe cangiaminde",
+	"hitcounters-statistics-mostpopular": "Pàggene cchiù visitate"
+}
