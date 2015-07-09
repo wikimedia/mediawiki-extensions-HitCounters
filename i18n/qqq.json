@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mark A. Hershberger"
+			"Mark A. Hershberger",
+			"Liuxinyu970226",
+			"Shirayuki",
+			"Siebrand"
 		]
 	},
 	"hitcounters-name": "{{optional}}",
 	"hitcounters-desc": "{{desc|name=HitCounters|url=https://www.mediawiki.org/wiki/Extension:HitCounters}}",
-	"hitcounters-nviews": "This message is used on [[Special:PopularPages]] to say how many times each page has been viewed.\n\nPreceded by the page title, like: Page title ($1 views)\n\nParameters:\n* $1 - the number of views",
+	"hitcounters-nviews": "This message is used on [[Special:PopularPages]] to say how many times each page has been viewed.\n\nPreceded by the page title, like: Page title ($1 views)\n\nParameters:\n* $1 - the number of views\n{{Identical|View}}",
 	"popularpages": "{{doc-special|PopularPages}}",
 	"popularpages-summary": "{{doc-specialpagesummary|popularpages}}",
 	"hitcounters-pageinfo-views": "The number of times the page has been viewed.",

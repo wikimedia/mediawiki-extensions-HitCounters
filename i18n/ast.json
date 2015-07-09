@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esbardu",
+			"Xuacu"
+		]
+	},
+	"hitcounters-desc": "Ufre estadístiques de visites per páxina",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visita|visites}}",
+	"popularpages": "Páxines populares",
+	"hitcounters-pageinfo-views": "Númberu de visites",
+	"hitcounters-statistics-header-views": "Ver estadístiques",
+	"hitcounters-statistics-views-total": "Total de visites",
+	"hitcounters-statistics-views-total-desc": "Nun s'incluyen les visites a páxines que nun esisten nin a páxines especiales",
+	"hitcounters-statistics-views-peredit": "Visites per edición",
+	"hitcounters-statistics-mostpopular": "Páxines más visitaes"
+}
