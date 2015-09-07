@@ -1,8 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"WindEwriX"
+			"WindEwriX",
+			"Okras"
 		]
 	},
-	"popularpages": "Популярные страницы"
+	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",
+	"popularpages": "Популярные страницы",
+	"hitcounters-pageinfo-views": "Количество просмотров",
+	"hitcounters-statistics-header-views": "Посмотреть статистику",
+	"hitcounters-statistics-views-total": "Вид просмотров",
+	"hitcounters-statistics-views-total-desc": "Просмотры несуществующих и служебных страниц не учитываются",
+	"hitcounters-statistics-mostpopular": "Наиболее часто просматриваемые страницы"
 }
