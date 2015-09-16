@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Reza1615"
+		]
+	},
+	"hitcounters-nviews": "$1 {{PLURAL:$1|بازدید|بازدید}}",
+	"popularpages": "صفحه‌های محبوب",
+	"hitcounters-pageinfo-views": "شمار بازدیدها",
+	"hitcounters-statistics-header-views": "آمار بازدیدها",
+	"hitcounters-statistics-views-total": "مجموع بازدیدها",
+	"hitcounters-statistics-views-total-desc": "بازدید صفحه‌های ناموجود و صفحه‌های ویژه شامل نشده‌است",
+	"hitcounters-statistics-views-peredit": "تعداد بازدید به ازای هر ویرایش",
+	"hitcounters-statistics-mostpopular": "صفحه‌هایی که بیشترین تعداد بازدیدکننده را داشته‌اند"
+}
