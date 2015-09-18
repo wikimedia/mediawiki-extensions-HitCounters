@@ -18,6 +18,9 @@
 		"HitCountersMagic": "HitCounters.i18n.magic.php",
 		"HitCountersAlias": "HitCounters.i18n.alias.php"
 	},
+	"SpecialPages": {
+		"PopularPages": "SpecialPopularPages"
+	},
 	"Hooks": {
 		"SpecialPage_initList": [
 			"HitCounters\\Hooks::onSpecialPage_initList"
