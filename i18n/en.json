@@ -4,7 +4,7 @@
 			"Mark A. Hershberger"
 		]
 	},
-	"hitcounters-name": "Hit Counter",
+	"hitcounters-extensionname": "Hit Counter",
 	"hitcounters-desc": "Provides per page view statistics",
 	"hitcounters-page-label": "[[$1|$1]]",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|view|views}}",
