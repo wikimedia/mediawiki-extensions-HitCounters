@@ -12,7 +12,7 @@
 	"hitcounters-page-label": "{{notranslate}} Shows title of pages that are the most viewed pages.",
 	"hitcounters-nviews": "This message is used on [[Special:PopularPages]] to say how many times each page has been viewed.\n\nPreceded by the page title, like: Page title ($1 views)\n\nParameters:\n* $1 - the number of views\n{{Identical|View}}",
 	"popularpages": "{{doc-special|PopularPages}}",
-	"popularpages-summary": "{{doc-specialpagesummary|popularpages}}",
+	"popularpages-summary": "{{notranslate}} {{doc-specialpagesummary|popularpages}}",
 	"hitcounters-pageinfo-views": "The number of times the page has been viewed.",
 	"hitcounters-statistics-header-views": "Used in [[Special:Statistics]]",
 	"hitcounters-statistics-views-total": "Used in [[Special:Statistics]]",
