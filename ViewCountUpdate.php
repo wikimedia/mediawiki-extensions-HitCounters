@@ -47,11 +47,13 @@ class ViewCountUpdate implements DeferrableUpdate {
 		global $wgHitcounterUpdateFreq;
 		$dbw = wfGetDB( DB_MASTER );
 
+		wfDebugLog ( "HitCounter", "update freq set to: $wgHitcounterUpdateFreq;" );
 		if ( $wgHitcounterUpdateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
 			$pageId = $this->pageId;
 			$method = __METHOD__;
 			$dbw->onTransactionIdle( function () use ( $dbw, $pageId, $method ) {
 				try {
+					wfDebugLog( "HitCounter", "About to update $pageId" );
 					$dbw->upsert( 'hit_counter',
 						// Perform this INSERT if page_id not found
 						array( 'page_id' => $pageId, 'page_counter' => 1 ),
@@ -61,6 +63,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 						$method
 					);
 				} catch ( DBError $e ) {
+					wfDebugLog("HitCounter", "Got an exception: " . $e->getMessage() );
 					MWExceptionHandler::logException( $e );
 				}
 			} );

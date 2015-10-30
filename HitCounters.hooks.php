@@ -121,6 +121,7 @@ class Hooks {
 
 			$viewcount = HitCounters::getCount( $skin->getTitle());
 			if ( $viewcount ) {
+				wfDebugLog( "HitCounters", "Got viewcount=$viewcount and putting in page" );
 				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->numParams( $viewcount )->parse() );
 			}
 		}

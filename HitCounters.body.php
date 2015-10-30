@@ -30,6 +30,9 @@ class HitCounters {
 		$cache = wfGetCache( CACHE_ANYTHING );
 		$key = wfMemcKey( 'viewcount', $title->getDBkey() );
 		$views = $cache->get( $key );
+		wfDebugLog( "HitCounters", "Got viewcount=" . var_export( $views, true ) .
+			" from cache" );
+
 		if ( !$views ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$row = $dbr->select(
@@ -37,11 +40,20 @@ class HitCounters {
 				array( 'hits' => 'page_counter' ),
 				array( 'page_id' => $title->getArticleID() ),
 				__METHOD__ );
+			wfDebugLog( "HitCounters", "Got result=" . var_export( $row, true ) .
+				" from DB and setting cache." );
 
 			if ( $row !== false && $current = $row->current() ) {
 				$views = $current->hits;
-				/* update only once a day */
-				$cache->set( $key, $views, 24 * 3600 );
+				wfDebugLog( "HitCounters", "Got result=" . var_export( $current, true ) .
+					" from DB and setting cache." );
+				if ( $views < 100 ) {
+					// Only cache for a minute
+					$cache->set( $key, $views, 60 );
+				} else {
+					/* update only once a day */
+					$cache->set( $key, $views, 24 * 3600 );
+				}
 			}
 		}
 
