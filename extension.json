@@ -48,7 +48,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"HitCounters\\Hooks": "Hooks.php",
+		"HitCounters\\Hooks": "HitCounters.hooks.php",
 		"HitCounters\\HitCounters": "HitCounters.body.php",
 		"ViewCountUpdate": "ViewCountUpdate.php",
 		"HitCounters\\SpecialPopularPages": "SpecialPopularPages.php",
