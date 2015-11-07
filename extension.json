@@ -1,7 +1,7 @@
 {
 	"name": "HitCounters",
-	"namemsg": "hitcounters-name",
-	"version": "0.1",
+	"namemsg": "hitcounters-extensionname",
+	"version": "0.2",
 	"author": [
 		"[//mwstake.org Mark A. Hershberger]"
 	],
@@ -17,6 +17,9 @@
 	"ExtensionMessagesFiles": {
 		"HitCountersMagic": "HitCounters.i18n.magic.php",
 		"HitCountersAlias": "HitCounters.i18n.alias.php"
+	},
+	"SpecialPages": {
+		"PopularPages": "SpecialPopularPages"
 	},
 	"Hooks": {
 		"SpecialPage_initList": [
@@ -45,7 +48,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"HitCounters\\Hooks": "Hooks.php",
+		"HitCounters\\Hooks": "HitCounters.hooks.php",
 		"HitCounters\\HitCounters": "HitCounters.body.php",
 		"ViewCountUpdate": "ViewCountUpdate.php",
 		"HitCounters\\SpecialPopularPages": "SpecialPopularPages.php",

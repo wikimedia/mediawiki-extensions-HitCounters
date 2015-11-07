@@ -4,10 +4,10 @@
 			"Bjankuloski06"
 		]
 	},
-	"hitcounters-name": "Бројач на посети",
+	"hitcounters-extensionname": "Бројач на посети",
 	"hitcounters-desc": "Дава статистики за посети на страници",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|посета|посети}}",
-	"popularpages": "Најпосетувани страници",
+	"popularpages": "Популарни страници",
 	"hitcounters-pageinfo-views": "Посети",
 	"hitcounters-statistics-header-views": "Дај статистики",
 	"hitcounters-statistics-views-total": "Вкупно посети",

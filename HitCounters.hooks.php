@@ -29,16 +29,27 @@ class Hooks {
 		$specialPages['PopularPages'] = 'HitCounters\SpecialPopularPages';
 	}
 
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
+	public static function onLoadExtensionSchemaUpdates(
+		DatabaseUpdater $updater
+	) {
 		HCUpdater::getDBUpdates( $updater );
 	}
 
-	public static function onSpecialStatsAddExtra( array &$extraStats, RequestContext $statsPage ) {
+	public static function onSpecialStatsAddExtra(
+		array &$extraStats, RequestContext $statsPage
+	) {
+		global $wgContLang;
+
 		$totalViews = HitCounters::views();
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
-			$totalViews / SiteStats::edits();
-		$extraStats['hitcounters-statistics-mostpopular'] = self::getMostViewedPages( $statsPage );
+		$extraStats['hitcounters-statistics-header-views']
+			['hitcounters-statistics-views-total'] = $totalViews;
+		$extraStats['hitcounters-statistics-header-views']
+			['hitcounters-statistics-views-peredit'] =
+			$wgContLang->formatNum( $totalViews
+				? sprintf( '%.2f', $totalViews / SiteStats::edits() )
+				: 0 );
+		$extraStats['hitcounters-statistics-mostpopular'] =
+			self::getMostViewedPages( $statsPage );
 		return true;
 	}
 
@@ -47,8 +58,10 @@ class Hooks {
 		$param = HitCounters::getQueryInfo();
 		$options['ORDER BY'] = array( 'page_counter DESC' );
 		$options['LIMIT'] = 10;
-		$res = $dbr->select( $param['tables'], $param['fields'], array(), __METHOD__,
-			$options, $param['join_conds'] );
+		$res = $dbr->select(
+			$param['tables'], $param['fields'], array(), __METHOD__,
+			$options, $param['join_conds']
+		);
 
 		$ret = array();
 		if ( $res->numRows() > 0 ) {
@@ -58,8 +71,7 @@ class Hooks {
 				if ( $title instanceof Title ) {
 					$ret[ $title->getPrefixedText() ]['number'] = $row->value;
 					$ret[ $title->getPrefixedText() ]['name'] =
-						$statsPage->msg( 'hitcounters-page-label',
-							$title->getText() )->title( $statsPage->getTitle() );
+						\Linker::link( $title );
 				}
 			}
 			$res->free();
@@ -94,14 +106,22 @@ class Hooks {
 		global $wgDisableCounters;
 
 		// Don't update page view counters on views from bot users (bug 14044)
-		if ( !$wgDisableCounters && !$user->isAllowed( 'bot' ) && $wikipage->exists() ) {
-			DeferredUpdates::addUpdate( new ViewCountUpdate( $wikipage->getId() ) );
+		if (
+			!$wgDisableCounters &&
+			!$user->isAllowed( 'bot' ) &&
+			$wikipage->exists()
+		) {
+			DeferredUpdates::addUpdate(
+				new ViewCountUpdate( $wikipage->getId() )
+			);
 			DeferredUpdates::addUpdate( new SiteStatsUpdate( 1, 0, 0 ) );
 		}
 	}
 
-	public static function onSkinTemplateOutputPageBeforeExec( SkinTemplate &$skin,
-															   QuickTemplate &$tpl) {
+	public static function onSkinTemplateOutputPageBeforeExec(
+		SkinTemplate &$skin,
+		QuickTemplate &$tpl
+	) {
 		global $wgDisableCounters;
 
 		/* Without this check two lines are added to the page. */
@@ -114,14 +134,20 @@ class Hooks {
 		if ( !$wgDisableCounters ) {
 			$footer = $tpl->get( 'footerlinks' );
 			if ( isset( $footer['info'] ) && is_array( $footer['info'] ) ) {
-				// 'viewcount' goes after 'lastmod', we'll just assume 'viewcount' is the 0th item
+				// 'viewcount' goes after 'lastmod', we'll just assume
+				// 'viewcount' is the 0th item
 				array_splice( $footer['info'], 1, 0, 'viewcount' );
 				$tpl->set( 'footerlinks', $footer );
 			}
 
 			$viewcount = HitCounters::getCount( $skin->getTitle());
 			if ( $viewcount ) {
-				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->numParams( $viewcount )->parse() );
+				wfDebugLog(
+					"HitCounters",
+					"Got viewcount=$viewcount and putting in page"
+				);
+				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->
+					numParams( $viewcount )->parse() );
 			}
 		}
 	}

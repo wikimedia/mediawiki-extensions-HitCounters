@@ -11,6 +11,16 @@ use MWException;
 class HitCounters {
 	protected static $mViews;
 
+	protected static function cacheStore( $cache, $key, $views ) {
+		if ( $views < 100 ) {
+			// Only cache for a minute
+			$cache->set( $key, $views, 60 );
+		} else {
+			/* update only once a day */
+			$cache->set( $key, $views, 24 * 3600 );
+		}
+	}
+
 	/**
 	 * @return int The view count for the page
 	 */
@@ -30,7 +40,10 @@ class HitCounters {
 		$cache = wfGetCache( CACHE_ANYTHING );
 		$key = wfMemcKey( 'viewcount', $title->getDBkey() );
 		$views = $cache->get( $key );
-		if ( !$views ) {
+		wfDebugLog( "HitCounters", "Got viewcount=" .
+			var_export( $views, true ) . " from cache" );
+
+		if ( !$views || $views == 1 ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$row = $dbr->select(
 				array( 'hit_counter' ),
@@ -40,8 +53,10 @@ class HitCounters {
 
 			if ( $row !== false && $current = $row->current() ) {
 				$views = $current->hits;
-				/* update only once a day */
-				$cache->set( $key, $views, 24 * 3600 );
+				wfDebugLog( "HitCounters", "Got result=" .
+					var_export( $current, true ) .
+					" from DB and setting cache." );
+				self::cacheStore( $cache, $key, $views );
 			}
 		}
 
@@ -55,15 +70,18 @@ class HitCounters {
 		// Re-calculate the count if the last tally is old...
 		if ( !self::$mViews ) {
 			self::$mViews = $cache->get( $key );
-			wfDebugLog( "HitCounters", __METHOD__ . ": got " . var_export( self::$mViews, true ) .
+			wfDebugLog( "HitCounters", __METHOD__
+				. ": got " . var_export( self::$mViews, true ) .
 				" from cache." );
-			if ( !self::$mViews ) {
+			if ( !self::$mViews || self::$mViews == 1 ) {
 				$dbr = wfGetDB( DB_SLAVE );
-				self::$mViews = $dbr->selectField( 'hit_counter', 'SUM(page_counter)', '',
-					__METHOD__ );
-				wfDebugLog( "HitCounters", __METHOD__ . ": got " . var_export( self::$mViews, true ) .
+				self::$mViews = $dbr->selectField(
+					'hit_counter', 'SUM(page_counter)', '', __METHOD__
+				);
+				wfDebugLog( "HitCounters", __METHOD__ . ": got " .
+					var_export( self::$mViews, true ) .
 					" from select." );
-				$cache->set( $key, self::$mViews, 24 * 3600 ); // don't update for 1 day
+				self::cacheStore( $cache, $key, self::$mViews );
 			}
 		}
 		return self::$mViews;
@@ -75,7 +93,9 @@ class HitCounters {
 	 *
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
-	public static function numberOfViews( Parser &$parser, PPFrame $frame, $args ) {
+	public static function numberOfViews(
+		Parser &$parser, PPFrame $frame, $args
+	) {
 		return self::getCount( $frame->title );
 	}
 
@@ -93,8 +113,10 @@ class HitCounters {
 				'page_namespace' => MWNamespace::getContentNamespaces(),
 			),
 			'join_conds' => array(
-				'page' => array( 'INNER JOIN', $wgDBprefix . 'page.page_id = ' . $wgDBprefix .
-					'hit_counter.page_id' )
+				'page' => array(
+					'INNER JOIN',
+					$wgDBprefix . 'page.page_id = ' .
+					$wgDBprefix . 'hit_counter.page_id' )
 			)
 		);
 	}
