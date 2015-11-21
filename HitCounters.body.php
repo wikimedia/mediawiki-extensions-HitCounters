@@ -88,12 +88,25 @@ class HitCounters {
 	}
 
 	/**
+	 * {{NUMBEROFVIEWS}} - number of total views of the site
+	 *
 	 * We can't choose our parameters since this is a hook and we
 	 * don't really need to use the $parser and $cache parameters.
 	 *
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
 	public static function numberOfViews(
+		Parser &$parser, PPFrame $frame, $args
+	) {
+		return self::views();
+	}
+
+	/**
+	 * {{NUMBEROFPAGEVIEWS}} - number of total views of the page
+	 *
+	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+	 */
+	public static function numberOfPageViews(
 		Parser &$parser, PPFrame $frame, $args
 	) {
 		return self::getCount( $frame->title );

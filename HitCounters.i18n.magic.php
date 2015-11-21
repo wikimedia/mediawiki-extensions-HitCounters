@@ -8,6 +8,7 @@ $magicWords = array();
 /** English (English) */
 $magicWords['en'] = array(
 	'numberofviews' => array( 0, 'NUMBEROFVIEWS' ),
+	'numberofpageviews' => array( 0, 'NUMBEROFPAGEVIEWS' ),
 );
 
 /** Egyptian Arabic (مصرى) */

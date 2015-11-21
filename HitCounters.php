@@ -11,7 +11,7 @@
  * @copyright 2015 Mark A. Hershberger
  * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License, version 3
  *            (or later)
- * @version   GIT: 0.1
+ * @version   GIT: 0.3
  * @link      https://www.mediawiki.org/wiki/Extension:HitCounters
  */
 
