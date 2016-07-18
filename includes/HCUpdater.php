@@ -12,13 +12,13 @@ class HCUpdater extends DatabaseUpdater {
 		/* This is an ugly abuse to rename a table. */
 		$updater->modifyExtensionField( 'hitcounter',
 			'hc_id',
-			__DIR__ . '/rename_table.sql' );
+			__DIR__ . '/../sql/rename_table.sql' );
 		$updater->addExtensionTable( 'hit_counter_extension',
-			__DIR__ . '/hit_counter_extension.sql', true );
+			__DIR__ . '/../sql/hit_counter_extension.sql', true );
 		$updater->addExtensionTable( 'hit_counter',
-			__DIR__ . '/page_counter.sql', true );
+			__DIR__ . '/../sql/page_counter.sql', true );
 		$updater->dropExtensionField( 'page', 'page_counter',
-			__DIR__ . '/drop_field.sql' );
+			__DIR__ . '/../sql/drop_field.sql' );
 	}
 
 	public function clearExtensionUpdates() {

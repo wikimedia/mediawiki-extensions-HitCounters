@@ -48,11 +48,11 @@
 		]
 	},
 	"AutoloadClasses": {
-		"HitCounters\\Hooks": "HitCounters.hooks.php",
-		"HitCounters\\HitCounters": "HitCounters.body.php",
-		"ViewCountUpdate": "ViewCountUpdate.php",
-		"HitCounters\\SpecialPopularPages": "SpecialPopularPages.php",
-		"HitCounters\\HCUpdater": "HCUpdater.php"
+		"HitCounters\\Hooks": "includes/HitCounters.hooks.php",
+		"HitCounters\\HitCounters": "includes/HitCounters.body.php",
+		"ViewCountUpdate": "includes/ViewCountUpdate.php",
+		"HitCounters\\SpecialPopularPages": "includes/SpecialPopularPages.php",
+		"HitCounters\\HCUpdater": "includes/HCUpdater.php"
 	},
 	"config": {
 		"HitcounterUpdateFreq": 1,
