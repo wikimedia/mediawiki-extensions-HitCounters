@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xoser"
+			"Xoser",
+			"Kumkumuk"
 		]
 	},
-	"popularpages": "Pelî ke populer o."
+	"popularpages": "Perrê populeri",
+	"hitcounters-pageinfo-views": "Amora vinayışan",
+	"hitcounters-statistics-header-views": "İstatistika bıvin",
+	"hitcounters-statistics-views-total": "Vinayışi pêro"
 }
