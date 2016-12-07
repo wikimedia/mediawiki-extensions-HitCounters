@@ -29,19 +29,4 @@ class HCUpdater extends DatabaseUpdater {
 		$updater = DatabaseUpdater::newForDb( $this->db, $this->shared, $this->maintenance );
 		return $updater->getCoreUpdateList();
 	}
-
-	/**
-	 * Maybe we could just not set $shared's default?
-	 *
-	 * @SuppressWarnings(BooleanArgumentFlag)
-	 */
-	public static function newForDB( &$dbconn, $shared = false, $maintenance = null ) {
-		$type = $dbconn->getType();
-		if ( in_array( $type, Installer::getDBTypes() ) ) {
-			return new self( $dbconn, $shared, $maintenance );
-		} else {
-			throw new MWException( __METHOD__ . ' called for unsupported $wgDBtype' );
-		}
-	}
-
 }
