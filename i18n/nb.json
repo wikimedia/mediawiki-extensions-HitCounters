@@ -1,6 +1,16 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Jon Harald Søby"
+		]
 	},
-	"popularpages": "Populære sider"
+	"hitcounters-desc": "Gir visningsstatistikk på enkeltsidebasis",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|visning|visninger}}",
+	"popularpages": "Populære sider",
+	"hitcounters-pageinfo-views": "Antall visninger",
+	"hitcounters-statistics-header-views": "Visningsstatistikk",
+	"hitcounters-statistics-views-total": "Totalt antall visninger",
+	"hitcounters-statistics-views-total-desc": "Visninger til ikke-eksisterende sider og spesialsider er ikke med",
+	"hitcounters-statistics-views-peredit": "Visninger per redigering",
+	"hitcounters-statistics-mostpopular": "Mest viste sider"
 }
