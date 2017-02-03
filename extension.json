@@ -19,12 +19,9 @@
 		"HitCountersAlias": "HitCounters.i18n.alias.php"
 	},
 	"SpecialPages": {
-		"PopularPages": "SpecialPopularPages"
+		"PopularPages": "HitCounters\\SpecialPopularPages"
 	},
 	"Hooks": {
-		"SpecialPage_initList": [
-			"HitCounters\\Hooks::onSpecialPage_initList"
-		],
 		"SpecialStatsAddExtra": [
 			"HitCounters\\Hooks::onSpecialStatsAddExtra"
 		],

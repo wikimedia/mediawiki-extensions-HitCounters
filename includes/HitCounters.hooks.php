@@ -25,10 +25,6 @@ use User;
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class Hooks {
-	public static function onSpecialPage_initList( array &$specialPages ) {
-		$specialPages['PopularPages'] = 'HitCounters\SpecialPopularPages';
-	}
-
 	public static function onLoadExtensionSchemaUpdates(
 		DatabaseUpdater $updater
 	) {
