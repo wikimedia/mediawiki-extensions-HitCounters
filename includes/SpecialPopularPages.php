@@ -40,9 +40,7 @@ class SpecialPopularPages extends QueryPage {
 	}
 
 	public function isExpensive() {
-		# page_counter is not indexed
-		# Is there a reason not to index it now?
-		return true;
+		return false;
 	}
 
 	public function isSyndicated() {
