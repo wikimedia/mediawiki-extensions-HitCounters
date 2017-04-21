@@ -12,3 +12,9 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'PopularPages' => array( 'PopularPages' ),
 );
+
+/** German (Deutsch) */
+$specialPageAliases['en'] = array(
+        'PopularPages' => array( 'Beliebteste_Seiten' ),
+);
+

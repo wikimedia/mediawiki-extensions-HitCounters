@@ -28,7 +28,8 @@ $magicWords['ce'] = array(
 
 /** German (Deutsch) */
 $magicWords['de'] = array(
-	'numberofviews' => array( 0, 'BETRACHTUNGEN' ),
+	'numberofviews' => array( 0, 'AUFRUFE', 'ANSICHTEN', 'BETRACHTUNGEN' ),
+	'numberofpageviews' => array( 0, 'SEITENAUFRUFE', 'SEITENANSICHTEN', 'SEITENBETRACHTUNGEN' ),
 );
 
 /** Zazaki (Zazaki) */
