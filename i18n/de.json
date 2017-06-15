@@ -6,7 +6,7 @@
 		]
 	},
 	"hitcounters-extensionname": "Hit Counter",
-	"hitcounters-desc": "Bietet Seitenaufrufstatistiken",
+	"hitcounters-desc": "Ermöglicht die Aufzeichnung und Darstellung von Seitenaufrufstatistiken",
 	"hitcounters-nviews": "{{PLURAL:$1|Ein Aufruf|$1 Aufrufe}}",
 	"popularpages": "Beliebte Seiten",
 	"hitcounters-pageinfo-views": "Anzahl der Aufrufe",
