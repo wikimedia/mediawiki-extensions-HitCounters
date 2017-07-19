@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Obsuser"
+		]
 	},
-	"popularpages": "Популарне странице"
+	"popularpages": "Популарне странице",
+	"hitcounters-statistics-mostpopular": "Најпосећеније странице"
 }
