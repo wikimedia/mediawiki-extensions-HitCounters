@@ -25,9 +25,6 @@ class HitCounters {
 	 * @return int The view count for the page
 	 */
 	public static function getCount( Title $title ) {
-		if ( $title === null ) {
-			throw new MWException( "Asked for count without a title!" );
-		}
 		if ( $title->isSpecialPage() ) {
 			return null;
 		}
