@@ -42,6 +42,15 @@
 		],
 		"SkinTemplateOutputPageBeforeExec": [
 			"HitCounters\\Hooks::onSkinTemplateOutputPageBeforeExec"
+		],
+		"AbuseFilter-builder": [
+			"HitCounters\\Hooks::onAbuseFilterBuilder"
+		],
+		"AbuseFilter-generateTitleVars": [
+			"HitCounters\\Hooks:onAbuseFilterGenerateTitleVars"
+		],
+		"AbuseFilter-computeVariable": [
+			"HitCounters\\Hooks:onAbuseFilterComputeVariable"
 		]
 	},
 	"AutoloadClasses": {

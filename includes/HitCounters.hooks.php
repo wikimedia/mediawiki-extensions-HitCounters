@@ -15,6 +15,7 @@ use QuickTemplate;
 use PPFrame;
 use WikiPage;
 use User;
+use AbuseFilterVariableHolder;
 
 /**
  * PHPMD will warn us about these things here but since they're hooks,
@@ -162,6 +163,49 @@ class Hooks {
 				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->
 					numParams( $viewcount )->parse() );
 			}
+		}
+	}
+
+	/**
+	 * Tells AbuseFilter about the article_views variable
+	 * @param array &$builderValues
+	 * @return void
+	 */
+	public static function onAbuseFilterBuilder( array &$builderValues ) {
+		$builderValues['vars']['article_views'] = 'article-views';
+		$builderValues['vars']['moved_from_views'] = 'movedfrom-views';
+		$builderValues['vars']['moved_to_views'] = 'movedto-views';
+	}
+
+	/**
+	 * Lazy-loads the article_views variable
+	 * @param AbuseFilterVariableHolder $vars
+	 * @param Title $title
+	 * @param string $prefix
+	 * @return void
+	 */
+	public static function onAbuseFilterGenerateTitleVars(
+		AbuseFilterVariableHolder $vars,
+		Title $title,
+		$prefix
+	) {
+		$vars->setLazyLoadVar( $prefix . '_VIEWS', 'article-views', [ 'title' => $title ] );
+	}
+
+	/**
+	 * Computes the article_views variables
+	 * @param string $method
+	 * @param AbuseFilterVariableHolder $vars
+	 * @param array $parameters
+	 * @param null &$result
+	 * @return bool
+	 */
+	public static function onAbuseFilterComputeVariable( $method, $vars, $parameters, &$result ) {
+		if ( $method === 'article-views' ) {
+			$result = HitCounters::getCount( $parameters['title'] );
+			return false;
+		} else {
+			return true;
 		}
 	}
 }
