@@ -101,7 +101,10 @@ class Hooks {
 			if ( $magicWord === $magicWordId ) {
 				if ( !$wgDisableCounters ) {
 					$ret = CoreParserFunctions::formatRaw(
-						call_user_func( $processingFunction, $parser, $frame, null ), null );
+						call_user_func( $processingFunction, $parser, $frame, null ),
+						null,
+						$parser->getFunctionLang()
+					);
 					return true;
 				} else {
 					wfDebugLog( 'HitCounters', 'Counters are disabled!' );
