@@ -101,7 +101,6 @@ class ViewCountUpdate implements DeferrableUpdate {
 			return;
 		}
 
-		wfProfileIn( __METHOD__ . '-collect' );
 		$oldUserAbort = ignore_user_abort( true );
 
 		$dbw->lockTables( array(), array( $hitcounterTable ), __METHOD__, false );
@@ -122,6 +121,5 @@ class ViewCountUpdate implements DeferrableUpdate {
 		$dbw->query( "DROP TABLE $acchitsTable", __METHOD__ );
 
 		ignore_user_abort( $oldUserAbort );
-		wfProfileOut( __METHOD__ . '-collect' );
 	}
 }
