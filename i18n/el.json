@@ -1,4 +1,16 @@
 {
-	"@metadata": [],
-	"popularpages": "Δημοφιλείς σελίδες"
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"hitcounters-desc": "Παρέχει στατιστικά προβολής ανά σελίδα",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|προβολή|προβολές}}",
+	"popularpages": "Δημοφιλείς σελίδες",
+	"hitcounters-pageinfo-views": "Αριθμός προβολών",
+	"hitcounters-statistics-header-views": "Προβολή στατιστικών",
+	"hitcounters-statistics-views-total": "Συνολικές προβολές",
+	"hitcounters-statistics-views-total-desc": "Προβολές σε μη υπάρχουσες και ειδικές σελίδες δεν συμπεριλαμβάνονται",
+	"hitcounters-statistics-views-peredit": "Προβολές ανά επεξεργασία",
+	"hitcounters-statistics-mostpopular": "Περισσότερες προβολές σελίδων"
 }
