@@ -50,16 +50,16 @@ class Hooks {
 	}
 
 	protected static function getMostViewedPages( RequestContext $statsPage ) {
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$param = HitCounters::getQueryInfo();
-		$options['ORDER BY'] = array( 'page_counter DESC' );
+		$options['ORDER BY'] = [ 'page_counter DESC' ];
 		$options['LIMIT'] = 10;
 		$res = $dbr->select(
-			$param['tables'], $param['fields'], array(), __METHOD__,
+			$param['tables'], $param['fields'], [], __METHOD__,
 			$options, $param['join_conds']
 		);
 
-		$ret = array();
+		$ret = [];
 		if ( $res->numRows() > 0 ) {
 			foreach ( $res as $row ) {
 				$title = Title::makeTitleSafe( $row->namespace, $row->title );
@@ -76,10 +76,10 @@ class Hooks {
 	}
 
 	protected static function getMagicWords() {
-		return array(
-			'numberofviews'     => array( 'HitCounters\HitCounters', 'numberOfViews' ),
-			'numberofpageviews' => array( 'HitCounters\HitCounters', 'numberOfPageViews' )
-		);
+		return [
+			'numberofviews'     => [ 'HitCounters\HitCounters', 'numberOfViews' ],
+			'numberofpageviews' => [ 'HitCounters\HitCounters', 'numberOfPageViews' ]
+		];
 	}
 
 	public static function onMagicWordwgVariableIDs( array &$variableIDs ) {
@@ -87,9 +87,10 @@ class Hooks {
 	}
 
 	public static function onParserFirstCallInit( Parser $parser ) {
-		foreach( self::getMagicWords() as $magicWord => $processingFunction )
+		foreach ( self::getMagicWords() as $magicWord => $processingFunction ) {
 			$parser->setFunctionHook( $magicWord, $processingFunction,
 				Parser::SFH_OBJECT_ARGS );
+		}
 		return true;
 	}
 
@@ -97,7 +98,7 @@ class Hooks {
 		array $cache, &$magicWordId, &$ret, PPFrame &$frame ) {
 		global $wgDisableCounters;
 
-		foreach( self::getMagicWords() as $magicWord => $processingFunction ) {
+		foreach ( self::getMagicWords() as $magicWord => $processingFunction ) {
 			if ( $magicWord === $magicWordId ) {
 				if ( !$wgDisableCounters ) {
 					$ret = CoreParserFunctions::formatRaw(
@@ -152,7 +153,7 @@ class Hooks {
 				$tpl->set( 'footerlinks', $footer );
 			}
 
-			$viewcount = HitCounters::getCount( $skin->getTitle());
+			$viewcount = HitCounters::getCount( $skin->getTitle() );
 			if ( $viewcount ) {
 				wfDebugLog(
 					"HitCounters",

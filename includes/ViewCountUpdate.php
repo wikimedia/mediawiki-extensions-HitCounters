@@ -47,7 +47,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 		global $wgHitcounterUpdateFreq;
 		$dbw = wfGetDB( DB_MASTER );
 
-		wfDebugLog ( "HitCounter", "update freq set to: $wgHitcounterUpdateFreq;" );
+		wfDebugLog( "HitCounter", "update freq set to: $wgHitcounterUpdateFreq;" );
 		if ( $wgHitcounterUpdateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
 			$pageId = $this->pageId;
 			$method = __METHOD__;
@@ -56,14 +56,14 @@ class ViewCountUpdate implements DeferrableUpdate {
 					wfDebugLog( "HitCounter", "About to update $pageId" );
 					$dbw->upsert( 'hit_counter',
 						// Perform this INSERT if page_id not found
-						array( 'page_id' => $pageId, 'page_counter' => 1 ),
-						array( 'page_id' ),
+						[ 'page_id' => $pageId, 'page_counter' => 1 ],
+						[ 'page_id' ],
 						// Perform this SET if page_id found
-						array( 'page_counter = page_counter + 1' ),
+						[ 'page_counter = page_counter + 1' ],
 						$method
 					);
 				} catch ( DBError $e ) {
-					wfDebugLog("HitCounter", "Got an exception: " . $e->getMessage() );
+					wfDebugLog( "HitCounter", "Got an exception: " . $e->getMessage() );
 					MWExceptionHandler::logException( $e );
 				}
 			} );
@@ -74,14 +74,14 @@ class ViewCountUpdate implements DeferrableUpdate {
 		try {
 			// Since `hit_counter_extension` is non-transactional, the
 			// contention is minimal
-			$dbw->insert( 'hit_counter_extension', array( 'hc_id' => $this->pageId ),
+			$dbw->insert( 'hit_counter_extension', [ 'hc_id' => $this->pageId ],
 				__METHOD__ );
 			$checkfreq = intval( $wgHitcounterUpdateFreq / 25 + 1 );
 			if ( rand() % $checkfreq == 0 && $dbw->lastErrno() == 0 ) {
 				$this->collect();
 			}
 		} catch ( DBError $e ) {
-			error_log("exception during insert update: " . $e->getMessage() );
+			error_log( "exception during insert update: " . $e->getMessage() );
 			MWExceptionHandler::logException( $e );
 		}
 	}
@@ -96,14 +96,14 @@ class ViewCountUpdate implements DeferrableUpdate {
 		$hitcounterTable = $dbw->tableName( 'hit_counter_extension' );
 		$acchitsTable = $dbw->tableName( 'acchits' );
 		$pageTable = $dbw->tableName( 'hit_counter' );
-		$rown = $dbw->selectField( $hitcounterTable, 'COUNT(*)', array(), __METHOD__ );
+		$rown = $dbw->selectField( $hitcounterTable, 'COUNT(*)', [], __METHOD__ );
 		if ( $rown < $wgHitcounterUpdateFreq ) {
 			return;
 		}
 
 		$oldUserAbort = ignore_user_abort( true );
 
-		$dbw->lockTables( array(), array( $hitcounterTable ), __METHOD__, false );
+		$dbw->lockTables( [], [ $hitcounterTable ], __METHOD__, false );
 		$dbw->query( "CREATE TEMPORARY TABLE $acchitsTable $tabletype AS " .
 			"SELECT hc_id,COUNT(*) AS hc_n FROM $hitcounterTable " .
 			'GROUP BY hc_id', __METHOD__ );

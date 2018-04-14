@@ -29,7 +29,6 @@
 
 namespace HitCounters;
 
-use HitCounters\HitCounters;
 use QueryPage;
 use Title;
 use Linker;
@@ -66,7 +65,7 @@ class SpecialPopularPages extends QueryPage {
 		if ( !$title ) {
 			return Html::element(
 				'span',
-				array( 'class' => 'mw-invalidtitle' ),
+				[ 'class' => 'mw-invalidtitle' ],
 				Linker::getInvalidTitleDescription(
 					$this->getContext(),
 					$result->namespace,

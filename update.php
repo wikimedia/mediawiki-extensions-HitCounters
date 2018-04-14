@@ -41,7 +41,7 @@ class UpdateHitCounter extends Maintenance {
 		$updater = HCUpdater::newForDb( $dbconn, $shared, $this );
 		$updater->clearExtensionUpdates();
 		HCUpdater::getDBUpdates( $updater );
-		$updater->doUpdates( array( 'extensions' ) );
+		$updater->doUpdates( [ 'extensions' ] );
 	}
 }
 

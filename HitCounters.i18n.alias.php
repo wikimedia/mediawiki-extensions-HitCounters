@@ -6,15 +6,14 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'PopularPages' => array( 'PopularPages' ),
-);
+$specialPageAliases['en'] = [
+	'PopularPages' => [ 'PopularPages' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['en'] = array(
-        'PopularPages' => array( 'Beliebteste_Seiten' ),
-);
-
+$specialPageAliases['en'] = [
+		'PopularPages' => [ 'Beliebteste_Seiten' ],
+];

@@ -3,12 +3,10 @@
 namespace HitCounters;
 
 use DatabaseUpdater;
-use Installer;
-use MWException;
 
 /* hack to get at protected member */
 class HCUpdater extends DatabaseUpdater {
-	public static function getDBUpdates ( DatabaseUpdater $updater ) {
+	public static function getDBUpdates( DatabaseUpdater $updater ) {
 		/* This is an ugly abuse to rename a table. */
 		$updater->modifyExtensionField( 'hitcounter',
 			'hc_id',
@@ -22,7 +20,7 @@ class HCUpdater extends DatabaseUpdater {
 	}
 
 	public function clearExtensionUpdates() {
-		$this->extensionUpdates = array();
+		$this->extensionUpdates = [];
 	}
 
 	public function getCoreUpdateList() {
