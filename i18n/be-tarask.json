@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck"
+		]
+	},
+	"hitcounters-desc": "Забясьпечвае статыстыку праглядаў старонак",
 	"popularpages": "Папулярныя старонкі"
 }
