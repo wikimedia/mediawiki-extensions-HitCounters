@@ -8,5 +8,6 @@
 	"hitcounters-nviews": "$1 {{PLURAL:$1|прагляд|прагляды|праглядаў}}",
 	"popularpages": "Папулярныя старонкі",
 	"hitcounters-pageinfo-views": "Колькасьць праглядаў",
-	"hitcounters-statistics-header-views": "Статыстыка праглядаў"
+	"hitcounters-statistics-header-views": "Статыстыка праглядаў",
+	"hitcounters-statistics-views-total": "Праглядаў агулам"
 }
