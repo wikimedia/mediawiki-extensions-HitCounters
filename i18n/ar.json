@@ -5,5 +5,13 @@
 			"ديفيد"
 		]
 	},
-	"popularpages": "صفحات شعبية"
+	"hitcounters-desc": "يوفر عرض إحصائيات لكل صفحة",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|مشاهدة|مشاهدات}}",
+	"popularpages": "صفحات شعبية",
+	"hitcounters-pageinfo-views": "عدد المشاهدات",
+	"hitcounters-statistics-header-views": "عرض الإحصاءات",
+	"hitcounters-statistics-views-total": "إجمالي المشاهدات",
+	"hitcounters-statistics-views-total-desc": "لا يتم تضمين مشاهدات الصفحات غير الموجودة والصفحات الخاصة",
+	"hitcounters-statistics-views-peredit": "المشاهدات لكل تحرير",
+	"hitcounters-statistics-mostpopular": "الصفحات الأكثر مشاهدة"
 }
