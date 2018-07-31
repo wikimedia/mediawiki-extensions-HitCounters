@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"WindEwriX",
-			"Okras"
+			"Okras",
+			"DCamer"
 		]
 	},
 	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",
@@ -13,5 +14,6 @@
 	"hitcounters-statistics-views-total": "Вид просмотров",
 	"hitcounters-statistics-views-total-desc": "Просмотры несуществующих и служебных страниц не учитываются",
 	"hitcounters-statistics-views-peredit": "Просмотров на правку",
-	"hitcounters-statistics-mostpopular": "Наиболее часто просматриваемые страницы"
+	"hitcounters-statistics-mostpopular": "Наиболее часто просматриваемые страницы",
+	"abusefilter-edit-builder-vars-article-views": "Просмотров страниц"
 }

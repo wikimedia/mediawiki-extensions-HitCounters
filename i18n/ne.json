@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "धेरै रूचाईएका पृष्ठहरू"
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"popularpages": "धेरै रूचाईएका पृष्ठहरू",
+	"abusefilter-edit-builder-vars-article-views": "पृष्ठ अवलोकन"
 }

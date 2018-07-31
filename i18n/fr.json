@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"hitcounters-desc": "Fournit les statistiques de consultation par page",
@@ -12,5 +13,8 @@
 	"hitcounters-statistics-views-total": "Total des consultations",
 	"hitcounters-statistics-views-total-desc": "L'accès aux pages non existantes et aux pages spéciales ne sont pas inclus",
 	"hitcounters-statistics-views-peredit": "Nombre de consultations par édition",
-	"hitcounters-statistics-mostpopular": "Pages les plus consultées"
+	"hitcounters-statistics-mostpopular": "Pages les plus consultées",
+	"abusefilter-edit-builder-vars-article-views": "Pages vues",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Vues du source de la page",
+	"abusefilter-edit-builder-vars-movedto-views": "Vues des pages cible"
 }

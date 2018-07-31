@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "პოპულარული გვერდები"
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"popularpages": "პოპულარული გვერდები",
+	"abusefilter-edit-builder-vars-article-views": "გვერდის ხილვა"
 }

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Tarawneh"
 		]
 	},
 	"hitcounters-desc": "يوفر عرض إحصائيات لكل صفحة",
@@ -13,5 +14,6 @@
 	"hitcounters-statistics-views-total": "إجمالي المشاهدات",
 	"hitcounters-statistics-views-total-desc": "لا يتم تضمين مشاهدات الصفحات غير الموجودة والصفحات الخاصة",
 	"hitcounters-statistics-views-peredit": "المشاهدات لكل تحرير",
-	"hitcounters-statistics-mostpopular": "الصفحات الأكثر مشاهدة"
+	"hitcounters-statistics-mostpopular": "الصفحات الأكثر مشاهدة",
+	"abusefilter-edit-builder-vars-article-views": "عدد مشاهدات الصفحة"
 }

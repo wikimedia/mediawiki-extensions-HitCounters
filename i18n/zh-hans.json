@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Yfdyh000"
 		]
 	},
 	"hitcounters-desc": "提供每个页面的查看统计",
@@ -12,5 +13,6 @@
 	"hitcounters-statistics-views-total": "总计查看",
 	"hitcounters-statistics-views-total-desc": "未包括对不存在页面和特殊页面的查看次数",
 	"hitcounters-statistics-views-peredit": "每次编辑查看",
-	"hitcounters-statistics-mostpopular": "最多查看页面"
+	"hitcounters-statistics-mostpopular": "最多查看页面",
+	"abusefilter-edit-builder-vars-article-views": "页面查看次数"
 }

@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Často wopytowane strony"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"popularpages": "Často wopytowane strony",
+	"abusefilter-edit-builder-vars-article-views": "Wobhladanja strony"
 }

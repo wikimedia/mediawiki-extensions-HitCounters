@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"2nd-player"
+			"2nd-player",
+			"Shirayuki"
 		]
 	},
 	"hitcounters-desc": "ページ別の閲覧に関する統計を提供する",
@@ -12,5 +13,6 @@
 	"hitcounters-statistics-views-total": "総閲覧回数",
 	"hitcounters-statistics-views-total-desc": "存在しないページと特別ページに対する閲覧は含まれていません",
 	"hitcounters-statistics-views-peredit": "1編集あたりの閲覧回数",
-	"hitcounters-statistics-mostpopular": "最も閲覧されているページ"
+	"hitcounters-statistics-mostpopular": "最も閲覧されているページ",
+	"abusefilter-edit-builder-vars-article-views": "ページ閲覧回数"
 }

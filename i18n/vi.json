@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Trang nhiều người đọc"
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"popularpages": "Trang nhiều người đọc",
+	"abusefilter-edit-builder-vars-article-views": "Số lần xem trang"
 }

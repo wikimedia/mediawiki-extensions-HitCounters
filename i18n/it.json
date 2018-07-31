@@ -3,7 +3,8 @@
 		"authors": [
 			"Alexmar983",
 			"Beta16",
-			"Selven"
+			"Selven",
+			"Gianfranco"
 		]
 	},
 	"hitcounters-desc": "Fornisce statistiche per ogni vizualizzazione di pagina",
@@ -14,5 +15,6 @@
 	"hitcounters-statistics-views-total": "Visualizzazioni totali",
 	"hitcounters-statistics-views-total-desc": "Le visite a pagine non esistenti e pagine speciali non sono incluse",
 	"hitcounters-statistics-views-peredit": "Visite per modifica",
-	"hitcounters-statistics-mostpopular": "Pagine più viste"
+	"hitcounters-statistics-mostpopular": "Pagine più viste",
+	"abusefilter-edit-builder-vars-article-views": "Visualizzazioni di pagina"
 }

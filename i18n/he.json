@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "הדפים הנצפים ביותר"
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"popularpages": "הדפים הנצפים ביותר",
+	"abusefilter-edit-builder-vars-article-views": "מספר הצגות הדף"
 }

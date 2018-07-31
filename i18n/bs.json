@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Popularne stranice"
+	"@metadata": {
+		"authors": [
+			"Edinwiki"
+		]
+	},
+	"popularpages": "Popularne stranice",
+	"abusefilter-edit-builder-vars-article-views": "Pregleda stranice"
 }

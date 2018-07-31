@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Pàggini cchiù visitati"
+	"@metadata": {
+		"authors": [
+			"Pippinu"
+		]
+	},
+	"popularpages": "Pàggini cchiù visitati",
+	"abusefilter-edit-builder-vars-article-views": "Nùmmiru di taliati dâ pàggina"
 }

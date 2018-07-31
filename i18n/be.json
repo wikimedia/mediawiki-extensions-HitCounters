@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Папулярныя старонкі"
+	"@metadata": {
+		"authors": [
+			"Artsiom91"
+		]
+	},
+	"popularpages": "Папулярныя старонкі",
+	"abusefilter-edit-builder-vars-article-views": "Праглядаў старонкі"
 }

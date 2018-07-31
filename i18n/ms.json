@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Laman popular"
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"popularpages": "Laman popular",
+	"abusefilter-edit-builder-vars-article-views": "Kunjungan halaman"
 }

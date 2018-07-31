@@ -13,5 +13,6 @@
 	"hitcounters-statistics-views-total": "Total de visites",
 	"hitcounters-statistics-views-total-desc": "Nun s'incluyen les visites a páxines que nun esisten nin a páxines especiales",
 	"hitcounters-statistics-views-peredit": "Visites per edición",
-	"hitcounters-statistics-mostpopular": "Páxines más visitaes"
+	"hitcounters-statistics-mostpopular": "Páxines más visitaes",
+	"abusefilter-edit-builder-vars-article-views": "Visites a la páxina"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"OTAVIO1981"
 		]
 	},
 	"hitcounters-desc": "Fornece estatísticas de visualização por página",
@@ -12,5 +13,8 @@
 	"hitcounters-statistics-views-total": "Total de visualizações",
 	"hitcounters-statistics-views-total-desc": "As visualizações de páginas não existentes e páginas especiais não estão incluídas",
 	"hitcounters-statistics-views-peredit": "Visualizações por edição",
-	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas"
+	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas",
+	"abusefilter-edit-builder-vars-article-views": "Visualização de páginas",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizações da página de origem",
+	"abusefilter-edit-builder-vars-movedto-views": "Visualizações da página de destino"
 }

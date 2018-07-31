@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Matma Rex"
 		]
 	},
 	"popularpages": "Popularne strony",
 	"hitcounters-pageinfo-views": "Liczba wyświetleń",
 	"hitcounters-statistics-header-views": "Zobacz statystyki",
-	"hitcounters-statistics-mostpopular": "Najczęściej odwiedzane strony"
+	"hitcounters-statistics-mostpopular": "Najczęściej odwiedzane strony",
+	"abusefilter-edit-builder-vars-article-views": "Liczba odwiedzin strony"
 }

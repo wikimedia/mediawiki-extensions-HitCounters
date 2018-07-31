@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Populære sider"
+	"@metadata": {
+		"authors": [
+			"Njardarlogar"
+		]
+	},
+	"popularpages": "Populære sider",
+	"abusefilter-edit-builder-vars-article-views": "Sidevisingar"
 }

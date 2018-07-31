@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Populära sidor"
+	"@metadata": {
+		"authors": [
+			"Ainali"
+		]
+	},
+	"popularpages": "Populära sidor",
+	"abusefilter-edit-builder-vars-article-views": "Sidvisningar"
 }
