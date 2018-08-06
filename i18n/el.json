@@ -14,5 +14,7 @@
 	"hitcounters-statistics-views-total-desc": "Προβολές σε μη υπάρχουσες και ειδικές σελίδες δεν συμπεριλαμβάνονται",
 	"hitcounters-statistics-views-peredit": "Προβολές ανά επεξεργασία",
 	"hitcounters-statistics-mostpopular": "Περισσότερες προβολές σελίδων",
-	"abusefilter-edit-builder-vars-article-views": "Προβολές σελίδων"
+	"abusefilter-edit-builder-vars-article-views": "Προβολές σελίδων",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Προβολές σελίδας πηγής",
+	"abusefilter-edit-builder-vars-movedto-views": "Προβολές σελίδων στόχου"
 }
