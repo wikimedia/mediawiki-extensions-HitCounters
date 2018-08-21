@@ -167,14 +167,23 @@ class Hooks {
 	}
 
 	/**
-	 * Tells AbuseFilter about the article_views variable
+	 * Tells AbuseFilter about our variables
 	 * @param array &$builderValues
 	 * @return void
 	 */
 	public static function onAbuseFilterBuilder( array &$builderValues ) {
-		$builderValues['vars']['article_views'] = 'article-views';
+		$builderValues['vars']['page_views'] = 'page-views';
 		$builderValues['vars']['moved_from_views'] = 'movedfrom-views';
 		$builderValues['vars']['moved_to_views'] = 'movedto-views';
+	}
+
+	/**
+	 * Old, deprecated syntax
+	 * @param array &$deprecatedVars
+	 * @return void
+	 */
+	public static function onAbuseFilterDeprecatedVariables( array &$deprecatedVars ) {
+		$deprecatedVars['article_views'] = 'page_views';
 	}
 
 	/**
@@ -189,7 +198,7 @@ class Hooks {
 		Title $title,
 		$prefix
 	) {
-		$vars->setLazyLoadVar( $prefix . '_VIEWS', 'article-views', [ 'title' => $title ] );
+		$vars->setLazyLoadVar( $prefix . '_VIEWS', 'page-views', [ 'title' => $title ] );
 	}
 
 	/**
@@ -201,7 +210,8 @@ class Hooks {
 	 * @return bool
 	 */
 	public static function onAbuseFilterComputeVariable( $method, $vars, $parameters, &$result ) {
-		if ( $method === 'article-views' ) {
+		// Both methods are needed because they're saved in the DB and are necessary for old entries
+		if ( $method === 'article-views' || $method === 'page-views' ) {
 			$result = HitCounters::getCount( $parameters['title'] );
 			return false;
 		} else {
