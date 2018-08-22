@@ -2,7 +2,7 @@
 namespace HitCounters;
 
 use DatabaseUpdater;
-use RequestContext;
+use IContextSource;
 use Title;
 use Parser;
 use DeferredUpdates;
@@ -33,7 +33,7 @@ class Hooks {
 	}
 
 	public static function onSpecialStatsAddExtra(
-		array &$extraStats, RequestContext $statsPage
+		array &$extraStats, IContextSource $statsPage
 	) {
 		global $wgContLang;
 
@@ -50,7 +50,7 @@ class Hooks {
 		return true;
 	}
 
-	protected static function getMostViewedPages( RequestContext $statsPage ) {
+	protected static function getMostViewedPages( IContextSource $statsPage ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$param = HitCounters::getQueryInfo();
 		$options['ORDER BY'] = [ 'page_counter DESC' ];
