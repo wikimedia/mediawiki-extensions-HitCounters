@@ -29,7 +29,9 @@
 
 namespace HitCounters;
 
+use Html;
 use QueryPage;
+use Skin;
 use Title;
 use Linker;
 
