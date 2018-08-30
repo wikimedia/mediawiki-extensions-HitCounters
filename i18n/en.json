@@ -16,7 +16,7 @@
 	"hitcounters-statistics-views-total-desc": "Views to non-existing pages and special pages are not included",
 	"hitcounters-statistics-views-peredit": "Views per edit",
 	"hitcounters-statistics-mostpopular": "Most viewed pages",
-	"abusefilter-edit-builder-vars-article-views": "Page views",
+	"abusefilter-edit-builder-vars-page-views": "Page views",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Source page views",
 	"abusefilter-edit-builder-vars-movedto-views": "Target page views"
 }

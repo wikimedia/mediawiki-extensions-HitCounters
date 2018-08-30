@@ -46,6 +46,9 @@
 		"AbuseFilter-builder": [
 			"HitCounters\\Hooks::onAbuseFilterBuilder"
 		],
+		"AbuseFilter-deprecatedVariables": [
+			"HitCounters\\Hooks::onAbuseFilterDeprecatedVariables"
+		],
 		"AbuseFilter-generateTitleVars": [
 			"HitCounters\\Hooks:onAbuseFilterGenerateTitleVars"
 		],
