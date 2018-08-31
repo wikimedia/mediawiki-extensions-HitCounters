@@ -14,7 +14,7 @@
 	"hitcounters-statistics-views-total-desc": "Não estão incluídas as visualizações de páginas não existentes e de páginas especiais",
 	"hitcounters-statistics-views-peredit": "Visualizações por edição",
 	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas",
-	"abusefilter-edit-builder-vars-article-views": "Visualizações da página",
+	"abusefilter-edit-builder-vars-page-views": "Visualizações da página",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizações da página de origem",
 	"abusefilter-edit-builder-vars-movedto-views": "Visualizações da página de destino"
 }

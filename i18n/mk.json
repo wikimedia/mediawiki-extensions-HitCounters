@@ -14,7 +14,7 @@
 	"hitcounters-statistics-views-total-desc": "Не се вброени посетите на непостоечки и службени страници",
 	"hitcounters-statistics-views-peredit": "Посети по уредување",
 	"hitcounters-statistics-mostpopular": "Најпосетувани страници",
-	"abusefilter-edit-builder-vars-article-views": "Посети",
+	"abusefilter-edit-builder-vars-page-views": "Посети",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Посети на изворната страница",
 	"abusefilter-edit-builder-vars-movedto-views": "Посети на целната страница"
 }

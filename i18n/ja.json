@@ -14,5 +14,5 @@
 	"hitcounters-statistics-views-total-desc": "存在しないページと特別ページに対する閲覧は含まれていません",
 	"hitcounters-statistics-views-peredit": "1編集あたりの閲覧回数",
 	"hitcounters-statistics-mostpopular": "最も閲覧されているページ",
-	"abusefilter-edit-builder-vars-article-views": "ページ閲覧回数"
+	"abusefilter-edit-builder-vars-page-views": "ページ閲覧回数"
 }
