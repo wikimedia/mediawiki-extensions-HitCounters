@@ -3,9 +3,11 @@
 		"authors": [
 			"Xoser",
 			"Kumkumuk",
-			"Gorizon"
+			"Gorizon",
+			"Mirzali"
 		]
 	},
+	"hitcounters-nviews": "$1 {{PLURAL:$1|asayış|asayışi}}",
 	"popularpages": "Perrê populeri",
 	"hitcounters-pageinfo-views": "Amora vinayışan",
 	"hitcounters-statistics-header-views": "İstatistika bıvin",
