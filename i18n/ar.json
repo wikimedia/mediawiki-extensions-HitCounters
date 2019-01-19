@@ -6,6 +6,7 @@
 			"Tarawneh"
 		]
 	},
+	"hitcounters-extensionname": "عداد الرؤية",
 	"hitcounters-desc": "يوفر عرض إحصائيات لكل صفحة",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|مشاهدة|مشاهدات}}",
 	"popularpages": "صفحات شعبية",
