@@ -4,7 +4,8 @@
 			"WindEwriX",
 			"Okras",
 			"DCamer",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",
@@ -12,10 +13,11 @@
 	"popularpages": "Популярные страницы",
 	"hitcounters-pageinfo-views": "Количество просмотров",
 	"hitcounters-statistics-header-views": "Посмотреть статистику",
-	"hitcounters-statistics-views-total": "Вид просмотров",
+	"hitcounters-statistics-views-total": "Всего просмотров",
 	"hitcounters-statistics-views-total-desc": "Просмотры несуществующих и служебных страниц не учитываются",
 	"hitcounters-statistics-views-peredit": "Просмотров на правку",
 	"hitcounters-statistics-mostpopular": "Наиболее часто просматриваемые страницы",
 	"abusefilter-edit-builder-vars-page-views": "Просмотров страниц",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Просмотров исходной страницы",
 	"abusefilter-edit-builder-vars-movedto-views": "Просмотры целевой страницы"
 }
