@@ -50,10 +50,10 @@
 			"HitCounters\\Hooks::onAbuseFilterDeprecatedVariables"
 		],
 		"AbuseFilter-generateTitleVars": [
-			"HitCounters\\Hooks:onAbuseFilterGenerateTitleVars"
+			"HitCounters\\Hooks::onAbuseFilterGenerateTitleVars"
 		],
 		"AbuseFilter-computeVariable": [
-			"HitCounters\\Hooks:onAbuseFilterComputeVariable"
+			"HitCounters\\Hooks::onAbuseFilterComputeVariable"
 		]
 	},
 	"AutoloadClasses": {
