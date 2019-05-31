@@ -34,7 +34,7 @@ class HitCounters {
 		 * information.
 		 */
 		$cache = wfGetCache( CACHE_ANYTHING );
-		$key = wfMemcKey( 'viewcount', $title->getDBkey() );
+		$key = wfMemcKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
 		wfDebugLog( "HitCounters", "Got viewcount=" .
 			var_export( $views, true ) . " from cache" );
