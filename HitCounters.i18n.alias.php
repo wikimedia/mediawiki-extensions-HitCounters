@@ -14,6 +14,6 @@ $specialPageAliases['en'] = [
 ];
 
 /** German (Deutsch) */
-$specialPageAliases['en'] = [
-		'PopularPages' => [ 'Beliebteste_Seiten' ],
+$specialPageAliases['de'] = [
+	'PopularPages' => [ 'Beliebteste_Seiten' ],
 ];
