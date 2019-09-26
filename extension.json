@@ -1,7 +1,7 @@
 {
 	"name": "HitCounters",
 	"namemsg": "hitcounters-extensionname",
-	"version": "0.3",
+	"version": "0.3.1",
 	"author": [
 		"[//mwstake.org Mark A. Hershberger]"
 	],
@@ -50,10 +50,10 @@
 			"HitCounters\\Hooks::onAbuseFilterDeprecatedVariables"
 		],
 		"AbuseFilter-generateTitleVars": [
-			"HitCounters\\Hooks:onAbuseFilterGenerateTitleVars"
+			"HitCounters\\Hooks::onAbuseFilterGenerateTitleVars"
 		],
 		"AbuseFilter-computeVariable": [
-			"HitCounters\\Hooks:onAbuseFilterComputeVariable"
+			"HitCounters\\Hooks::onAbuseFilterComputeVariable"
 		]
 	},
 	"AutoloadClasses": {
