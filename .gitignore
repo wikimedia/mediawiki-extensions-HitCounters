@@ -21,3 +21,6 @@ project.index
 ## Sublime
 sublime-*
 sftp-config.json
+# ignoriert alle Mac-Dateien "DS_Store"
+.DS_Store
+._.DS_Store
