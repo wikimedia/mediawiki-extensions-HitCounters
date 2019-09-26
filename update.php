@@ -26,6 +26,12 @@ require_once "$IP/maintenance/Maintenance.php";
  */
 class UpdateHitCounter extends Maintenance {
 
+	public function __construct() {
+		parent::__construct();
+
+		$this->requireExtension( 'HitCounters' );
+	}
+
 	public function execute() {
 		# Attempt to connect to the database as a privileged user
 		# This will vomit up an error if there are permissions problems
