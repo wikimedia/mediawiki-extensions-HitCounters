@@ -9,9 +9,8 @@
  * @package   HitCounters
  * @author    Mark A. Hershberger <mah@nichework.com>
  * @copyright 2015 Mark A. Hershberger
- * @license   http://www.gnu.org/licenses/gpl-3.0.html GNU General Public License, version 3
- *            (or later)
- * @version   GIT: 0.3
+ * @license   GPL-3.0-or-later
+ * @version   GIT: 0.3.0.2
  * @link      https://www.mediawiki.org/wiki/Extension:HitCounters
  */
 
