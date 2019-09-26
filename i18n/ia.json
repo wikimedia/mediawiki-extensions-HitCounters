@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Paginas popular"
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"popularpages": "Paginas popular",
+	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina"
 }

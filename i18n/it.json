@@ -3,16 +3,22 @@
 		"authors": [
 			"Alexmar983",
 			"Beta16",
-			"Selven"
+			"Selven",
+			"Gianfranco"
 		]
 	},
+	"hitcounters-extensionname": "Hit Counter",
 	"hitcounters-desc": "Fornisce statistiche per ogni vizualizzazione di pagina",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualizzazione|visualizzazioni}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|visualizzazione|visualizzazioni}} &ndash; {{PLURAL:$2|1 carattere|$2 caratteri}}",
 	"popularpages": "Pagine popolari",
 	"hitcounters-pageinfo-views": "Numero di visualizzazioni",
 	"hitcounters-statistics-header-views": "Vedi statistiche",
 	"hitcounters-statistics-views-total": "Visualizzazioni totali",
 	"hitcounters-statistics-views-total-desc": "Le visite a pagine non esistenti e pagine speciali non sono incluse",
 	"hitcounters-statistics-views-peredit": "Visite per modifica",
-	"hitcounters-statistics-mostpopular": "Pagine più viste"
+	"hitcounters-statistics-mostpopular": "Pagine più viste",
+	"abusefilter-edit-builder-vars-page-views": "Visualizzazioni di pagina",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizzazioni di pagina di origine",
+	"abusefilter-edit-builder-vars-movedto-views": "Visualizzazioni di pagina di destinazione"
 }

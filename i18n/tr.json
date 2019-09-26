@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Watermelon juice",
-			"Emperyan"
+			"Emperyan",
+			"Joseph"
 		]
 	},
 	"popularpages": "Popüler sayfalar",
 	"hitcounters-statistics-views-peredit": "Düzenleme başına görüntüler",
-	"hitcounters-statistics-mostpopular": "En çok görüntülenen sayfalar"
+	"hitcounters-statistics-mostpopular": "En çok görüntülenen sayfalar",
+	"abusefilter-edit-builder-vars-page-views": "Sayfa görüntülenmesi"
 }

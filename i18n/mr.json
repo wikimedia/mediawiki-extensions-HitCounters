@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "प्रसिद्ध पाने"
+	"@metadata": {
+		"authors": [
+			"V.narsikar"
+		]
+	},
+	"popularpages": "प्रसिद्ध पाने",
+	"abusefilter-edit-builder-vars-page-views": "पानांची दृष्यता"
 }

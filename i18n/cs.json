@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Nejnavštěvovanější stránky"
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"popularpages": "Nejnavštěvovanější stránky",
+	"abusefilter-edit-builder-vars-page-views": "Zobrazení stránky"
 }

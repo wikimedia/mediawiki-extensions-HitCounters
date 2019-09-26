@@ -2,8 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Tarawneh"
 		]
 	},
-	"popularpages": "صفحات شعبية"
+	"hitcounters-extensionname": "عداد الرؤية",
+	"hitcounters-desc": "يوفر عرض إحصائيات لكل صفحة",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|مشاهدة|مشاهدات}}",
+	"popularpages": "صفحات شعبية",
+	"hitcounters-pageinfo-views": "عدد المشاهدات",
+	"hitcounters-statistics-header-views": "عرض الإحصاءات",
+	"hitcounters-statistics-views-total": "إجمالي المشاهدات",
+	"hitcounters-statistics-views-total-desc": "لا يتم تضمين مشاهدات الصفحات غير الموجودة والصفحات الخاصة",
+	"hitcounters-statistics-views-peredit": "المشاهدات لكل تحرير",
+	"hitcounters-statistics-mostpopular": "الصفحات الأكثر مشاهدة",
+	"abusefilter-edit-builder-vars-page-views": "عدد مشاهدات الصفحة",
+	"abusefilter-edit-builder-vars-movedfrom-views": "مشاهدات مصدر الصفحة",
+	"abusefilter-edit-builder-vars-movedto-views": "مشاهدات الصفحة الهدف"
 }

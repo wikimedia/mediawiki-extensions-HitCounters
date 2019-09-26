@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bellayet"
+			"Bellayet",
+			"আফতাবুজ্জামান"
 		]
 	},
-	"popularpages": "জনপ্রিয় পাতাসমূহ"
+	"popularpages": "জনপ্রিয় পাতাসমূহ",
+	"abusefilter-edit-builder-vars-page-views": "পাতা দর্শন"
 }

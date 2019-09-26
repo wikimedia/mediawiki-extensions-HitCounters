@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Populiarūs puslapiai"
+	"@metadata": {
+		"authors": [
+			"Mantak111"
+		]
+	},
+	"popularpages": "Populiarūs puslapiai",
+	"abusefilter-edit-builder-vars-page-views": "Puslapio peržiūros"
 }

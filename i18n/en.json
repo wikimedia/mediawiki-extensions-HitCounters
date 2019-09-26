@@ -8,6 +8,7 @@
 	"hitcounters-desc": "Provides per page view statistics",
 	"hitcounters-page-label": "[[$1|$1]]",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|view|views}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|view|views}} &ndash; {{PLURAL:$2|1 character|$2 characters}}",
 	"popularpages": "Popular pages",
 	"popularpages-summary": "",
 	"hitcounters-pageinfo-views": "Number of views",
@@ -15,5 +16,8 @@
 	"hitcounters-statistics-views-total": "Views total",
 	"hitcounters-statistics-views-total-desc": "Views to non-existing pages and special pages are not included",
 	"hitcounters-statistics-views-peredit": "Views per edit",
-	"hitcounters-statistics-mostpopular": "Most viewed pages"
+	"hitcounters-statistics-mostpopular": "Most viewed pages",
+	"abusefilter-edit-builder-vars-page-views": "Page views",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Source page views",
+	"abusefilter-edit-builder-vars-movedto-views": "Target page views"
 }

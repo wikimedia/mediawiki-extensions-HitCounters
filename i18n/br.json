@@ -1,4 +1,9 @@
 {
-	"@metadata": [],
-	"popularpages": "Pajennoù sellet ar muiañ"
+	"@metadata": {
+		"authors": [
+			"Y-M D"
+		]
+	},
+	"popularpages": "Pajennoù sellet ar muiañ",
+	"abusefilter-edit-builder-vars-page-views": "Pajennoù gwelet"
 }

@@ -13,5 +13,6 @@
 	"hitcounters-statistics-views-total": "Alle Affrohfe",
 	"hitcounters-statistics-views-total-desc": "Affrohfe vun Sigge, di_j_et nit jitt un Affrohfe vun {{int:specialpages}} in nit derbei.",
 	"hitcounters-statistics-views-peredit": "Affrohre per Änderong em Schnett",
-	"hitcounters-statistics-mostpopular": "De mihts aanjelohrte Sigge"
+	"hitcounters-statistics-mostpopular": "De mihts aanjelohrte Sigge",
+	"abusefilter-edit-builder-vars-page-views": "Aanzahl Afroofe vun dä Sigg"
 }

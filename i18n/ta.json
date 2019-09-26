@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"செல்வா"
+			"செல்வா",
+			"ElangoRamanujam"
 		]
 	},
-	"popularpages": "அடிக்கடி பார்க்கப்படும் பக்கங்கள்"
+	"popularpages": "அடிக்கடி பார்க்கப்படும் பக்கங்கள்",
+	"abusefilter-edit-builder-vars-page-views": "பக்க நோக்குகள்"
 }

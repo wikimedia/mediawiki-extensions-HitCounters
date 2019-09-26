@@ -1,4 +1,10 @@
 {
-	"@metadata": [],
-	"popularpages": "ప్రజాదరణ పొందిన పేజీలు"
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Veeven"
+		]
+	},
+	"popularpages": "ప్రాచుర్య పేజీలు",
+	"abusefilter-edit-builder-vars-page-views": "పేజీ వీక్షణలు"
 }

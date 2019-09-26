@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Roderick Mallia"
+			"Roderick Mallia",
+			"Leli Forte"
 		]
 	},
-	"popularpages": "L-iktar paġni popolari"
+	"popularpages": "L-iktar paġni popolari",
+	"abusefilter-edit-builder-vars-page-views": "Dehriet tal-paġna"
 }

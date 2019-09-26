@@ -12,5 +12,8 @@
 	"hitcounters-statistics-views-total": "Totalt antall visninger",
 	"hitcounters-statistics-views-total-desc": "Visninger til ikke-eksisterende sider og spesialsider er ikke med",
 	"hitcounters-statistics-views-peredit": "Visninger per redigering",
-	"hitcounters-statistics-mostpopular": "Mest viste sider"
+	"hitcounters-statistics-mostpopular": "Mest viste sider",
+	"abusefilter-edit-builder-vars-page-views": "Sidevisninger",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visninger av kildesiden",
+	"abusefilter-edit-builder-vars-movedto-views": "Visninger av målsiden"
 }

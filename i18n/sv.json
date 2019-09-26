@@ -1,4 +1,12 @@
 {
-	"@metadata": [],
-	"popularpages": "Populära sidor"
+	"@metadata": {
+		"authors": [
+			"Ainali",
+			"WikiPhoenix"
+		]
+	},
+	"popularpages": "Populära sidor",
+	"abusefilter-edit-builder-vars-page-views": "Sidvisningar",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visningar för källsida",
+	"abusefilter-edit-builder-vars-movedto-views": "Visningar för målsidan"
 }

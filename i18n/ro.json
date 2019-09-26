@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Emily"
+			"Emily",
+			"Minisarm"
 		]
 	},
-	"popularpages": "Pagini populare"
+	"popularpages": "Pagini populare",
+	"abusefilter-edit-builder-vars-page-views": "Vizualizări ale paginii"
 }
