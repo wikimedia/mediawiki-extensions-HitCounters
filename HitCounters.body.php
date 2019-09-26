@@ -2,6 +2,14 @@
 
 namespace HitCounters;
 
+/**
+* backward compatibility to MediaWiki v1.25 and v1.26
+* fix an issue that was introduced here:
+* https://github.com/WikiMANNia/mediawiki-extensions-HitCounters/commit/822140f6d96974f5051449837e7f46a771d5f6a5#diff-1b6cef982bd7ace2232d91536185b83a
+* DB_REPLICA remains undefined in MediaWiki before v1.27
+*/
+defined('DB_REPLICA') or define('DB_REPLICA', DB_SLAVE);
+
 use Title;
 use Parser;
 use PPFrame;
