@@ -10,7 +10,7 @@
  * @author    Mark A. Hershberger <mah@nichework.com>
  * @copyright 2015 Mark A. Hershberger
  * @license   GPL-3.0-or-later
- * @version   GIT: 0.3
+ * @version   GIT: 0.3.1
  * @link      https://www.mediawiki.org/wiki/Extension:HitCounters
  */
 
