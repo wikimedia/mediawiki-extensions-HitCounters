@@ -1,6 +1,20 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Red Winged Duck",
+			"Wizardist"
+		]
 	},
-	"popularpages": "Папулярныя старонкі"
+	"hitcounters-desc": "Забясьпечвае статыстыку праглядаў старонак",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|прагляд|прагляды|праглядаў}}",
+	"popularpages": "Папулярныя старонкі",
+	"hitcounters-pageinfo-views": "Колькасьць праглядаў",
+	"hitcounters-statistics-header-views": "Статыстыка праглядаў",
+	"hitcounters-statistics-views-total": "Праглядаў агулам",
+	"hitcounters-statistics-views-total-desc": "Прагляды няісных і спэцыяльных старонак ня ўлічваюцца",
+	"hitcounters-statistics-views-peredit": "Праглядаў на рэдагаваньне",
+	"hitcounters-statistics-mostpopular": "Найбольш прагляданыя старонкі",
+	"abusefilter-edit-builder-vars-page-views": "Праглядаў старонкі",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Прагляды крынічнай старонкі",
+	"abusefilter-edit-builder-vars-movedto-views": "Прагляды мэтавай старонкі"
 }

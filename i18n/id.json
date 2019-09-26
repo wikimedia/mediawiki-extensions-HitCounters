@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Farras"
+		]
 	},
-	"popularpages": "Halaman populer"
+	"popularpages": "Halaman populer",
+	"abusefilter-edit-builder-vars-page-views": "Kunjungan halaman"
 }

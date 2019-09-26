@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"AS",
+			"Piramidion"
 		]
 	},
 	"hitcounters-desc": "Забезпечує статистику переглядів посторінково",
@@ -12,5 +14,8 @@
 	"hitcounters-statistics-views-total": "Усього переглядів",
 	"hitcounters-statistics-views-total-desc": "Перегляди неіснуючих сторінок та спеціальних сторінок не враховано",
 	"hitcounters-statistics-views-peredit": "Переглядів на редагування",
-	"hitcounters-statistics-mostpopular": "Сторінки, які найчастіше переглядають"
+	"hitcounters-statistics-mostpopular": "Сторінки, які найчастіше переглядають",
+	"abusefilter-edit-builder-vars-page-views": "Переглядів сторінки",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Перегляди вихідної сторінки",
+	"abusefilter-edit-builder-vars-movedto-views": "Перегляди цільової сторінки"
 }

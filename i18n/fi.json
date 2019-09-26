@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Harriv"
+		]
 	},
-	"popularpages": "Suositut sivut"
+	"popularpages": "Suositut sivut",
+	"abusefilter-edit-builder-vars-page-views": "Sivulatauksia"
 }

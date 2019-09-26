@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"SpeedyGonsales"
+		]
 	},
-	"popularpages": "Popularne stranice"
+	"popularpages": "Popularne stranice",
+	"abusefilter-edit-builder-vars-page-views": "Pregleda stranice"
 }

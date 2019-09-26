@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Joao Xavier"
+		]
 	},
-	"popularpages": "Populara pagini"
+	"popularpages": "Populara pagini",
+	"hitcounters-statistics-header-views": "Montrez statistiki"
 }

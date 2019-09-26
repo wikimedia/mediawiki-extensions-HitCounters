@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Borislav"
+			"Borislav",
+			"StanProg",
+			"Vodnokon4e"
 		]
 	},
-	"popularpages": "Най-посещавани страници"
+	"popularpages": "Популярни страници",
+	"abusefilter-edit-builder-vars-page-views": "Преглеждания на страницата"
 }

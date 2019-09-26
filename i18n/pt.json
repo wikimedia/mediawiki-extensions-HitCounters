@@ -1,15 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
+	"hitcounters-extensionname": "Hit Counter",
 	"hitcounters-desc": "Fornece estatísticas de visualização por página",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualização|visualizações}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|visualização|visualizações}} &ndash; {{PLURAL:$2|1 caractere|$2 caracteres}}",
 	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizações",
 	"hitcounters-statistics-header-views": "Ver estatísticas",
 	"hitcounters-statistics-views-total": "Total de visualizações",
+	"hitcounters-statistics-views-total-desc": "Não estão incluídas as visualizações de páginas não existentes e de páginas especiais",
 	"hitcounters-statistics-views-peredit": "Visualizações por edição",
-	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas"
+	"hitcounters-statistics-mostpopular": "Páginas mais visualizadas",
+	"abusefilter-edit-builder-vars-page-views": "Visualizações da página",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizações da página de origem",
+	"abusefilter-edit-builder-vars-movedto-views": "Visualizações da página de destino"
 }

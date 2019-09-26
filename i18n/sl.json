@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Dbc334"
+		]
 	},
-	"popularpages": "Priljubljene strani"
+	"popularpages": "Priljubljene strani",
+	"abusefilter-edit-builder-vars-page-views": "Ogledi strani"
 }

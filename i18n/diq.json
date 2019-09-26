@@ -1,8 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xoser"
+			"Xoser",
+			"Kumkumuk",
+			"Gorizon",
+			"Mirzali"
 		]
 	},
-	"popularpages": "Pelî ke populer o."
+	"hitcounters-nviews": "$1 {{PLURAL:$1|asayış|asayışi}}",
+	"popularpages": "Perrê populeri",
+	"hitcounters-pageinfo-views": "Amora vinayışan",
+	"hitcounters-statistics-header-views": "İstatistika bıvin",
+	"hitcounters-statistics-views-total": "Vinayışi pêro",
+	"abusefilter-edit-builder-vars-page-views": "Perer bıvin"
 }

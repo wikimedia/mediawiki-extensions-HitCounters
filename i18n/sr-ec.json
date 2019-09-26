@@ -1,6 +1,11 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Obsuser",
+			"Acamicamacaraca"
+		]
 	},
-	"popularpages": "Популарне странице"
+	"popularpages": "Популарне странице",
+	"hitcounters-statistics-mostpopular": "Најпосећеније странице",
+	"abusefilter-edit-builder-vars-page-views": "Прегледи странице"
 }

@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Alex00728",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
-	"popularpages": "인기 있는 문서 목록",
-	"hitcounters-statistics-header-views": "통계 보기"
+	"popularpages": "인기 있는 문서",
+	"hitcounters-statistics-header-views": "통계 보기",
+	"abusefilter-edit-builder-vars-page-views": "문서 조회수"
 }

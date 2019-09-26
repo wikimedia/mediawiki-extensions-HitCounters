@@ -1,6 +1,16 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Ooswesthoesbes"
+		]
 	},
-	"popularpages": "Populaire artikels"
+	"hitcounters-desc": "Verzuut van stattestieke van waergaves per pagina",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|waergaaf|waergaves}}",
+	"popularpages": "Populair pagina's",
+	"hitcounters-pageinfo-views": "Aantaal waergaves",
+	"hitcounters-statistics-header-views": "Tuin stattestieke",
+	"hitcounters-statistics-views-total": "Totaal waergaves",
+	"hitcounters-statistics-views-total-desc": "Waergaves van neet-bestäönde pagina's en speciaal pagina's zint neet inbegrepe",
+	"hitcounters-statistics-views-peredit": "Waergaves per bewirking",
+	"hitcounters-statistics-mostpopular": "Meis-bekeke pagina's"
 }

@@ -1,6 +1,9 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Pintor Smeargle"
+		]
 	},
-	"popularpages": "Pàgines populars"
+	"popularpages": "Pàgines populars",
+	"abusefilter-edit-builder-vars-page-views": "Vistes de la pàgina"
 }

@@ -6,13 +6,17 @@
 		]
 	},
 	"hitcounters-extensionname": "Hit Counter",
-	"hitcounters-desc": "Bietet Seitenaufrufstatistiken",
+	"hitcounters-desc": "Ermöglicht die Aufzeichnung und Darstellung von Seitenaufruf-Statistiken",
 	"hitcounters-nviews": "{{PLURAL:$1|Ein Aufruf|$1 Aufrufe}}",
-	"popularpages": "Beliebte Seiten",
+	"hitcounters-nviews2": "{{PLURAL:$1|Ein Aufruf|$1 Aufrufe}} &ndash; $2 Zeichen",
+	"popularpages": "Beliebteste Seiten",
 	"hitcounters-pageinfo-views": "Anzahl der Aufrufe",
 	"hitcounters-statistics-header-views": "Statistiken ansehen",
 	"hitcounters-statistics-views-total": "Gesamtaufrufe",
 	"hitcounters-statistics-views-total-desc": "Aufrufe nicht vorhandener Seiten sowie von Spezialseiten sind nicht inbegriffen",
 	"hitcounters-statistics-views-peredit": "Aufrufe pro Bearbeitung",
-	"hitcounters-statistics-mostpopular": "Meistbetrachtete Seiten"
+	"hitcounters-statistics-mostpopular": "Meistbetrachtete Seiten",
+	"abusefilter-edit-builder-vars-page-views": "Seitenaufrufe",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Aufrufe der Quellseite",
+	"abusefilter-edit-builder-vars-movedto-views": "Aufrufe der Zielseite"
 }
