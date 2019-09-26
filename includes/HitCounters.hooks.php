@@ -125,10 +125,7 @@ class Hooks {
 			!$user->isAllowed( 'bot' ) &&
 			$wikipage->exists()
 		) {
-			DeferredUpdates::addUpdate(
-				new ViewCountUpdate( $wikipage->getId() )
-			);
-			DeferredUpdates::addUpdate( new SiteStatsUpdate( 1, 0, 0 ) );
+			DeferredUpdates::addUpdate( new ViewCountUpdate( $wikipage->getId() ) );
 		}
 	}
 
