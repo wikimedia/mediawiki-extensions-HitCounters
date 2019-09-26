@@ -1,9 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Mainframe98"
 		]
 	},
+	"hitcounters-desc": "Maakt de opname en weergave van pagina-oproepstatistieken mogelijk",
+    "hitcounters-nviews": "$1 keer bekeken",
 	"popularpages": "Veel bekeken pagina's",
-	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's"
+	"hitcounters-pageinfo-views": "Aantal weergaven",
+	"hitcounters-statistics-header-views": "Statistieken weergeven",
+	"hitcounters-statistics-views-total": "Totaal aantal weergaven",
+	"hitcounters-statistics-views-total-desc": "Oproepen van niet-bestaande pagina's en speciale pagina's zijn niet inbegrepen",
+	"hitcounters-statistics-views-peredit": "Weergaven per bewerking",
+	"hitcounters-statistics-mostpopular": "Meest bekeken pagina's",
+	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Bekeken de origin pagina",
+	"abusefilter-edit-builder-vars-movedto-views": "Bekeken de landingspagina"
 }
