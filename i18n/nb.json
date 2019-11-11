@@ -4,6 +4,7 @@
 			"Jon Harald Søby"
 		]
 	},
+	"hitcounters-extensionname": "Treffteller",
 	"hitcounters-desc": "Gir visningsstatistikk på enkeltsidebasis",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visning|visninger}}",
 	"popularpages": "Populære sider",
