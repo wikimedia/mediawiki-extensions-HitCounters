@@ -3,11 +3,20 @@
 		"authors": [
 			"Watermelon juice",
 			"Emperyan",
-			"Joseph"
+			"Joseph",
+			"BaRaN6161 TURK"
 		]
 	},
+	"hitcounters-desc": "Sayfa görüntüleme istatistiklerini sağlar",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|görüntüleme|görüntüleme}}",
 	"popularpages": "Popüler sayfalar",
+	"hitcounters-pageinfo-views": "Gösterim sayısı",
+	"hitcounters-statistics-header-views": "İstatistikleri görüntüle",
+	"hitcounters-statistics-views-total": "Toplam görüntüleme",
+	"hitcounters-statistics-views-total-desc": "Var olmayan sayfalara ve özel sayfalara görünümler dahil değildir",
 	"hitcounters-statistics-views-peredit": "Düzenleme başına görüntüler",
 	"hitcounters-statistics-mostpopular": "En çok görüntülenen sayfalar",
-	"abusefilter-edit-builder-vars-page-views": "Sayfa görüntülenmesi"
+	"abusefilter-edit-builder-vars-page-views": "Sayfa görüntülenmesi",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Kaynak sayfa görünümleri",
+	"abusefilter-edit-builder-vars-movedto-views": "Hedef sayfa görüntülemeleri"
 }
