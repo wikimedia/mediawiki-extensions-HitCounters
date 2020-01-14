@@ -1,20 +1,20 @@
 <?php
 namespace HitCounters;
 
-use DatabaseUpdater;
-use IContextSource;
-use Title;
-use Parser;
-use DeferredUpdates;
+use AbuseFilterVariableHolder;
 use CoreParserFunctions;
-use ViewCountUpdate;
+use DatabaseUpdater;
+use DeferredUpdates;
+use IContextSource;
+use Parser;
+use PPFrame;
+use QuickTemplate;
 use SiteStats;
 use SkinTemplate;
-use QuickTemplate;
-use PPFrame;
-use WikiPage;
+use Title;
 use User;
-use AbuseFilterVariableHolder;
+use ViewCountUpdate;
+use WikiPage;
 
 /**
  * PHPMD will warn us about these things here but since they're hooks,

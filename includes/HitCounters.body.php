@@ -2,10 +2,10 @@
 
 namespace HitCounters;
 
-use Title;
+use MWNamespace;
 use Parser;
 use PPFrame;
-use MWNamespace;
+use Title;
 
 class HitCounters {
 	protected static $mViews;
