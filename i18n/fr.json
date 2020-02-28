@@ -15,6 +15,6 @@
 	"hitcounters-statistics-views-peredit": "Nombre de consultations par édition",
 	"hitcounters-statistics-mostpopular": "Pages les plus consultées",
 	"abusefilter-edit-builder-vars-page-views": "Pages vues",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Vues du source de la page",
-	"abusefilter-edit-builder-vars-movedto-views": "Vues des pages cible"
+	"abusefilter-edit-builder-vars-movedfrom-views": "Pages source vues",
+	"abusefilter-edit-builder-vars-movedto-views": "Pages cible vues"
 }
