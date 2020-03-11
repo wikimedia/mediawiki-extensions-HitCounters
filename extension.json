@@ -22,39 +22,17 @@
 		"PopularPages": "HitCounters\\SpecialPopularPages"
 	},
 	"Hooks": {
-		"SpecialStatsAddExtra": [
-			"HitCounters\\Hooks::onSpecialStatsAddExtra"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"HitCounters\\Hooks::onLoadExtensionSchemaUpdates"
-		],
-		"MagicWordwgVariableIDs": [
-			"HitCounters\\Hooks::onMagicWordwgVariableIDs"
-		],
-		"ParserGetVariableValueSwitch": [
-			"HitCounters\\Hooks::onParserGetVariableValueSwitch"
-		],
-		"ParserFirstCallInit": [
-			"HitCounters\\Hooks::onParserFirstCallInit"
-		],
-		"PageViewUpdates": [
-			"HitCounters\\Hooks::onPageViewUpdates"
-		],
-		"SkinTemplateOutputPageBeforeExec": [
-			"HitCounters\\Hooks::onSkinTemplateOutputPageBeforeExec"
-		],
-		"AbuseFilter-builder": [
-			"HitCounters\\Hooks::onAbuseFilterBuilder"
-		],
-		"AbuseFilter-deprecatedVariables": [
-			"HitCounters\\Hooks::onAbuseFilterDeprecatedVariables"
-		],
-		"AbuseFilter-generateTitleVars": [
-			"HitCounters\\Hooks::onAbuseFilterGenerateTitleVars"
-		],
-		"AbuseFilter-computeVariable": [
-			"HitCounters\\Hooks::onAbuseFilterComputeVariable"
-		]
+		"SpecialStatsAddExtra": "HitCounters\\Hooks::onSpecialStatsAddExtra",
+		"LoadExtensionSchemaUpdates": "HitCounters\\Hooks::onLoadExtensionSchemaUpdates",
+		"MagicWordwgVariableIDs": "HitCounters\\Hooks::onMagicWordwgVariableIDs",
+		"ParserGetVariableValueSwitch": "HitCounters\\Hooks::onParserGetVariableValueSwitch",
+		"ParserFirstCallInit": "HitCounters\\Hooks::onParserFirstCallInit",
+		"PageViewUpdates": "HitCounters\\Hooks::onPageViewUpdates",
+		"SkinTemplateOutputPageBeforeExec": "HitCounters\\Hooks::onSkinTemplateOutputPageBeforeExec",
+		"AbuseFilter-builder": "HitCounters\\Hooks::onAbuseFilterBuilder",
+		"AbuseFilter-deprecatedVariables": "HitCounters\\Hooks::onAbuseFilterDeprecatedVariables",
+		"AbuseFilter-generateTitleVars": "HitCounters\\Hooks::onAbuseFilterGenerateTitleVars",
+		"AbuseFilter-computeVariable": "HitCounters\\Hooks::onAbuseFilterComputeVariable"
 	},
 	"AutoloadClasses": {
 		"HitCounters\\Hooks": "includes/HitCounters.hooks.php",
