@@ -94,14 +94,14 @@ class Hooks {
 		return true;
 	}
 
-	public static function onParserGetVariableValueSwitch( Parser &$parser,
-		array $cache, &$magicWordId, &$ret, PPFrame &$frame ) {
+	public static function onParserGetVariableValueSwitch( Parser $parser,
+		array &$cache, $magicWordId, &$ret, PPFrame $frame ) {
 		global $wgDisableCounters;
 
 		foreach ( self::getMagicWords() as $magicWord => $processingFunction ) {
 			if ( $magicWord === $magicWordId ) {
 				if ( !$wgDisableCounters ) {
-					$ret = CoreParserFunctions::formatRaw(
+					$ret = $cache[$magicWordId] = CoreParserFunctions::formatRaw(
 						call_user_func( $processingFunction, $parser, $frame, null ),
 						null,
 						$parser->getFunctionLang()
