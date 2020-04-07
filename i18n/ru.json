@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"WindEwriX",
-			"Okras",
 			"DCamer",
+			"Movses",
+			"Okras",
 			"Vlad5250",
-			"Movses"
+			"WindEwriX"
 		]
 	},
 	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",

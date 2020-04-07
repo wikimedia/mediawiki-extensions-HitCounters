@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wladek92",
-			"Gomoko"
+			"Gomoko",
+			"Wladek92"
 		]
 	},
 	"hitcounters-desc": "Fournit les statistiques de consultation par page",

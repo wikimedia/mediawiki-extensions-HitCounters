@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xoser",
-			"Kumkumuk",
 			"Gorizon",
-			"Mirzali"
+			"Kumkumuk",
+			"Mirzali",
+			"Xoser"
 		]
 	},
 	"hitcounters-nviews": "$1 {{PLURAL:$1|asayış|asayışi}}",
