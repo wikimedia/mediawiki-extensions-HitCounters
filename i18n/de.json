@@ -5,7 +5,7 @@
 			"Metalhead64"
 		]
 	},
-	"hitcounters-extensionname": "Hit Counter",
+	"hitcounters-extensionname": "Hit Counters",
 	"hitcounters-desc": "Ermöglicht die Aufzeichnung und Darstellung von Seitenaufrufstatistiken",
 	"hitcounters-nviews": "{{PLURAL:$1|Ein Aufruf|$1 Aufrufe}}",
 	"popularpages": "Beliebte Seiten",
