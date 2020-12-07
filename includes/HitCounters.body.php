@@ -3,6 +3,7 @@
 namespace HitCounters;
 
 use MWNamespace;
+use ObjectCache;
 use Parser;
 use PPFrame;
 use Title;
@@ -33,8 +34,8 @@ class HitCounters {
 		 * page views are pretty common and this is a tiny bit of
 		 * information.
 		 */
-		$cache = wfGetMainCache();
-		$key = wfMemcKey( 'viewcount', $title->getPrefixedDBkey() );
+		$cache = ObjectCache::getInstance();
+		$key = $cache->makeKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
 		wfDebugLog( "HitCounters", "Got viewcount=" .
 			var_export( $views, true ) . " from cache" );
@@ -61,8 +62,8 @@ class HitCounters {
 
 	public static function views() {
 		# Should check for MiserMode here
-		$cache = wfGetCache( CACHE_ANYTHING );
-		$key = wfMemcKey( 'sitestats', 'activeusers-updated' );
+		$cache = ObjectCache::getInstance( CACHE_ANYTHING );
+		$key = $cache->makeKey( 'sitestats', 'activeusers-updated' );
 		// Re-calculate the count if the last tally is old...
 		if ( !self::$mViews ) {
 			self::$mViews = $cache->get( $key );
