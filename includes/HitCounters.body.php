@@ -44,16 +44,15 @@ class HitCounters {
 
 		if ( !$views || $views == 1 ) {
 			$dbr = wfGetDB( DB_REPLICA );
-			$row = $dbr->select(
+			$hits = $dbr->selectField(
 				[ 'hit_counter' ],
 				[ 'hits' => 'page_counter' ],
 				[ 'page_id' => $title->getArticleID() ],
 				__METHOD__ );
 
-			if ( $row !== false && $current = $row->current() ) {
-				$views = $current->hits;
-				wfDebugLog( "HitCounters", "Got result=" .
-					var_export( $current, true ) .
+			if ( $hits !== false ) {
+				$views = $hits;
+				wfDebugLog( "HitCounters", "Got result=" . $hits .
 					" from DB and setting cache." );
 				self::cacheStore( $cache, $key, $views );
 			}
