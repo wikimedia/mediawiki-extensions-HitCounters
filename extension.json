@@ -31,11 +31,11 @@
 		"SkinTemplateOutputPageBeforeExec": "Hooks::onSkinTemplateOutputPageBeforeExec"
 	},
 	"AutoloadClasses": {
-		"HitCounters\\Hooks": "includes/HitCounters.hooks.php",
-		"HitCounters\\HitCounters": "includes/HitCounters.body.php",
+		"Hooks": "includes/HitCounters.hooks.php",
+		"HitCounters": "includes/HitCounters.body.php",
 		"ViewCountUpdate": "includes/ViewCountUpdate.php",
-		"HitCounters\\SpecialPopularPages": "includes/SpecialPopularPages.php",
-		"HitCounters\\HCUpdater": "includes/HCUpdater.php"
+		"SpecialPopularPages": "includes/SpecialPopularPages.php",
+		"HCUpdater": "includes/HCUpdater.php"
 	},
 	"config": {
 		"HitcounterUpdateFreq": 1,
