@@ -31,9 +31,9 @@ namespace HitCounters;
 
 use Html;
 use QueryPage;
+use Linker;
 use Skin;
 use Title;
-use Linker;
 
 class SpecialPopularPages extends QueryPage {
 	public function __construct( $name = 'PopularPages' ) {

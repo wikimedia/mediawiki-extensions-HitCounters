@@ -1,7 +1,7 @@
 {
 	"name": "HitCounters",
 	"namemsg": "hitcounters-extensionname",
-	"version": "0.3",
+	"version": "0.3.0.6",
 	"author": [
 		"[//mwstake.org Mark A. Hershberger]"
 	],
@@ -28,7 +28,11 @@
 		"ParserGetVariableValueSwitch": "Hooks::onParserGetVariableValueSwitch",
 		"ParserFirstCallInit": "Hooks::onParserFirstCallInit",
 		"PageViewUpdates": "Hooks::onPageViewUpdates",
-		"SkinTemplateOutputPageBeforeExec": "Hooks::onSkinTemplateOutputPageBeforeExec"
+		"SkinTemplateOutputPageBeforeExec": "Hooks::onSkinTemplateOutputPageBeforeExec",
+		"AbuseFilter-builder": "Hooks::onAbuseFilterBuilder",
+		"AbuseFilter-deprecatedVariables": "Hooks::onAbuseFilterDeprecatedVariables",
+		"AbuseFilter-generateTitleVars": "Hooks::onAbuseFilterGenerateTitleVars",
+		"AbuseFilter-computeVariable": "Hooks::onAbuseFilterComputeVariable"
 	},
 	"AutoloadClasses": {
 		"Hooks": "includes/HitCounters.hooks.php",
