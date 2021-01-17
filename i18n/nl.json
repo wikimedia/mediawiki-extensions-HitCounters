@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Mainframe98",
 			"Siebrand"
 		]
 	},
-	"popularpages": "Veel bekeken pagina's",
+	"hitcounters-nviews": "$1 {{PLURAL:$1|keer bekeken}}",
+	"popularpages": "Populaire pagina's",
+	"hitcounters-pageinfo-views": "Aantal keer bekijken",
+	"hitcounters-statistics-header-views": "Statistieken weergeven",
+	"hitcounters-statistics-views-total": "Totaal weergeven",
+	"hitcounters-statistics-mostpopular": "Meest bekeken pagina's",
 	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's"
 }
