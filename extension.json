@@ -1,7 +1,7 @@
 {
 	"name": "HitCounters",
 	"namemsg": "hitcounters-extensionname",
-	"version": "0.3.0.6",
+	"version": "0.3.1",
 	"author": [
 		"[//mwstake.org Mark A. Hershberger]"
 	],

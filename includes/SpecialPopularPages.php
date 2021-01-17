@@ -30,8 +30,8 @@
 namespace HitCounters;
 
 use Html;
-use QueryPage;
 use Linker;
+use QueryPage;
 use Skin;
 use Title;
 

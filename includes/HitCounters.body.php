@@ -33,7 +33,7 @@ class HitCounters {
 		 * page views are pretty common and this is a tiny bit of
 		 * information.
 		 */
-		$cache = wfGetCache( CACHE_ANYTHING );
+		$cache = wfGetMainCache();
 		$key = wfMemcKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
 		wfDebugLog( "HitCounters", "Got viewcount=" .
