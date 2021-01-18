@@ -1,13 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mark A. Hershberger"
+			"Mark A. Hershberger",
+			"WikiMANNia"
 		]
 	},
 	"hitcounters-extensionname": "Hit Counter",
 	"hitcounters-desc": "Provides per page view statistics",
 	"hitcounters-page-label": "[[$1|$1]]",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|view|views}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|view|views}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|view|views}} &ndash; {{PLURAL:$2|1 character|$2 characters}}",
+	"hitcounters-pop-page-line-len-id": "id: $3 &ndash; $1 {{PLURAL:$1|view|views}} &ndash; {{PLURAL:$2|1 character|$2 characters}}",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|view|views}}",
 	"popularpages": "Popular pages",
 	"popularpages-summary": "",
 	"hitcounters-pageinfo-views": "Number of views",

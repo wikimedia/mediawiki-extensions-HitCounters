@@ -36,22 +36,17 @@ class HitCounters {
 		$cache = wfGetMainCache();
 		$key = wfMemcKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
-		wfDebugLog( "HitCounters", "Got viewcount=" .
-			var_export( $views, true ) . " from cache" );
 
 		if ( !$views || $views == 1 ) {
 			$dbr = wfGetDB( DB_REPLICA );
-			$row = $dbr->select(
+			$hits = $dbr->selectField(
 				[ 'hit_counter' ],
 				[ 'hits' => 'page_counter' ],
 				[ 'page_id' => $title->getArticleID() ],
 				__METHOD__ );
 
-			if ( $row !== false && $current = $row->current() ) {
-				$views = $current->hits;
-				wfDebugLog( "HitCounters", "Got result=" .
-					var_export( $current, true ) .
-					" from DB and setting cache." );
+			if ( $hits !== false ) {
+				$views = $hits;
 				self::cacheStore( $cache, $key, $views );
 			}
 		}
@@ -115,8 +110,10 @@ class HitCounters {
 			'tables' => [ 'page', 'hit_counter' ],
 			'fields' => [
 				'namespace' => 'page_namespace',
-				'title' => 'page_title',
-				'value' => 'page_counter' ],
+				'title'  => 'page_title',
+				'value'  => 'page_counter',
+				'length' => 'page_len'
+			],
 			'conds' => [
 				'page_is_redirect' => 0,
 				'page_namespace' => MWNamespace::getContentNamespaces(),
