@@ -61,6 +61,9 @@ class SpecialPopularPages extends QueryPage {
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
 	public function formatResult( $skin, $result ) {
+		$enableAddTextLength = $this->getConfig()->get( 'EnableAddTextLength' );
+		$enableAddPageId = $this->getConfig()->get( 'EnableAddPageId' );
+
 		$title = Title::makeTitleSafe( $result->namespace, $result->title );
 		if ( !$title ) {
 			return Html::element(
@@ -78,9 +81,15 @@ class SpecialPopularPages extends QueryPage {
 			$this->getContentLanguage()->convert( htmlspecialchars( $title->getPrefixedText() ) )
 		);
 
+		$msg = 'hitcounters-pop-page-line';
+		$msg .= $enableAddTextLength ? '-len' : '';
+		$msg .= $enableAddPageId ? '-id' : '';
 		return $this->getLanguage()->specialList(
 			$link,
-			$this->msg( 'hitcounters-nviews' )->numParams( $result->value )->escaped()
+			$this->msg( $msg )
+				 ->numParams( $result->value )
+				 ->numParams( $result->length )
+				 ->numParams( $title->getArticleID() )
 		);
 	}
 

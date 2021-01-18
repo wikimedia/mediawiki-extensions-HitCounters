@@ -1,7 +1,7 @@
 {
 	"name": "HitCounters",
 	"namemsg": "hitcounters-extensionname",
-	"version": "0.3",
+	"version": "0.3.4",
 	"author": [
 		"[//mwstake.org Mark A. Hershberger]"
 	],
@@ -28,7 +28,7 @@
 		"ParserGetVariableValueSwitch": "HitCounters\\Hooks::onParserGetVariableValueSwitch",
 		"ParserFirstCallInit": "HitCounters\\Hooks::onParserFirstCallInit",
 		"PageViewUpdates": "HitCounters\\Hooks::onPageViewUpdates",
-		"SkinTemplateOutputPageBeforeExec": "HitCounters\\Hooks::onSkinTemplateOutputPageBeforeExec",
+		"SkinAddFooterLinks": "HitCounters\\Hooks::onSkinAddFooterLinks",
 		"AbuseFilter-builder": "HitCounters\\Hooks::onAbuseFilterBuilder",
 		"AbuseFilter-deprecatedVariables": "HitCounters\\Hooks::onAbuseFilterDeprecatedVariables",
 		"AbuseFilter-generateTitleVars": "HitCounters\\Hooks::onAbuseFilterGenerateTitleVars",
@@ -43,7 +43,9 @@
 	},
 	"config": {
 		"HitcounterUpdateFreq": 1,
-		"DisableCounters": false
+		"DisableCounters": false,
+		"EnableAddTextLength": false,
+		"EnableAddPageId": false
 	},
 	"manifest_version": 1
 }
