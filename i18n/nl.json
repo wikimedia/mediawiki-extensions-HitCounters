@@ -2,14 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Siebrand"
+			"Siebrand",
+			"WikiMANNia"
 		]
 	},
+	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's",
+	"hitcounters-desc": "Maakt de opname en weergave van [[Special:PopularPages|pagina-oproepstatistieken]] mogelijk",
+	"hitcounters-extensionname": "Hit Counters",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|keer bekeken}}",
-	"popularpages": "Populaire pagina's",
-	"hitcounters-pageinfo-views": "Aantal keer bekijken",
+	"hitcounters-nviews2": "$1 keer bekeken &ndash; {{PLURAL:$2|1 teken|$2 tekens}}",
+	"hitcounters-nviews3": "$1 &ndash; $2 keer bekeken &ndash; {{PLURAL:$3|1 teken|$3 tekens}}",
+	"hitcounters-pageinfo-views": "Aantal weergaven",
 	"hitcounters-statistics-header-views": "Statistieken weergeven",
-	"hitcounters-statistics-views-total": "Totaal weergeven",
 	"hitcounters-statistics-mostpopular": "Meest bekeken pagina's",
-	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's"
+	"hitcounters-statistics-views-peredit": "Weergaven per bewerking",
+	"hitcounters-statistics-views-total": "Totaal aantal weergaven",
+	"hitcounters-statistics-views-total-desc": "Oproepen van niet-bestaande pagina's en speciale pagina's zijn niet inbegrepen",
+	"popularpages": "Veel bekeken pagina's"
 }

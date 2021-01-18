@@ -22,3 +22,13 @@ project.index
 ## Sublime
 sublime-*
 sftp-config.json
+
+# test runner
+makeutil
+ci
+composer
+expected
+installer
+
+# From composer?
+.htaccess

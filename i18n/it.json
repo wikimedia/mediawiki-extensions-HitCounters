@@ -4,11 +4,14 @@
 			"Alexmar983",
 			"Beta16",
 			"Gianfranco",
-			"Selven"
+			"Selven",
+			"WikiMANNia"
 		]
 	},
 	"hitcounters-desc": "Fornisce statistiche per ogni vizualizzazione di pagina",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualizzazione|visualizzazioni}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|visualizzazione|visualizzazioni}} &ndash; {{PLURAL:$2|1 carattere|$2 caratteri}}",
+	"hitcounters-nviews3": "$1 &ndash; $2 {{PLURAL:$2|visualizzazione|visualizzazioni}} &ndash; {{PLURAL:$3|1 carattere|$3 caratteri}}",
 	"popularpages": "Pagine popolari",
 	"hitcounters-pageinfo-views": "Numero di visualizzazioni",
 	"hitcounters-statistics-header-views": "Vedi statistiche",

@@ -61,6 +61,9 @@ class SpecialPopularPages extends QueryPage {
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
 	public function formatResult( $skin, $result ) {
+		$enableAddTextLength = $this->getConfig()->get( 'wgEnableAddTextLength' );
+		$enableAddPageId = $this->getConfig()->get( 'wgEnableAddPageId' );
+
 		$title = Title::makeTitleSafe( $result->namespace, $result->title );
 		if ( !$title ) {
 			return Html::element(
@@ -78,10 +81,29 @@ class SpecialPopularPages extends QueryPage {
 			$this->getContentLanguage()->convert( htmlspecialchars( $title->getPrefixedText() ) )
 		);
 
-		return $this->getLanguage()->specialList(
-			$link,
-			$this->msg( 'hitcounters-nviews' )->numParams( $result->value )->escaped()
-		);
+		if ( $enableAddTextLength ) {
+			if ( $enableAddPageId ) {
+				return $this->getLanguage()->specialList(
+					$link,
+					$this->msg( 'hitcounters-nviews3' )
+						 ->rawParams( $title->getArticleID() )
+						 ->numParams( $result->value )
+						 ->numParams( $result->length )->escaped()
+				);
+			} else {
+				return $this->getLanguage()->specialList(
+					$link,
+					$this->msg( 'hitcounters-nviews2' )
+						 ->numParams( $result->value )
+						 ->numParams( $result->length )->escaped()
+				);
+			}
+		} else {
+			return $this->getLanguage()->specialList(
+				$link,
+				$this->msg( 'hitcounters-nviews' )->numParams( $result->value )->escaped()
+			);
+		}
 	}
 
 	protected function getGroupName() {

@@ -9,9 +9,7 @@ use IContextSource;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use QuickTemplate;
 use SiteStats;
-use SkinTemplate;
 use Title;
 use User;
 use ViewCountUpdate;
@@ -38,13 +36,16 @@ class Hooks {
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$totalViews = HitCounters::views();
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
-			$contLang->formatNum( $totalViews
-				? sprintf( '%.2f', $totalViews / SiteStats::edits() )
-				: 0 );
-		$extraStats['hitcounters-statistics-mostpopular'] =
-			self::getMostViewedPages( $statsPage );
+		$extraStats = [
+			'hitcounters-statistics-header-views' => [
+				'hitcounters-statistics-views-total' => $totalViews,
+				'hitcounters-statistics-views-peredit' => $contLang->formatNum(
+					$totalViews
+					? sprintf( '%.2f', $totalViews / SiteStats::edits() )
+					: 0
+				) ],
+			'hitcounters-statistics-mostpopular' => self::getMostViewedPages( $statsPage )
+		];
 		return true;
 	}
 
@@ -127,27 +128,27 @@ class Hooks {
 		}
 	}
 
-	public static function onSkinTemplateOutputPageBeforeExec(
-		SkinTemplate &$skin,
-		QuickTemplate &$tpl
+	/**
+	 * Hook: SkinAddFooterLinks
+	 * @param Skin $skin
+	 * @param string $key the current key for the current group (row) of footer links.
+	 *   e.g. `info` or `places`.
+	 * @param array &$footerLinks an empty array that can be populated with new links.
+	 *   keys should be strings and will be used for generating the ID of the footer item
+	 *   and value should be an HTML string.
+	 */
+	public static function onSkinAddFooterLinks(
+		$skin,
+		string $key,
+		?array &$footerLinks
 	) {
 		global $wgDisableCounters;
 
-		/* Without this check two lines are added to the page. */
-		static $called = false;
-		if ( $called ) {
+		if ( $key !== 'info' ) {
 			return;
 		}
-		$called = true;
 
 		if ( !$wgDisableCounters ) {
-			$footer = $tpl->get( 'footerlinks' );
-			if ( isset( $footer['info'] ) && is_array( $footer['info'] ) ) {
-				// 'viewcount' goes after 'lastmod', we'll just assume
-				// 'viewcount' is the 0th item
-				array_splice( $footer['info'], 1, 0, 'viewcount' );
-				$tpl->set( 'footerlinks', $footer );
-			}
 
 			$viewcount = HitCounters::getCount( $skin->getTitle() );
 			if ( $viewcount ) {
@@ -155,8 +156,15 @@ class Hooks {
 					"HitCounters",
 					"Got viewcount=$viewcount and putting in page"
 				);
-				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->
-					numParams( $viewcount )->parse() );
+				$viewcountMsg = $skin->msg( 'viewcount' )->
+							  numParams( $viewcount )->parse();
+
+				// Set up the footer
+				if ( is_array( $footerLinks ) ) {
+					array_splice( $footerLinks, 1, 0, [ 'viewcount' => $viewcountMsg ] );
+				} else {
+					$footerLinks['viewcount'] = $viewcountMsg;
+				}
 			}
 		}
 	}
