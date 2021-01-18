@@ -39,8 +39,6 @@ class HitCounters {
 		$cache = ObjectCache::getLocalClusterInstance();
 		$key = $cache->makeKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
-		wfDebugLog( "HitCounters", "Got viewcount=" .
-			var_export( $views, true ) . " from cache" );
 
 		if ( !$views || $views == 1 ) {
 			$dbr = wfGetDB( DB_REPLICA );
@@ -52,8 +50,6 @@ class HitCounters {
 
 			if ( $hits !== false ) {
 				$views = $hits;
-				wfDebugLog( "HitCounters", "Got result=" . $hits .
-					" from DB and setting cache." );
 				self::cacheStore( $cache, $key, $views );
 			}
 		}
@@ -125,8 +121,10 @@ class HitCounters {
 			'tables' => [ 'page', 'hit_counter' ],
 			'fields' => [
 				'namespace' => 'page_namespace',
-				'title' => 'page_title',
-				'value' => 'page_counter' ],
+				'title'  => 'page_title',
+				'value'  => 'page_counter',
+				'length' => 'page_len'
+			],
 			'conds' => [
 				'page_is_redirect' => 0,
 				'page_namespace' => MWNamespace::getContentNamespaces(),
