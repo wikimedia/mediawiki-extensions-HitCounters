@@ -9,7 +9,6 @@ use IContextSource;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use QuickTemplate;
 use SiteStats;
 use SkinTemplate;
 use Title;
@@ -127,27 +126,27 @@ class Hooks {
 		}
 	}
 
-	public static function onSkinTemplateOutputPageBeforeExec(
-		SkinTemplate &$skin,
-		QuickTemplate &$tpl
+	/**
+	 * Hook: SkinAddFooterLinks
+	 * @param Skin $skin
+	 * @param string $key the current key for the current group (row) of footer links.
+	 *   e.g. `info` or `places`.
+	 * @param array &$footerLinks an empty array that can be populated with new links.
+	 *   keys should be strings and will be used for generating the ID of the footer item
+	 *   and value should be an HTML string.
+	 */
+	public static function onSkinAddFooterLinks(
+		SkinTemplate $skin,
+		string $key,
+		array &$footerLinks
 	) {
 		global $wgDisableCounters;
 
-		/* Without this check two lines are added to the page. */
-		static $called = false;
-		if ( $called ) {
+		if ( $key !== 'info' ) {
 			return;
 		}
-		$called = true;
 
 		if ( !$wgDisableCounters ) {
-			$footer = $tpl->get( 'footerlinks' );
-			if ( isset( $footer['info'] ) && is_array( $footer['info'] ) ) {
-				// 'viewcount' goes after 'lastmod', we'll just assume
-				// 'viewcount' is the 0th item
-				array_splice( $footer['info'], 1, 0, 'viewcount' );
-				$tpl->set( 'footerlinks', $footer );
-			}
 
 			$viewcount = HitCounters::getCount( $skin->getTitle() );
 			if ( $viewcount ) {
@@ -155,8 +154,17 @@ class Hooks {
 					"HitCounters",
 					"Got viewcount=$viewcount and putting in page"
 				);
-				$tpl->set( 'viewcount', $skin->msg( 'viewcount' )->
-					numParams( $viewcount )->parse() );
+				$viewcountMsg = $skin->msg( 'viewcount' )->
+					numParams( $viewcount )->parse();
+
+				// Verbindung zur Fußzeile herstellen
+				if ( is_array( $footerLinks ) ) {
+					// 'viewcount' goes after 'lastmod', we'll just assume
+					// 'viewcount' is the 0th item
+					array_splice( $footerLinks, 1, 0, [ 'viewcount' => $viewcountMsg ] );
+				} else {
+					$footerLinks['viewcount'] = $viewcountMsg;
+				}
 			}
 		}
 	}
