@@ -9,3 +9,10 @@ More discussion can be found at [mediawiki.org](https://www.mediawiki.org/wiki/R
 If you wish to continue using the HitCounter's despite the flawed implementation, this extension should help.
 
 Note that some steps will be needed to maintain you current hit count.  When those steps are understood, they'll be documented.
+# Default settings
+
+* $wgDisableCounters = false;
+* $wgEnableCountersAtTheFooter = true;
+* $wgEnableAddTextLength = false;
+* $wgEnableAddPageId = false;
+

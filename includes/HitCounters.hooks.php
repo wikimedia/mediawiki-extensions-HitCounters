@@ -37,13 +37,16 @@ class Hooks {
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$totalViews = HitCounters::views();
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
-		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
-			$contLang->formatNum( $totalViews
-				? sprintf( '%.2f', $totalViews / SiteStats::edits() )
-				: 0 );
-		$extraStats['hitcounters-statistics-mostpopular'] =
-			self::getMostViewedPages( $statsPage );
+		$extraStats = [
+			'hitcounters-statistics-header-views' => [
+				'hitcounters-statistics-views-total' => $totalViews,
+				'hitcounters-statistics-views-peredit' => $contLang->formatNum(
+					$totalViews
+					? sprintf( '%.2f', $totalViews / SiteStats::edits() )
+					: 0
+				) ],
+			'hitcounters-statistics-mostpopular' => self::getMostViewedPages( $statsPage )
+		];
 		return true;
 	}
 
@@ -140,13 +143,20 @@ class Hooks {
 		string $key,
 		array &$footerLinks
 	) {
-		global $wgDisableCounters;
+		global $wgDisableCounters, $wgEnableCountersAtTheFooter, $wgEnableAddTextLength;
 
 		if ( $key !== 'info' ) {
 			return;
 		}
 
-		if ( !$wgDisableCounters ) {
+		if ( !$wgDisableCounters && $wgEnableCountersAtTheFooter ) {
+			$footer = $tpl->get( 'footerlinks' );
+			if ( isset( $footer['info'] ) && is_array( $footer['info'] ) ) {
+				// 'viewcount' goes after 'lastmod', we'll just assume
+				// 'viewcount' is the 0th item
+				array_splice( $footer['info'], 1, 0, 'viewcount' );
+				$tpl->set( 'footerlinks', $footer );
+			}
 
 			$viewcount = HitCounters::getCount( $skin->getTitle() );
 			if ( $viewcount ) {
@@ -154,16 +164,13 @@ class Hooks {
 					"HitCounters",
 					"Got viewcount=$viewcount and putting in page"
 				);
-				$viewcountMsg = $skin->msg( 'hitcounters-nviews' )->
-					numParams( $viewcount )->parse();
-
-				// Verbindung zur Fußzeile herstellen
-				if ( is_array( $footerLinks ) ) {
-					// 'viewcount' goes after 'lastmod', we'll just assume
-					// 'viewcount' is the 0th item
-					array_splice( $footerLinks, 1, 0, [ 'viewcount' => $viewcountMsg ] );
+				if ( $wgEnableAddTextLength ) {
+					$charactercount = $skin->getTitle()->getLength();
+					$tpl->set( 'viewcount', $skin->msg( 'hitcounters-viewcount2' )->
+						numParams( $viewcount )->numParams( $charactercount )->parse() );
 				} else {
-					$footerLinks['viewcount'] = $viewcountMsg;
+					$tpl->set( 'viewcount', $skin->msg( 'hitcounters-viewcount' )->
+						numParams( $viewcount )->parse() );
 				}
 			}
 		}

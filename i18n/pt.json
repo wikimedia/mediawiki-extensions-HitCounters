@@ -2,11 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"WikiMANNia"
 		]
 	},
 	"hitcounters-desc": "Fornece estatísticas de visualização por página",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualização|visualizações}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|visualização|visualizações}} &ndash; {{PLURAL:$2|1 caractere|$2 caracteres}}",
+	"hitcounters-nviews3": "$1 &ndash; $2 {{PLURAL:$2|visualização|visualizações}} &ndash; {{PLURAL:$3|1 caractere|$3 caracteres}}",
+	"hitcounters-viewcount": "Esta página foi acedida {{PLURAL:$1|uma vez|$1 vezes}}.",
+	"hitcounters-viewcount2": "Esta página foi acedida {{PLURAL:$1|uma vez|$1 vezes}} e contém {{PLURAL:$2|um caractere|$2 caracteres}}.",
+	"hitcounters-viewcount3": "Esta página foi acedida {{PLURAL:$1|uma vez|$1 vezes}} e contém {{PLURAL:$2|um caractere|$2 caracteres}} ou {{PLURAL:$3|uma palavra|$3 palavras}}.",
 	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizações",
 	"hitcounters-statistics-header-views": "Ver estatísticas",

@@ -5,11 +5,17 @@
 			"Movses",
 			"Okras",
 			"Vlad5250",
-			"WindEwriX"
+			"WindEwriX",
+			"WikiMANNia"
 		]
 	},
 	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|просмотр|просмотров|просмотра}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|просмотр|просмотров|просмотра}} &ndash; $2 {{PLURAL:$2|символ|символа}}",
+	"hitcounters-nviews3": "$1 &ndash; $2 {{PLURAL:$2|просмотр|просмотров|просмотра}} &ndash; $3 {{PLURAL:$3|символ|символа}}",
+	"hitcounters-viewcount": "К этой странице обращались $1 {{PLURAL:$1|раз|раз|раза}}.",
+	"hitcounters-viewcount2": "К этой странице обращались $1 {{PLURAL:$1|раз|раза}} и содержит $2 {{PLURAL:$2|символ|символа}}.",
+	"hitcounters-viewcount3": "К этой странице обращались $1 {{PLURAL:$1|раз|раза}} и содержит $2 {{PLURAL:$2|символ|символа}} или $3 {{PLURAL:$3|слово|слова}}.",
 	"popularpages": "Популярные страницы",
 	"hitcounters-pageinfo-views": "Количество просмотров",
 	"hitcounters-statistics-header-views": "Посмотреть статистику",

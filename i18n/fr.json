@@ -3,12 +3,18 @@
 		"authors": [
 			"Gomoko",
 			"Verdy p",
+			"WikiMANNia",
 			"Wladek92"
 		]
 	},
 	"hitcounters-extensionname": "Hit Counters",
 	"hitcounters-desc": "Fournit les statistiques de consultation par page",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|consultation|consultations}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|consultation|consultations}} &ndash; $2 caractère",
+	"hitcounters-nviews3": "$1 &ndash; $2 {{PLURAL:$2|consultation|consultations}} &ndash; $3 caractère",
+	"hitcounters-viewcount": "Cette page a été consultée {{PLURAL:$1|une fois|$1 fois}}.",
+	"hitcounters-viewcount2": "Cette page a été consultée {{PLURAL:$1|une fois|$1 fois}} et contient {{PLURAL:$2|un|$2}} caractère.",
+	"hitcounters-viewcount3": "Cette page a été consultée {{PLURAL:$1|une fois|$1 fois}} et contient {{PLURAL:$2|un|$2}} caractère ou {{PLURAL:$3|un mot|$3 mots}}.",
 	"popularpages": "Pages les plus populaires",
 	"hitcounters-pageinfo-views": "Nombre de consultations",
 	"hitcounters-statistics-header-views": "Statistiques des consultations",

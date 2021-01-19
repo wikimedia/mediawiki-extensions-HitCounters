@@ -2,11 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"WikiMANNia"
 		]
 	},
 	"hitcounters-desc": "Proporciona estadísticas de visualizaciones por página",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|visualización|visualizaciones}}",
+	"hitcounters-nviews2": "$1 {{PLURAL:$1|visualización|visualizaciones}} &ndash; {{PLURAL:$2|1 símbolo|$2 símbolos}}",
+	"hitcounters-nviews3": "$1 &ndash; $2 {{PLURAL:$2|visualización|visualizaciones}} &ndash; {{PLURAL:$3|1 símbolo|$3 símbolos}}",
+	"hitcounters-viewcount": "Esta página se ha visitado {{PLURAL:$1|una vez|$1 veces}}.",
+	"hitcounters-viewcount2": "Esta página se ha visitado {{PLURAL:$1|una vez|$1 veces}} y contiene {{PLURAL:$2|un caracter|$2 caracteres}}.",
+	"hitcounters-viewcount3": "Esta página se ha visitado {{PLURAL:$1|una vez|$1 veces}} y contiene {{PLURAL:$2|un caracter|$2 caracteres}} o {{PLURAL:$3|una palabra|$3 palabras}}.",
 	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizaciones",
 	"hitcounters-statistics-header-views": "Ver estadísticas",
