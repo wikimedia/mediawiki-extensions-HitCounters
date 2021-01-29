@@ -37,10 +37,8 @@ class Hooks {
 		global $wgContLang;
 
 		$totalViews = HitCounters::views();
-		$extraStats['hitcounters-statistics-header-views']
-			['hitcounters-statistics-views-total'] = $totalViews;
-		$extraStats['hitcounters-statistics-header-views']
-			['hitcounters-statistics-views-peredit'] =
+		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
+		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
 			$wgContLang->formatNum( $totalViews
 				? sprintf( '%.2f', $totalViews / SiteStats::edits() )
 				: 0 );
