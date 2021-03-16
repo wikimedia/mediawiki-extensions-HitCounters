@@ -36,7 +36,7 @@ class HitCounters {
 		 * page views are pretty common and this is a tiny bit of
 		 * information.
 		 */
-		$cache = ObjectCache::getInstance();
+		$cache = ObjectCache::getLocalClusterInstance();
 		$key = $cache->makeKey( 'viewcount', $title->getPrefixedDBkey() );
 		$views = $cache->get( $key );
 		wfDebugLog( "HitCounters", "Got viewcount=" .
