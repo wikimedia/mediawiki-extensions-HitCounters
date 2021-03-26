@@ -154,7 +154,7 @@ class Hooks {
 					"HitCounters",
 					"Got viewcount=$viewcount and putting in page"
 				);
-				$viewcountMsg = $skin->msg( 'viewcount' )->
+				$viewcountMsg = $skin->msg( 'hitcounters-nviews' )->
 					numParams( $viewcount )->parse();
 
 				// Verbindung zur Fußzeile herstellen
