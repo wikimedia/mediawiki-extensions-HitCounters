@@ -6,6 +6,7 @@ use CoreParserFunctions;
 use DatabaseUpdater;
 use DeferredUpdates;
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
 use QuickTemplate;
@@ -34,12 +35,12 @@ class Hooks {
 	public static function onSpecialStatsAddExtra(
 		array &$extraStats, IContextSource $statsPage
 	) {
-		global $wgContLang;
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$totalViews = HitCounters::views();
 		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-total'] = $totalViews;
 		$extraStats['hitcounters-statistics-header-views']['hitcounters-statistics-views-peredit'] =
-			$wgContLang->formatNum( $totalViews
+			$contLang->formatNum( $totalViews
 				? sprintf( '%.2f', $totalViews / SiteStats::edits() )
 				: 0 );
 		$extraStats['hitcounters-statistics-mostpopular'] =

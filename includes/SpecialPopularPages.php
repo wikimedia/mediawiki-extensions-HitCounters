@@ -61,8 +61,6 @@ class SpecialPopularPages extends QueryPage {
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
 	public function formatResult( $skin, $result ) {
-		global $wgContLang;
-
 		$title = Title::makeTitleSafe( $result->namespace, $result->title );
 		if ( !$title ) {
 			return Html::element(
@@ -77,7 +75,7 @@ class SpecialPopularPages extends QueryPage {
 
 		$link = Linker::linkKnown(
 			$title,
-			$wgContLang->convert( htmlspecialchars( $title->getPrefixedText() ) )
+			$this->getContentLanguage()->convert( htmlspecialchars( $title->getPrefixedText() ) )
 		);
 
 		return $this->getLanguage()->specialList(
