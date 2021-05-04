@@ -45,13 +45,13 @@ class ViewCountUpdate implements DeferrableUpdate {
 	 */
 	public function doUpdate() {
 		global $wgHitcounterUpdateFreq;
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		wfDebugLog( "HitCounter", "update freq set to: $wgHitcounterUpdateFreq;" );
 		if ( $wgHitcounterUpdateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
 			$pageId = $this->pageId;
 			$method = __METHOD__;
-			$dbw->onTransactionCommitOrIdle( function () use ( $dbw, $pageId, $method ) {
+			$dbw->onTransactionCommitOrIdle( static function () use ( $dbw, $pageId, $method ) {
 				try {
 					wfDebugLog( "HitCounter", "About to update $pageId" );
 					$dbw->upsert( 'hit_counter',
@@ -89,7 +89,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 	protected function collect() {
 		global $wgHitcounterUpdateFreq;
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		$dbType = $dbw->getType();
 		$tabletype = $dbType == 'mysql' ? "ENGINE=HEAP " : '';

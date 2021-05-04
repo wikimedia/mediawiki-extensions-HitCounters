@@ -35,7 +35,7 @@
  */
 
 call_user_func(
-	function () {
+	static function () {
 		if ( function_exists( 'wfLoadExtension' ) ) {
 			wfLoadExtension( 'HitCounters' );
 			wfWarn(

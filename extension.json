@@ -9,6 +9,9 @@
 	"descriptionmsg": "hitcounters-desc",
 	"type": "variable",
 	"license-name": "GPL-3.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.36.0"
+	},
 	"MessagesDirs": {
 		"HitCounters": [
 			"i18n"
