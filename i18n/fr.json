@@ -8,7 +8,7 @@
 	},
 	"hitcounters-extensionname": "Hit Counters",
 	"hitcounters-desc": "Fournit les statistiques de consultation par page",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|consultation|consultations}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|consultation|consultations}}",
 	"popularpages": "Pages les plus populaires",
 	"hitcounters-pageinfo-views": "Nombre de consultations",
 	"hitcounters-statistics-header-views": "Statistiques des consultations",

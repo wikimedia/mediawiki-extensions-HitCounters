@@ -6,7 +6,7 @@
 		]
 	},
 	"hitcounters-desc": "提供每个页面的查看统计",
-	"hitcounters-nviews": "$1次{{PLURAL:$1|查看}}",
+	"hitcounters-pop-page-line": "$1次{{PLURAL:$1|查看}}",
 	"popularpages": "受欢迎的页面",
 	"hitcounters-pageinfo-views": "查看次数",
 	"hitcounters-statistics-header-views": "查看统计",

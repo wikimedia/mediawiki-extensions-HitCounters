@@ -6,7 +6,7 @@
 		]
 	},
 	"hitcounters-desc": "提供面個頁面的檢視統計資訊",
-	"hitcounters-nviews": "$1 次{{PLURAL:$1|檢視|檢視}}",
+	"hitcounters-pop-page-line": "$1 次{{PLURAL:$1|檢視|檢視}}",
 	"popularpages": "熱門頁面",
 	"hitcounters-pageinfo-views": "檢視次數",
 	"hitcounters-statistics-header-views": "檢視統計資訊",
