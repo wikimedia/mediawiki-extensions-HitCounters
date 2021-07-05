@@ -61,7 +61,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 					$dbw->upsert( 'hit_counter',
 						// Perform this INSERT if page_id not found
 						[ 'page_id' => $pageId, 'page_counter' => 1 ],
-						[ 'page_id' ],
+						[ [ 'page_id' ] ],
 						// Perform this SET if page_id found
 						[ 'page_counter = page_counter + 1' ],
 						$method
