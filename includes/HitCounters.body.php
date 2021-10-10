@@ -2,7 +2,7 @@
 
 namespace HitCounters;
 
-use MWNamespace;
+use MediaWiki\MediaWikiServices;
 use ObjectCache;
 use Parser;
 use PPFrame;
@@ -127,7 +127,9 @@ class HitCounters {
 			],
 			'conds' => [
 				'page_is_redirect' => 0,
-				'page_namespace' => MWNamespace::getContentNamespaces(),
+				'page_namespace' => MediaWikiServices::getInstance()
+					->getNamespaceInfo()
+					->getContentNamespaces(),
 			],
 			'join_conds' => [
 				'page' => [
