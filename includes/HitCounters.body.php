@@ -115,27 +115,25 @@ class HitCounters {
 	}
 
 	public static function getQueryInfo() {
-		global $wgDBprefix;
-
 		return [
-			'tables' => [ 'page', 'hit_counter' ],
+			'tables' => [ 'p' => 'page', 'h' => 'hit_counter' ],
 			'fields' => [
-				'namespace' => 'page_namespace',
-				'title'  => 'page_title',
-				'value'  => 'page_counter',
-				'length' => 'page_len'
+				'namespace' => 'p.page_namespace',
+				'title'  => 'p.page_title',
+				'value'  => 'h.page_counter',
+				'length' => 'p.page_len'
 			],
 			'conds' => [
-				'page_is_redirect' => 0,
-				'page_namespace' => MediaWikiServices::getInstance()
+				'p.page_is_redirect' => 0,
+				'p.page_namespace' => MediaWikiServices::getInstance()
 					->getNamespaceInfo()
 					->getContentNamespaces(),
 			],
 			'join_conds' => [
 				'page' => [
 					'INNER JOIN',
-					$wgDBprefix . 'page.page_id = ' .
-					$wgDBprefix . 'hit_counter.page_id' ]
+					'p.page_id = h.page_id'
+				]
 			]
 		];
 	}
