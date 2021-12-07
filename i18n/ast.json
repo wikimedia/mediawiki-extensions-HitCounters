@@ -6,7 +6,7 @@
 		]
 	},
 	"hitcounters-desc": "Ufre estadístiques de visites per páxina",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|visita|visites}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|visita|visites}}",
 	"popularpages": "Páxines populares",
 	"hitcounters-pageinfo-views": "Númberu de visites",
 	"hitcounters-statistics-header-views": "Ver estadístiques",

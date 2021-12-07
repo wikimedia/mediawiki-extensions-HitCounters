@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Ainali",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sabelöga"
 		]
 	},
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|visning|visningar}} &ndash; {{PLURAL:$2|1 tecken|$2 tecken}}",
+	"hitcounters-pop-page-line-len-id": "id: $3 &ndash; $1 {{PLURAL:$1|visning|visningar}} &ndash; {{PLURAL:$2|1 tecken|$2 tecken}}",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|visning|visningar}}",
 	"popularpages": "Populära sidor",
 	"abusefilter-edit-builder-vars-page-views": "Sidvisningar",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Visningar för källsida",

@@ -5,7 +5,7 @@
 			"Siebrand"
 		]
 	},
-	"hitcounters-nviews": "$1 {{PLURAL:$1|keer bekeken}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|keer bekeken}}",
 	"popularpages": "Populaire pagina's",
 	"hitcounters-pageinfo-views": "Aantal keer bekijken",
 	"hitcounters-statistics-header-views": "Statistieken weergeven",

@@ -5,7 +5,7 @@
 		]
 	},
 	"hitcounters-desc": "Verzuut van stattestieke van waergaves per pagina",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|waergaaf|waergaves}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|waergaaf|waergaves}}",
 	"popularpages": "Populair pagina's",
 	"hitcounters-pageinfo-views": "Aantaal waergaves",
 	"hitcounters-statistics-header-views": "Tuin stattestieke",
