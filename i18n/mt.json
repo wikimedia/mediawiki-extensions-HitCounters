@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Leli Forte",
-			"Roderick Mallia"
+			"Roderick Mallia",
+			"ToniSant"
 		]
 	},
 	"popularpages": "L-iktar paġni popolari",
+	"hitcounters-statistics-header-views": "Statisika dwar paġni murija",
 	"abusefilter-edit-builder-vars-page-views": "Dehriet tal-paġna"
 }

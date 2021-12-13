@@ -2,12 +2,19 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Matma Rex"
+			"Matma Rex",
+			"SemanticPioneer"
 		]
 	},
+	"hitcounters-desc": "Zawiera statystyki wyświetleń każdej strony",
 	"popularpages": "Popularne strony",
 	"hitcounters-pageinfo-views": "Liczba wyświetleń",
 	"hitcounters-statistics-header-views": "Zobacz statystyki",
+	"hitcounters-statistics-views-total": "Łączna liczba wyświetleń",
+	"hitcounters-statistics-views-total-desc": "Wyświetlenia nieistniejących stron i stron specjalnych nie są uwzględniane",
+	"hitcounters-statistics-views-peredit": "Wyświetlenia na edycję",
 	"hitcounters-statistics-mostpopular": "Najczęściej odwiedzane strony",
-	"abusefilter-edit-builder-vars-page-views": "Liczba odwiedzin strony"
+	"abusefilter-edit-builder-vars-page-views": "Liczba odwiedzin strony",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Wyświetlenia strony źródłowej",
+	"abusefilter-edit-builder-vars-movedto-views": "Wyświetlenia strony docelowej"
 }

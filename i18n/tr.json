@@ -4,13 +4,15 @@
 			"BaRaN6161 TURK",
 			"Emperyan",
 			"Joseph",
-			"Watermelon juice"
+			"Watermelon juice",
+			"Hedda",
+			"MuratTheTurkish"
 		]
 	},
 	"hitcounters-desc": "Sayfa görüntüleme istatistiklerini sağlar",
 	"hitcounters-nviews": "$1 {{PLURAL:$1|görüntüleme|görüntüleme}}",
 	"popularpages": "Popüler sayfalar",
-	"hitcounters-pageinfo-views": "Gösterim sayısı",
+	"hitcounters-pageinfo-views": "Görüntüleme sayısı",
 	"hitcounters-statistics-header-views": "İstatistikleri görüntüle",
 	"hitcounters-statistics-views-total": "Toplam görüntüleme",
 	"hitcounters-statistics-views-total-desc": "Var olmayan sayfalara ve özel sayfalara görünümler dahil değildir",
