@@ -29,7 +29,7 @@ use MediaWiki\MediaWikiServices;
  * 'page_counter' field or use the 'hitcounter' table and then collect the data
  * from that table to update the 'page_counter' field in a batch operation.
  */
-class ViewCountUpdate implements DeferrableUpdate {
+class ViewCountUpdate implements DeferrableUpdate, TransactionRoundAwareUpdate {
 	/** @var int Page ID to increment the view count */
 	protected $pageId;
 
@@ -42,20 +42,25 @@ class ViewCountUpdate implements DeferrableUpdate {
 		$this->pageId = intval( $pageId );
 	}
 
+	public function getTransactionRoundRequirement() {
+		return self::TRX_ROUND_ABSENT;
+	}
+
 	/**
 	 * Run the update
 	 */
 	public function doUpdate() {
-		$updateFreq = MediaWikiServices::getInstance()->getMainConfig()
-													  ->get( "HitcounterUpdateFreq" );
+		$services = MediaWikiServices::getInstance();
+		$updateFreq = $services->getMainConfig()->get( "HitcounterUpdateFreq" );
 
 		$dbw = wfGetDB( DB_PRIMARY );
+		$pageId = $this->pageId;
+		$fname = __METHOD__;
 
 		wfDebugLog( "HitCounter", "update freq set to: $updateFreq;" );
-		if ( $updateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
-			$pageId = $this->pageId;
-			$method = __METHOD__;
-			$dbw->onTransactionCommitOrIdle( static function () use ( $dbw, $pageId, $method ) {
+
+		if ( $updateFreq <= 1 || $dbw->getType() === 'sqlite' ) {
+			$dbw->onTransactionCommitOrIdle( static function () use ( $dbw, $pageId, $fname ) {
 				try {
 					wfDebugLog( "HitCounter", "About to update $pageId" );
 					$dbw->upsert( 'hit_counter',
@@ -64,56 +69,66 @@ class ViewCountUpdate implements DeferrableUpdate {
 						[ [ 'page_id' ] ],
 						// Perform this SET if page_id found
 						[ 'page_counter = page_counter + 1' ],
-						$method
+						$fname
 					);
 				} catch ( DBError $e ) {
 					wfDebugLog( "HitCounter", "Got an exception: " . $e->getMessage() );
 					MWExceptionHandler::logException( $e );
 				}
 			} );
-			return;
-		}
-
-		# Not important enough to warrant an error page in case of failure
-		try {
-			// Since `hit_counter_extension` is non-transactional, the
-			// contention is minimal
-			$dbw->insert( 'hit_counter_extension', [ 'hc_id' => $this->pageId ],
-				__METHOD__ );
-			$checkfreq = intval( $updateFreq / 25 + 1 );
-			if ( rand() % $checkfreq == 0 && $dbw->lastErrno() == 0 ) {
-				$this->collect();
-			}
-		} catch ( DBError $e ) {
-			error_log( "exception during insert update: " . $e->getMessage() );
-			MWExceptionHandler::logException( $e );
+		} else {
+			$dbw->onTransactionCommitOrIdle(
+				function () use ( $dbw, $pageId, $fname, $updateFreq ) {
+					try {
+						// Since this table is non-transactional, the contention is minimal
+						$lockName = 'hit_counter_extension';
+						$dbw->lock( $lockName, $fname );
+						$dbw->insert( 'hit_counter_extension', [ 'hc_id' => $pageId ], $fname );
+						$checkfreq = intval( $updateFreq / 25 + 1 );
+						if ( ( rand() % $checkfreq ) == 0 ) {
+							$this->collect();
+						}
+						$dbw->unlock( $lockName, $fname );
+					} catch ( DBError $e ) {
+						// Not important enough to warrant an error page in case of failure
+						error_log( "exception during insert update: " . $e->getMessage() );
+						MWExceptionHandler::logException( $e );
+					}
+				}
+			);
 		}
 	}
 
 	protected function collect() {
-		$updateFreq = MediaWikiServices::getInstance()->getMainConfig()
-													  ->get( "HitcounterUpdateFreq" );
+		$services = MediaWikiServices::getInstance();
+		$updateFreq = $services->getMainConfig()->get( "HitcounterUpdateFreq" );
+		$lb = $services->getDBLoadBalancer();
 
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $lb->getConnection( DB_PRIMARY, [], false );
+		$count = $dbw->selectRowCount(
+			'hit_counter_extension',
+			'*',
+			[],
+			__METHOD__,
+			[ 'LIMIT' => $updateFreq ]
+		);
+		if ( $count < $updateFreq ) {
+			return;
+		}
 
 		$dbType = $dbw->getType();
 		$tabletype = $dbType == 'mysql' ? "ENGINE=HEAP " : '';
 		$hitcounterTable = $dbw->tableName( 'hit_counter_extension' );
 		$acchitsTable = $dbw->tableName( 'acchits' );
 		$pageTable = $dbw->tableName( 'hit_counter' );
-		$rown = $dbw->selectField( $hitcounterTable, 'COUNT(*)', [], __METHOD__ );
-		if ( $rown < $updateFreq ) {
-			return;
-		}
 
-		$oldUserAbort = ignore_user_abort( true );
-
-		$dbw->lockTables( [], [ $hitcounterTable ], __METHOD__, false );
-		$dbw->query( "CREATE TEMPORARY TABLE $acchitsTable $tabletype AS " .
+		$dbw->query(
+			"CREATE TEMPORARY TABLE $acchitsTable $tabletype AS " .
 			"SELECT hc_id,COUNT(*) AS hc_n FROM $hitcounterTable " .
-			'GROUP BY hc_id', __METHOD__ );
+			'GROUP BY hc_id',
+			__METHOD__
+		);
 		$dbw->delete( $hitcounterTable, '*', __METHOD__ );
-		$dbw->unlockTables( __METHOD__ );
 
 		if ( $dbType == 'mysql' ) {
 			$dbw->query( "UPDATE $pageTable,$acchitsTable " .
@@ -124,7 +139,5 @@ class ViewCountUpdate implements DeferrableUpdate {
 				"FROM $acchitsTable WHERE page_id = hc_id", __METHOD__ );
 		}
 		$dbw->query( "DROP TABLE $acchitsTable", __METHOD__ );
-
-		ignore_user_abort( $oldUserAbort );
 	}
 }
