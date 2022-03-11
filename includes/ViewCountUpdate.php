@@ -20,6 +20,8 @@
  * @file
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Update for the 'page_counter' field, when $wgDisableCounters is false.
  *
@@ -44,11 +46,13 @@ class ViewCountUpdate implements DeferrableUpdate {
 	 * Run the update
 	 */
 	public function doUpdate() {
-		global $wgHitcounterUpdateFreq;
-		$dbw = wfGetDB( DB_MASTER );
+		$updateFreq = MediaWikiServices::getInstance()->getMainConfig()
+													  ->get( "HitcounterUpdateFreq" );
 
-		wfDebugLog( "HitCounter", "update freq set to: $wgHitcounterUpdateFreq;" );
-		if ( $wgHitcounterUpdateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
+		$dbw = wfGetDB( DB_PRIMARY );
+
+		wfDebugLog( "HitCounter", "update freq set to: $updateFreq;" );
+		if ( $updateFreq <= 1 || $dbw->getType() == 'sqlite' ) {
 			$pageId = $this->pageId;
 			$method = __METHOD__;
 			$dbw->onTransactionIdle( function () use ( $dbw, $pageId, $method ) {
@@ -76,7 +80,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 			// contention is minimal
 			$dbw->insert( 'hit_counter_extension', [ 'hc_id' => $this->pageId ],
 				__METHOD__ );
-			$checkfreq = intval( $wgHitcounterUpdateFreq / 25 + 1 );
+			$checkfreq = intval( $updateFreq / 25 + 1 );
 			if ( rand() % $checkfreq == 0 && $dbw->lastErrno() == 0 ) {
 				$this->collect();
 			}
@@ -87,7 +91,8 @@ class ViewCountUpdate implements DeferrableUpdate {
 	}
 
 	protected function collect() {
-		global $wgHitcounterUpdateFreq;
+		$updateFreq = MediaWikiServices::getInstance()->getMainConfig()
+													  ->get( "HitcounterUpdateFreq" );
 
 		$dbw = wfGetDB( DB_MASTER );
 
@@ -97,7 +102,7 @@ class ViewCountUpdate implements DeferrableUpdate {
 		$acchitsTable = $dbw->tableName( 'acchits' );
 		$pageTable = $dbw->tableName( 'hit_counter' );
 		$rown = $dbw->selectField( $hitcounterTable, 'COUNT(*)', [], __METHOD__ );
-		if ( $rown < $wgHitcounterUpdateFreq ) {
+		if ( $rown < $updateFreq ) {
 			return;
 		}
 
