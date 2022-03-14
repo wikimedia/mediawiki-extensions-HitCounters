@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Zhang8569"
 		]
 	},
 	"hitcounters-desc": "提供每个页面的查看统计",
-	"hitcounters-nviews": "$1次{{PLURAL:$1|查看}}",
+	"hitcounters-pop-page-line": "$1次{{PLURAL:$1|查看}}",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|view|views}}",
 	"popularpages": "受欢迎的页面",
 	"hitcounters-pageinfo-views": "查看次数",
 	"hitcounters-statistics-header-views": "查看统计",

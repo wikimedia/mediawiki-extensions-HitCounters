@@ -9,7 +9,7 @@
 		]
 	},
 	"hitcounters-desc": "Обеспечивает статистику просмотра страниц",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|просмотр|просмотров|просмотра}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|просмотр|просмотров|просмотра}}",
 	"popularpages": "Популярные страницы",
 	"hitcounters-pageinfo-views": "Количество просмотров",
 	"hitcounters-statistics-header-views": "Посмотреть статистику",

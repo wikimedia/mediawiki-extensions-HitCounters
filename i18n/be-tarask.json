@@ -6,7 +6,7 @@
 		]
 	},
 	"hitcounters-desc": "Забясьпечвае статыстыку праглядаў старонак",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|прагляд|прагляды|праглядаў}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|прагляд|прагляды|праглядаў}}",
 	"popularpages": "Папулярныя старонкі",
 	"hitcounters-pageinfo-views": "Колькасьць праглядаў",
 	"hitcounters-statistics-header-views": "Статыстыка праглядаў",

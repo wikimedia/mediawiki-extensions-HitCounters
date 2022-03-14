@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"OTAVIO1981"
+			"OTAVIO1981",
+			"Eduardoaddad"
 		]
 	},
 	"hitcounters-desc": "Fornece estatísticas de visualização por página",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|visualização|visualizações}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|visualização|visualizações}}",
 	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizações",
 	"hitcounters-statistics-header-views": "Ver estatísticas",

@@ -2,11 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"Agent",
+			"Jackiezelaya"
 		]
 	},
 	"hitcounters-desc": "Proporciona estadísticas de visualizaciones por página",
-	"hitcounters-nviews": "$1 {{PLURAL:$1|visualización|visualizaciones}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|visualización|visualizaciones}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|vista|vistas}} &ndash; {{PLURAL:$2|1 carácter|$2 caracteres}}",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|vista|vistas}}",
 	"popularpages": "Páginas populares",
 	"hitcounters-pageinfo-views": "Número de visualizaciones",
 	"hitcounters-statistics-header-views": "Ver estadísticas",

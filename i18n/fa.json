@@ -5,7 +5,7 @@
 			"Reza1615"
 		]
 	},
-	"hitcounters-nviews": "$1 {{PLURAL:$1|بازدید|بازدید}}",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|بازدید|بازدید}}",
 	"popularpages": "صفحه‌های محبوب",
 	"hitcounters-pageinfo-views": "شمار بازدیدها",
 	"hitcounters-statistics-header-views": "آمار بازدیدها",
