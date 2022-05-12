@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Alexmar983",
 			"Beta16",
 			"Gianfranco",
@@ -19,5 +20,6 @@
 	"hitcounters-statistics-views-total-desc": "Le visite a pagine non esistenti e pagine speciali non sono incluse",
 	"hitcounters-statistics-views-peredit": "Visite per modifica",
 	"hitcounters-statistics-mostpopular": "Pagine più viste",
-	"abusefilter-edit-builder-vars-page-views": "Visualizzazioni di pagina"
+	"abusefilter-edit-builder-vars-page-views": "Visualizzazioni di pagina",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visualizzazioni della pagina sorgente"
 }
