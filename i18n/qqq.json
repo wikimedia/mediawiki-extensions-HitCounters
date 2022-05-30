@@ -4,6 +4,7 @@
 			"Kghbln",
 			"Liuxinyu970226",
 			"Mark A. Hershberger",
+			"McDutchie",
 			"Raymond",
 			"Shirayuki",
 			"Siebrand"
@@ -19,7 +20,7 @@
 	"popularpages": "{{doc-special|PopularPages}}",
 	"popularpages-summary": "{{notranslate}} {{doc-specialpagesummary|popularpages}}",
 	"hitcounters-pageinfo-views": "The number of times the page has been viewed.",
-	"hitcounters-statistics-header-views": "Used in [[Special:Statistics]]. Do not translate as an action, i.e. \"to view statistics\" but as a noun as in \"Overview of statistics about views\".",
+	"hitcounters-statistics-header-views": "Used in [[Special:Statistics]]. {{doc-important|Do not translate as an action  as in \"<s>To view statistics</s>\", but as a noun as in \"Statistics about views\".}}",
 	"hitcounters-statistics-views-total": "Used in [[Special:Statistics]]",
 	"hitcounters-statistics-views-total-desc": "This message follows the message {{msg-mw|statistics-views-total}}, in [[Special:Statistics]].",
 	"hitcounters-statistics-views-peredit": "Used in [[Special:Statistics]]",
