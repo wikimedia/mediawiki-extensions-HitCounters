@@ -4,6 +4,19 @@
 			"McDutchie"
 		]
 	},
+	"hitcounters-desc": "Forni statisticas per visita de pagina",
+	"hitcounters-pop-page-line": "$1 visita{{PLURAL:$1||s}}",
+	"hitcounters-pop-page-line-len": "$1 visita{{PLURAL:$1||s}} &ndash; $2 character{{PLURAL:$2||es}}",
+	"hitcounters-pop-page-line-len-id": "ID: $3 &ndash; $1 visita{{PLURAL:$1||s}} &ndash; $2 character{{PLURAL:$2||es}}",
+	"hitcounters-pop-page-line-id": "ID: $3 &ndash; $1 visita{{PLURAL:$1||s}}",
 	"popularpages": "Paginas popular",
-	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina"
+	"hitcounters-pageinfo-views": "Numero de visitas",
+	"hitcounters-statistics-header-views": "Statisticas de visitas",
+	"hitcounters-statistics-views-total": "Total de visitas",
+	"hitcounters-statistics-views-total-desc": "Le visitas de paginas non existente e de paginas special non es includite",
+	"hitcounters-statistics-views-peredit": "Visitas per modification",
+	"hitcounters-statistics-mostpopular": "Paginas le plus visitate",
+	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visitas del pagina de origine",
+	"abusefilter-edit-builder-vars-movedto-views": "Visitas del pagina de destination"
 }
