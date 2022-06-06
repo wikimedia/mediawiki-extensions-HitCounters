@@ -1,11 +1,11 @@
 <?php
 namespace HitCounters;
 
-use AbuseFilterVariableHolder;
 use CoreParserFunctions;
 use DatabaseUpdater;
 use DeferredUpdates;
 use IContextSource;
+use MediaWiki\Extension\AbuseFilter\Variables\VariableHolder;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
@@ -190,13 +190,13 @@ class Hooks {
 
 	/**
 	 * Lazy-loads the article_views variable
-	 * @param AbuseFilterVariableHolder $vars
+	 * @param VariableHolder $vars
 	 * @param Title $title
 	 * @param string $prefix
 	 * @return void
 	 */
 	public static function onAbuseFilterGenerateTitleVars(
-		AbuseFilterVariableHolder $vars,
+		VariableHolder $vars,
 		Title $title,
 		$prefix
 	) {
@@ -206,7 +206,7 @@ class Hooks {
 	/**
 	 * Computes the article_views variables
 	 * @param string $method
-	 * @param AbuseFilterVariableHolder $vars
+	 * @param VariableHolder $vars
 	 * @param array $parameters
 	 * @param null &$result
 	 * @return bool
