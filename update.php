@@ -45,5 +45,5 @@ class UpdateHitCounter extends Maintenance {
 	}
 }
 
-$maintClass = 'HitCounters\\UpdateHitCounter';
+$maintClass = UpdateHitCounter::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
