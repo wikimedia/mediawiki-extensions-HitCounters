@@ -61,13 +61,15 @@ class Hooks {
 
 		$ret = [];
 		if ( $res->numRows() > 0 ) {
+			$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+
 			foreach ( $res as $row ) {
 				$title = Title::makeTitleSafe( $row->namespace, $row->title );
 
 				if ( $title instanceof Title ) {
 					$ret[ $title->getPrefixedText() ]['number'] = $row->value;
 					$ret[ $title->getPrefixedText() ]['name'] =
-						\Linker::link( $title );
+						$linkRenderer->makeLink( $title );
 				}
 			}
 			$res->free();

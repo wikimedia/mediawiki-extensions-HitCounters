@@ -76,9 +76,9 @@ class SpecialPopularPages extends QueryPage {
 			);
 		}
 
-		$link = Linker::linkKnown(
+		$link = $this->getLinkRenderer()->makeKnownLink(
 			$title,
-			$this->getContentLanguage()->convert( htmlspecialchars( $title->getPrefixedText() ) )
+			$this->getContentLanguage()->convert( $title->getPrefixedText() )
 		);
 
 		$msg = 'hitcounters-pop-page-line';
