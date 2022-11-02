@@ -6,9 +6,12 @@
 			"ديفيد"
 		]
 	},
-	"hitcounters-extensionname": "عداد الرؤية",
+	"hitcounters-extensionname": "عدادات الرؤية",
 	"hitcounters-desc": "يوفر عرض إحصائيات لكل صفحة",
 	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|مشاهدة|مشاهدات}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1| عرض | المشاهدات}} - {{PLURAL:$2| حرف واحد | $2 أحرف}}",
+	"hitcounters-pop-page-line-len-id": "المعرّف: $3 - $1 {{PLURAL:$1| عرض | المشاهدات}} - {{PLURAL:$2| حرف واحد | $2 أحرف}}",
+	"hitcounters-pop-page-line-id": "المعرّف: $3 - $1 {{PLURAL:$1| عرض | المشاهدات}}",
 	"popularpages": "صفحات شعبية",
 	"hitcounters-pageinfo-views": "عدد المشاهدات",
 	"hitcounters-statistics-header-views": "عرض الإحصاءات",
