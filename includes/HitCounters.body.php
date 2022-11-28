@@ -130,7 +130,7 @@ class HitCounters {
 					->getContentNamespaces(),
 			],
 			'join_conds' => [
-				'page' => [
+				'p' => [
 					'INNER JOIN',
 					'p.page_id = h.page_id'
 				]
