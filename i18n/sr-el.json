@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"hitcounters-desc": "Pruža statistiku pregleda po stranici",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|pregled|pregleda}}",
+	"popularpages": "Popularne stranice",
+	"hitcounters-pageinfo-views": "Broj pregleda",
+	"hitcounters-statistics-header-views": "Pregled statistika",
+	"hitcounters-statistics-views-total": "Ukupno pregleda",
+	"hitcounters-statistics-views-total-desc": "Pregledi ka nepostojećim stranicama i specijalnim stranicama koje nisu uključene",
+	"hitcounters-statistics-views-peredit": "Pregledi po izmeni",
+	"hitcounters-statistics-mostpopular": "Najposećenije stranice",
+	"abusefilter-edit-builder-vars-page-views": "Pregledi stranice",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Pregledi izvorne stranice",
+	"abusefilter-edit-builder-vars-movedto-views": "Pregledi ciljane stranice"
+}
