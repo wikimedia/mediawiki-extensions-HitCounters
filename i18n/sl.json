@@ -1,9 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
+	"hitcounters-extensionname": "Števci zadetkov",
+	"hitcounters-desc": "Zagotavlja statistiko ogledov strani",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|ogled|ogleda|ogledi|ogledov}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|ogled|ogleda|ogledi|ogledov}} &ndash; {{PLURAL:$2|1 znak|2 znaka|$2 znaki|$2 znakov}}",
+	"hitcounters-pop-page-line-len-id": "id: $3 &ndash $1 {{PLURAL:$1|ogled|ogleda|ogledi|ogledov}} &ndash; {{PLURAL:$2|1 znak|2 znaka|$2 znaki|$2 znakov}}",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|ogled|ogleda|ogledi|ogledov}}",
 	"popularpages": "Priljubljene strani",
-	"abusefilter-edit-builder-vars-page-views": "Ogledi strani"
+	"hitcounters-pageinfo-views": "Število ogledov",
+	"hitcounters-statistics-header-views": "Ogled statistike",
+	"hitcounters-statistics-views-total": "Skupaj ogledov",
+	"hitcounters-statistics-views-total-desc": "Ogledi neobstoječih strani in posebnih strani niso vključeni",
+	"hitcounters-statistics-views-peredit": "Ogledi na urejanje",
+	"hitcounters-statistics-mostpopular": "Najbolj obiskane strani",
+	"abusefilter-edit-builder-vars-page-views": "Ogledi strani",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Ogledi izvorne strani",
+	"abusefilter-edit-builder-vars-movedto-views": "Ogledi ciljne strani"
 }
