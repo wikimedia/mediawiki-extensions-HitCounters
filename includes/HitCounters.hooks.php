@@ -135,14 +135,14 @@ class Hooks {
 	 * @param Skin $skin
 	 * @param string $key the current key for the current group (row) of footer links.
 	 *   e.g. `info` or `places`.
-	 * @param array &$footerLinks an empty array that can be populated with new links.
+	 * @param array &$footerItems an empty array that can be populated with new links.
 	 *   keys should be strings and will be used for generating the ID of the footer item
 	 *   and value should be an HTML string.
 	 */
 	public static function onSkinAddFooterLinks(
 		$skin,
 		string $key,
-		?array &$footerLinks
+		array &$footerItems
 	) {
 		if ( $key === 'info' ) {
 			$conf = MediaWikiServices::getInstance()->getMainConfig();
@@ -160,11 +160,7 @@ class Hooks {
 								  numParams( $viewcount )->parse();
 
 					// Set up the footer
-					if ( is_array( $footerLinks ) ) {
-						array_splice( $footerLinks, 1, 0, [ 'viewcount' => $viewcountMsg ] );
-					} else {
-						$footerLinks['viewcount'] = $viewcountMsg;
-					}
+					$footerItems['viewcount'] = $viewcountMsg;
 				}
 			}
 		}
