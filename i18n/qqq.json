@@ -27,5 +27,7 @@
 	"hitcounters-statistics-mostpopular": "Used in [[Special:Statistics]]",
 	"abusefilter-edit-builder-vars-page-views": "The number of views that the page has. May not be enabled on all wikis. Abuse filter syntax option in a dropdown from the group {{msg-mw|abusefilter-edit-builder-group-vars}}.\n{{Identical|Page view}}",
 	"abusefilter-edit-builder-vars-movedfrom-views": "The number of views that the source page of a move has. May not be enabled on all wikis. Abuse filter syntax option in a dropdown from the group {{msg-mw|abusefilter-edit-builder-group-vars}}.",
-	"abusefilter-edit-builder-vars-movedto-views": "The number of views that the target page of a move has. May not be enabled on all wikis. Abuse filter syntax option in a dropdown from the group {{msg-mw|abusefilter-edit-builder-group-vars}}."
+	"abusefilter-edit-builder-vars-movedto-views": "The number of views that the target page of a move has. May not be enabled on all wikis. Abuse filter syntax option in a dropdown from the group {{msg-mw|abusefilter-edit-builder-group-vars}}.",
+	"action-hitcounter-exempt": "{{doc-action|hitcounter-exempt}}",
+	"right-hitcounter-exempt": "{{doc-right|hitcounter-exempt}}"
 }
