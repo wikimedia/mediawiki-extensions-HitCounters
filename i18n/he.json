@@ -5,6 +5,19 @@
 			"Ghsuvr"
 		]
 	},
+	"hitcounters-desc": "אספקת נתונים סטטיסטיים על צפייה בכל בדף",
+	"hitcounters-pop-page-line": "{{PLURAL:$1|צפייה אחת|$1 צפיות}}",
+	"hitcounters-pop-page-line-len": "{{PLURAL:$1|צפייה אחת|$1 צפיות}} &ndash; {{PLURAL:$2|תו אחד|$2 תווים}}",
+	"hitcounters-pop-page-line-len-id": "מזהה: $3 &ndash; {{PLURAL:$1|צפייה אחת|$1 צפיות}} &ndash; {{PLURAL:$2|תו אחד|$2 תווים}}",
+	"hitcounters-pop-page-line-id": "מזהה: $3 &ndash; {{PLURAL:$1|צפייה אחת|$1 צפיות}}",
 	"popularpages": "דפים מובילים",
-	"abusefilter-edit-builder-vars-page-views": "מספר הצגות הדף"
+	"hitcounters-pageinfo-views": "מספר צפיות",
+	"hitcounters-statistics-header-views": "סטטיסקות צפיות",
+	"hitcounters-statistics-views-total": "סך כל הצפיות",
+	"hitcounters-statistics-views-total-desc": "צפיות בדפים לא קיימים ובדפים מיוחדים אינן כלולות",
+	"hitcounters-statistics-views-peredit": "צפיות לכל עריכה",
+	"hitcounters-statistics-mostpopular": "הדפים הנצפים ביותר",
+	"abusefilter-edit-builder-vars-page-views": "צפיות בדף",
+	"abusefilter-edit-builder-vars-movedfrom-views": "צפיות בדף מקור",
+	"abusefilter-edit-builder-vars-movedto-views": "צפיות בדף היעד"
 }
