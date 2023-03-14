@@ -25,7 +25,7 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		$footerItems = [];
 		Hooks::onSkinAddFooterLinks( $skinMock, "", $footerItems );
 
-		$this->assertSame( $footerItems, [], "footerItems is un-changed (empty array)" );
+		$this->assertSame( [], $footerItems, "footerItems is un-changed (empty array)" );
 	}
 
 	/**
@@ -44,6 +44,6 @@ class HooksTest extends MediaWikiIntegrationTestCase {
 		$footerItems = [];
 		Hooks::onSkinAddFooterLinks( $skinMock, "", $footerItems );
 
-		$this->assertSame( $footerItems, [], "Do not count views for special page" );
+		$this->assertSame( [], $footerItems, "Do not count views for special page" );
 	}
 }
