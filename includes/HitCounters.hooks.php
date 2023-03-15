@@ -35,7 +35,7 @@ class Hooks {
 	) {
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
-		$totalViews = HitCounters::views();
+		$totalViews = HitCounters::views() ?? 0;
 		$extraStats = [
 			'hitcounters-statistics-header-views' => [
 				'hitcounters-statistics-views-total' => $totalViews,
