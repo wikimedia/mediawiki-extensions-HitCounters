@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"hitcounters-desc": "Pruža statistike za posjete stranica",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|posjeta|posjete|posjeta}}",
+	"popularpages": "Popularne stranice",
+	"hitcounters-pageinfo-views": "Posjeta",
+	"hitcounters-statistics-header-views": "Daj statistike",
+	"hitcounters-statistics-views-total": "Ukupno posjeta",
+	"hitcounters-statistics-views-total-desc": "Nisu uključene posjete nepostojećim i službenim stranicama",
+	"hitcounters-statistics-views-peredit": "Posjeta po izmjeni",
+	"hitcounters-statistics-mostpopular": "Najposjećenije stranice",
+	"abusefilter-edit-builder-vars-page-views": "Posjete",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Posjete izvorne stranice",
+	"abusefilter-edit-builder-vars-movedto-views": "Posjete ciljne stranice"
+}
