@@ -142,6 +142,11 @@ $magicWords['sh'] = [
 	'numberofviews' => [ 0, 'BROJPREGLEDA' ],
 ];
 
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
+$magicWords['sr-ec'] = [
+	'numberofviews' => [ 0, 'БРОЈПРЕГЛЕДА', 'БРОЈ_ПРЕГЛЕДА' ],
+];
+
 /** Serbian (Latin script) (srpski (latinica)‎) */
 $magicWords['sr-el'] = [
 	'numberofviews' => [ 0, 'BROJPREGLEDA', 'BROJ_PREGLEDA' ],
