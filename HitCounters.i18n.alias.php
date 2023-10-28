@@ -17,3 +17,13 @@ $specialPageAliases['en'] = [
 $specialPageAliases['de'] = [
 	'PopularPages' => [ 'Beliebteste_Seiten' ],
 ];
+
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
+$specialPageAliases['sr-ec'] = [
+	'PopularPages' => [ 'ПопуларнеСтранице', 'Популарне_странице' ],
+];
+
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$specialPageAliases['sr-el'] = [
+	'PopularPages' => [ 'PopularneStranice', 'Popularne_stranice' ],
+];
