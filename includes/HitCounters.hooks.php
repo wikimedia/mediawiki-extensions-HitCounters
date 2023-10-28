@@ -124,6 +124,7 @@ class Hooks {
 		if (
 			!$conf->get( "DisableCounters" ) &&
 			!$user->isAllowed( 'bot' ) &&
+			!$user->isAllowed( 'hitcounter-exempt' ) &&
 			$wikipage->exists()
 		) {
 			DeferredUpdates::addUpdate( new ViewCountUpdate( $wikipage->getId() ) );

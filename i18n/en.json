@@ -22,5 +22,7 @@
 	"hitcounters-statistics-mostpopular": "Most viewed pages",
 	"abusefilter-edit-builder-vars-page-views": "Page views",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Source page views",
-	"abusefilter-edit-builder-vars-movedto-views": "Target page views"
+	"abusefilter-edit-builder-vars-movedto-views": "Target page views",
+	"action-hitcounter-exempt": "exclude your page views from statistics",
+	"right-hitcounter-exempt": "Exclude your page views from statistics"
 }
