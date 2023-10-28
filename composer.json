@@ -26,22 +26,36 @@
 		"email": "mediawiki-l@lists.wikimedia.org",
 		"chat": "https://matrix.to/#/!MBxZoWJjBazjKVexqQ:matrix.org"
 	},
+	"autoload": {
+		"psr-4": {
+			"HitCounter\\": "includes/"
+		}
+	},
 	"require-dev": {
-		"mediawiki/mediawiki-codesniffer": "41.0.0",
-		"mediawiki/minus-x": "1.1.1",
-		"php-parallel-lint/php-console-highlighter": "1.0.0",
-		"php-parallel-lint/php-parallel-lint": "1.3.2"
+		"mediawiki/mediawiki-codesniffer": "^42.0",
+		"mediawiki/mediawiki-phan-config": "^0.13.0",
+		"mediawiki/minus-x": "^1.1",
+		"php-parallel-lint/php-parallel-lint": "^1.3",
+		"php-parallel-lint/php-console-highlighter": "^1.0",
+		"vimeo/psalm": "^5.15"
 	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"minus-x check .",
-			"@phpcs"
+			"npm i && npm test",
+			"test ! -f \"$MW_INSTALL_PATH/LocalSettings.php\" || php \"$MW_INSTALL_PATH/tests/parser/parserTests.php\" --file tests/parser/hitcounters.txt"
+		],
+		"error-format-test": [
+			"phpcs -s --report=emacs --basepath=$PWD . || true",
+			"phan -d . -m text --analyze-twice --no-progress-bar | sed 's, ,:,'",
+			"psalm --output-format=emacs --show-info=true --no-progress | sed \"s,${PWD}/,,\""
 		],
 		"fix": [
 			"minus-x fix .",
-			"phpcbf"
+			"phpcbf",
+			"psalter --issues=all"
 		],
-		"phpcs": "phpcs -sp"
+		"phpcs": "phpcs -sp --cache"
 	}
 }

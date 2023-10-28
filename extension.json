@@ -37,12 +37,8 @@
 		"AbuseFilter-generateTitleVars": "HitCounters\\Hooks::onAbuseFilterGenerateTitleVars",
 		"AbuseFilter-computeVariable": "HitCounters\\Hooks::onAbuseFilterComputeVariable"
 	},
-	"AutoloadClasses": {
-		"HitCounters\\Hooks": "includes/HitCounters.hooks.php",
-		"HitCounters\\HitCounters": "includes/HitCounters.body.php",
-		"ViewCountUpdate": "includes/ViewCountUpdate.php",
-		"HitCounters\\SpecialPopularPages": "includes/SpecialPopularPages.php",
-		"HitCounters\\HCUpdater": "includes/HCUpdater.php"
+	"AutoloadNamespaces": {
+		"HitCounters\\": "includes/"
 	},
 	"AvailableRights": [
 		"hitcounter-exempt"

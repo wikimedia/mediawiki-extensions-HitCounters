@@ -1,7 +1,6 @@
 <?php
 namespace HitCounters;
 
-use CoreParserFunctions;
 use DatabaseUpdater;
 use DeferredUpdates;
 use IContextSource;
@@ -10,9 +9,9 @@ use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
 use SiteStats;
+use Skin;
 use Title;
 use User;
-use ViewCountUpdate;
 use WikiPage;
 
 /**
@@ -50,8 +49,10 @@ class Hooks {
 	}
 
 	protected static function getMostViewedPages( IContextSource $statsPage ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
+			 ->getMaintenanceConnectionRef( DB_REPLICA );
 		$param = HitCounters::getQueryInfo();
+		$options = [];
 		$options['ORDER BY'] = [ 'page_counter DESC' ];
 		$options['LIMIT'] = 10;
 		$res = $dbr->select(
@@ -79,7 +80,7 @@ class Hooks {
 
 	protected static function getMagicWords() {
 		return [
-			'numberofviews'     => [ 'HitCounters\HitCounters', 'numberOfViews' ],
+			'numberofviews'		=> [ 'HitCounters\HitCounters', 'numberOfViews' ],
 			'numberofpageviews' => [ 'HitCounters\HitCounters', 'numberOfPageViews' ]
 		];
 	}
@@ -96,17 +97,16 @@ class Hooks {
 		return true;
 	}
 
-	public static function onParserGetVariableValueSwitch( Parser $parser,
-		array &$cache, $magicWordId, &$ret, PPFrame $frame ) {
+	public static function onParserGetVariableValueSwitch(
+		Parser $parser, array &$cache, $magicWordId, &$ret, PPFrame $frame
+	): bool {
 		$conf = MediaWikiServices::getInstance()->getMainConfig();
 
 		foreach ( self::getMagicWords() as $magicWord => $processingFunction ) {
 			if ( $magicWord === $magicWordId ) {
 				if ( !$conf->get( "DisableCounters" ) ) {
-					$ret = $cache[$magicWordId] = CoreParserFunctions::formatRaw(
-						call_user_func( $processingFunction, $parser, $frame, null ),
-						null,
-						$parser->getTargetLanguage()
+					$ret = $cache[$magicWordId] = $parser->getTargetLanguage()->formatNum(
+						call_user_func( $processingFunction, $parser, $frame, null )
 					);
 					return true;
 				} else {
@@ -135,13 +135,13 @@ class Hooks {
 	 * Hook: SkinAddFooterLinks
 	 * @param Skin $skin
 	 * @param string $key the current key for the current group (row) of footer links.
-	 *   e.g. `info` or `places`.
+	 *	 e.g. `info` or `places`.
 	 * @param array &$footerItems an empty array that can be populated with new links.
-	 *   keys should be strings and will be used for generating the ID of the footer item
-	 *   and value should be an HTML string.
+	 *	 keys should be strings and will be used for generating the ID of the footer item
+	 *	 and value should be an HTML string.
 	 */
 	public static function onSkinAddFooterLinks(
-		$skin,
+		Skin $skin,
 		string $key,
 		array &$footerItems
 	) {
@@ -210,7 +210,9 @@ class Hooks {
 	 * @param null &$result
 	 * @return bool
 	 */
-	public static function onAbuseFilterComputeVariable( $method, $vars, $parameters, &$result ) {
+	public static function onAbuseFilterComputeVariable(
+		string $method, VariableHolder $vars, array $parameters, &$result
+	): bool {
 		// Both methods are needed because they're saved in the DB and are necessary for old entries
 		if ( $method === 'article-views' || $method === 'page-views' ) {
 			$result = HitCounters::getCount( $parameters['title'] );

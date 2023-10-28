@@ -31,6 +31,7 @@ namespace HitCounters;
 
 use Html;
 use Linker;
+use MediaWiki\MediaWikiServices;
 use QueryPage;
 use Skin;
 use Title;
@@ -78,7 +79,10 @@ class SpecialPopularPages extends QueryPage {
 
 		$link = $this->getLinkRenderer()->makeKnownLink(
 			$title,
-			$this->getContentLanguage()->convert( $title->getPrefixedText() )
+			MediaWikiServices::getInstance()->
+				getLanguageConverterFactory()->
+				getLanguageConverter()->
+				convert( $title->getPrefixedText() )
 		);
 
 		$msg = 'hitcounters-pop-page-line';
