@@ -3,6 +3,7 @@
 		"authors": [
 			"Acamicamacaraca",
 			"Kizule",
+			"Milicevic01",
 			"Obsuser"
 		]
 	},
@@ -17,5 +18,7 @@
 	"hitcounters-statistics-mostpopular": "Најпосећеније странице",
 	"abusefilter-edit-builder-vars-page-views": "Прегледи странице",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Прегледи изворне странице",
-	"abusefilter-edit-builder-vars-movedto-views": "Прегледи циљане странице"
+	"abusefilter-edit-builder-vars-movedto-views": "Прегледи циљане странице",
+	"action-hitcounter-exempt": "изузмете своје прегледе из статистика",
+	"right-hitcounter-exempt": "изузимање сопствених прегледа страница из статистика"
 }

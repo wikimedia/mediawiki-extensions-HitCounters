@@ -18,5 +18,7 @@
 	"hitcounters-statistics-mostpopular": "Paginas le plus visitate",
 	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Visitas del pagina de origine",
-	"abusefilter-edit-builder-vars-movedto-views": "Visitas del pagina de destination"
+	"abusefilter-edit-builder-vars-movedto-views": "Visitas del pagina de destination",
+	"action-hitcounter-exempt": "excluder tu visitas de paginas del statisticas",
+	"right-hitcounter-exempt": "Excluder tu visitas de paginas del statisticas"
 }

@@ -19,5 +19,7 @@
 	"hitcounters-statistics-mostpopular": "Најпосетувани страници",
 	"abusefilter-edit-builder-vars-page-views": "Посети",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Посети на изворната страница",
-	"abusefilter-edit-builder-vars-movedto-views": "Посети на целната страница"
+	"abusefilter-edit-builder-vars-movedto-views": "Посети на целната страница",
+	"action-hitcounter-exempt": "изземање на вашите посети на страници од статистиката",
+	"right-hitcounter-exempt": "Изземање на вашите посети на страници од статистиката"
 }
