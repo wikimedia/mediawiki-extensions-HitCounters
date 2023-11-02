@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Bellayet",
+			"Borhan",
 			"আফতাবুজ্জামান"
 		]
 	},
 	"popularpages": "জনপ্রিয় পাতাসমূহ",
-	"abusefilter-edit-builder-vars-page-views": "পাতা দর্শন"
+	"abusefilter-edit-builder-vars-page-views": "পাতা দর্শন",
+	"action-hitcounter-exempt": "পরিসংখ্যান থেকে আপনার পাতার দর্শন বাদ দিন",
+	"right-hitcounter-exempt": "পরিসংখ্যান থেকে আপনার পাতার দর্শন বাদ দিন"
 }
