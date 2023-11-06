@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"Winston Sung"
 		]
 	},
 	"hitcounters-desc": "提供面個頁面的檢視統計資訊",
@@ -19,5 +20,6 @@
 	"hitcounters-statistics-mostpopular": "被最多人檢查的頁面",
 	"abusefilter-edit-builder-vars-page-views": "頁面檢視次數",
 	"abusefilter-edit-builder-vars-movedfrom-views": "來源頁面檢視次數",
-	"abusefilter-edit-builder-vars-movedto-views": "目標頁面檢視次數"
+	"abusefilter-edit-builder-vars-movedto-views": "目標頁面檢視次數",
+	"action-hitcounter-exempt": "從統計資料中排除您的頁面瀏覽量"
 }
