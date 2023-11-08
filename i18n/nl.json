@@ -2,14 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
-			"Siebrand"
+			"Siebrand",
+			"McDutchie"
 		]
 	},
+	"hitcounters-desc": "Verstrekt statistieken per paginaweergave",
 	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|keer bekeken}}",
+	"hitcounters-pop-page-line-len": "$1 weergave{{PLURAL:$1||n}} &ndash; $2 teken{{PLURAL:$2||s}}",
+	"hitcounters-pop-page-line-len-id": "ID: $3 &ndash; $1 weergave{{PLURAL:$1||n}} &ndash; $2 teken{{PLURAL:$2||s}}",
+	"hitcounters-pop-page-line-id": "ID: $3 &ndash; $1 weergave{{PLURAL:$1||n}}",
 	"popularpages": "Populaire pagina's",
 	"hitcounters-pageinfo-views": "Aantal keer bekijken",
 	"hitcounters-statistics-header-views": "Statistieken weergeven",
 	"hitcounters-statistics-views-total": "Totaal weergeven",
+	"hitcounters-statistics-views-total-desc": "De weergaven van niet-bestaande pagina’s en speciale pagina’s zijn niet inbegrepen",
+	"hitcounters-statistics-views-peredit": "Weergaven per bewerking",
 	"hitcounters-statistics-mostpopular": "Meest bekeken pagina's",
-	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's"
+	"abusefilter-edit-builder-vars-page-views": "Bekeken pagina's",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Weergaven bronpagina",
+	"abusefilter-edit-builder-vars-movedto-views": "Weergaven doelpagina"
 }
