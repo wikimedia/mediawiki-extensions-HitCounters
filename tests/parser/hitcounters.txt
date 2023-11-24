@@ -1,0 +1,5 @@
+!! Version 2
+# Force the test runner to ensure the extension is loaded
+!! hooks
+numberofviews
+!! endhooks

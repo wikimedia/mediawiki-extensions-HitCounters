@@ -49,7 +49,7 @@
 		"error-format-test": [
 			"phpcs -s --report=emacs --basepath=$PWD . || true",
 			"phan -d . -m text --analyze-twice --no-progress-bar | sed 's, ,:,'",
-			"psalm --output-format=emacs --show-info=true --no-progress | sed \"s,${PWD}/,,\""
+			"psalm --output-format=emacs --show-info=true --no-progress . | sed \"s,${PWD}/,,\""
 		],
 		"fix": [
 			"minus-x fix .",
