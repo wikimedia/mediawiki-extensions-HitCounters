@@ -48,6 +48,9 @@ class ViewCountUpdate implements DeferrableUpdate, TransactionRoundAwareUpdate {
 		$this->pageId = intval( $pageId );
 	}
 
+	/**
+	 * @return int
+	 */
 	public function getTransactionRoundRequirement() {
 		return self::TRX_ROUND_ABSENT;
 	}

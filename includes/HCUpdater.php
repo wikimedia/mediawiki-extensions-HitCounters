@@ -35,6 +35,9 @@ class HCUpdater extends DatabaseUpdater {
 		$this->extensionUpdates = [];
 	}
 
+	/**
+	 * @return array[]
+	 */
 	public function getCoreUpdateList() {
 		$updater = DatabaseUpdater::newForDb(
 			$this->db, (bool)$this->shared, $this->maintenance

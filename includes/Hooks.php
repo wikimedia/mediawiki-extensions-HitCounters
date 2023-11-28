@@ -23,12 +23,20 @@ use WikiPage;
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class Hooks {
+	/**
+	 * @param DatabaseUpdater $updater
+	 */
 	public static function onLoadExtensionSchemaUpdates(
 		DatabaseUpdater $updater
 	) {
 		HCUpdater::getDBUpdates( $updater );
 	}
 
+	/**
+	 * @param array &$extraStats
+	 * @param IContextSource $statsPage
+	 * @return bool
+	 */
 	public static function onSpecialStatsAddExtra(
 		array &$extraStats, IContextSource $statsPage
 	) {
@@ -48,6 +56,10 @@ class Hooks {
 		return true;
 	}
 
+	/**
+	 * @param IContextSource $statsPage
+	 * @return array
+	 */
 	protected static function getMostViewedPages( IContextSource $statsPage ) {
 		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()
 			 ->getMaintenanceConnectionRef( DB_REPLICA );
@@ -78,6 +90,9 @@ class Hooks {
 		return $ret;
 	}
 
+	/**
+	 * @return array[]
+	 */
 	protected static function getMagicWords() {
 		return [
 			'numberofviews'		=> [ 'HitCounters\HitCounters', 'numberOfViews' ],
@@ -85,10 +100,17 @@ class Hooks {
 		];
 	}
 
+	/**
+	 * @param array &$variableIDs
+	 */
 	public static function onMagicWordwgVariableIDs( array &$variableIDs ) {
 		$variableIDs = array_merge( $variableIDs, array_keys( self::getMagicWords() ) );
 	}
 
+	/**
+	 * @param Parser $parser
+	 * @return bool
+	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
 		foreach ( self::getMagicWords() as $magicWord => $processingFunction ) {
 			$parser->setFunctionHook( $magicWord, $processingFunction,
@@ -97,6 +119,14 @@ class Hooks {
 		return true;
 	}
 
+	/**
+	 * @param Parser $parser
+	 * @param array &$cache
+	 * @param string $magicWordId
+	 * @param string|null &$ret
+	 * @param PPFrame $frame
+	 * @return bool
+	 */
 	public static function onParserGetVariableValueSwitch(
 		Parser $parser, array &$cache, $magicWordId, &$ret, PPFrame $frame
 	): bool {
@@ -117,6 +147,10 @@ class Hooks {
 		return true;
 	}
 
+	/**
+	 * @param WikiPage $wikipage
+	 * @param User $user
+	 */
 	public static function onPageViewUpdates( WikiPage $wikipage, User $user ) {
 		$conf = MediaWikiServices::getInstance()->getMainConfig();
 

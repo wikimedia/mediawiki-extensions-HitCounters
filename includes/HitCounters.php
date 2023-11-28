@@ -117,6 +117,9 @@ class HitCounters {
 		return self::getCount( $frame->getTitle() );
 	}
 
+	/**
+	 * @return array
+	 */
 	public static function getQueryInfo() {
 		return [
 			'tables' => [ 'p' => 'page', 'h' => 'hit_counter' ],
