@@ -20,5 +20,7 @@
 	"hitcounters-statistics-mostpopular": "Najbolj obiskane strani",
 	"abusefilter-edit-builder-vars-page-views": "Ogledi strani",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Ogledi izvorne strani",
-	"abusefilter-edit-builder-vars-movedto-views": "Ogledi ciljne strani"
+	"abusefilter-edit-builder-vars-movedto-views": "Ogledi ciljne strani",
+	"action-hitcounter-exempt": "izključitev lastnih ogledov strani iz statistike",
+	"right-hitcounter-exempt": "Izključitev lastnih ogledov strani iz statistike"
 }
