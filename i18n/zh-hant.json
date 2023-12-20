@@ -21,5 +21,6 @@
 	"abusefilter-edit-builder-vars-page-views": "頁面檢視次數",
 	"abusefilter-edit-builder-vars-movedfrom-views": "來源頁面檢視次數",
 	"abusefilter-edit-builder-vars-movedto-views": "目標頁面檢視次數",
-	"action-hitcounter-exempt": "從統計資料中排除您的頁面瀏覽量"
+	"action-hitcounter-exempt": "從統計資料中排除您的頁面瀏覽量",
+	"right-hitcounter-exempt": "從統計資料中排除您的頁面檢視次數"
 }
