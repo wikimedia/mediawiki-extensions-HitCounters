@@ -34,9 +34,9 @@
 	"require-dev": {
 		"mediawiki/mediawiki-codesniffer": "^42.0",
 		"mediawiki/mediawiki-phan-config": "^0.13.0",
-		"mediawiki/minus-x": "^1.1",
-		"php-parallel-lint/php-parallel-lint": "^1.3",
+		"mediawiki/minus-x": "1.1.1",
 		"php-parallel-lint/php-console-highlighter": "^1.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2",
 		"vimeo/psalm": "^5.15"
 	},
 	"scripts": {
@@ -53,8 +53,8 @@
 		],
 		"fix": [
 			"minus-x fix .",
-			"phpcbf",
-			"psalter --issues=all"
+			"psalter --issues=all",
+			"phpcbf"
 		],
 		"phpcs": "phpcs -sp --cache",
 		"phan": "phan -d . --long-progress-bar"
