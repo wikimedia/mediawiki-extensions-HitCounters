@@ -19,5 +19,7 @@
 	"hitcounters-statistics-mostpopular": "Mest viste sider",
 	"abusefilter-edit-builder-vars-page-views": "Sidevisninger",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Visninger av kildesiden",
-	"abusefilter-edit-builder-vars-movedto-views": "Visninger av målsiden"
+	"abusefilter-edit-builder-vars-movedto-views": "Visninger av målsiden",
+	"action-hitcounter-exempt": "ekskludere dine sidevisninger fra statistikken",
+	"right-hitcounter-exempt": "Ekskludere dine sidevisninger fra statistikken"
 }
