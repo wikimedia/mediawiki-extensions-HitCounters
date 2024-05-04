@@ -20,9 +20,9 @@
 	"hitcounters-statistics-views-total-desc": "Views to non-existing pages and special pages are not included",
 	"hitcounters-statistics-views-peredit": "Views per edit",
 	"hitcounters-statistics-mostpopular": "Most viewed pages",
-	"abusefilter-edit-builder-vars-page-views": "Page views",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Source page views",
-	"abusefilter-edit-builder-vars-movedto-views": "Target page views",
+	"abusefilter-edit-builder-vars-page-views": "Page views ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Source page views ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Target page views ($1)",
 	"action-hitcounter-exempt": "exclude your page views from statistics",
 	"right-hitcounter-exempt": "Exclude your page views from statistics"
 }
