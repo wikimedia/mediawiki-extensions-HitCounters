@@ -17,9 +17,9 @@
 	"hitcounters-statistics-views-total-desc": "Visninger til ikke-eksisterende sider og spesialsider er ikke med",
 	"hitcounters-statistics-views-peredit": "Visninger per redigering",
 	"hitcounters-statistics-mostpopular": "Mest viste sider",
-	"abusefilter-edit-builder-vars-page-views": "Sidevisninger",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Visninger av kildesiden",
-	"abusefilter-edit-builder-vars-movedto-views": "Visninger av målsiden",
+	"abusefilter-edit-builder-vars-page-views": "Sidevisninger ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visninger av kildesiden ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Visninger av målsiden ($1)",
 	"action-hitcounter-exempt": "ekskludere dine sidevisninger fra statistikken",
 	"right-hitcounter-exempt": "Ekskludere dine sidevisninger fra statistikken"
 }

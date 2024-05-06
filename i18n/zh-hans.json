@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"Liuxinyu970226",
 			"Yfdyh000",
 			"Zhang8569"
@@ -16,6 +17,7 @@
 	"hitcounters-statistics-views-total-desc": "未包括对不存在页面和特殊页面的查看次数",
 	"hitcounters-statistics-views-peredit": "每次编辑查看",
 	"hitcounters-statistics-mostpopular": "最多查看页面",
-	"abusefilter-edit-builder-vars-page-views": "页面查看次数",
-	"abusefilter-edit-builder-vars-movedfrom-views": "原始页面访问量"
+	"abusefilter-edit-builder-vars-page-views": "页面访问量（$1）",
+	"abusefilter-edit-builder-vars-movedfrom-views": "原始页面访问量（$1）",
+	"abusefilter-edit-builder-vars-movedto-views": "目标页面访问量（$1）"
 }

@@ -18,9 +18,9 @@
 	"hitcounters-statistics-views-total-desc": "Aufrufe nicht vorhandener Seiten sowie von Spezialseiten sind nicht inbegriffen",
 	"hitcounters-statistics-views-peredit": "Aufrufe pro Bearbeitung",
 	"hitcounters-statistics-mostpopular": "Meistbetrachtete Seiten",
-	"abusefilter-edit-builder-vars-page-views": "Seitenaufrufe",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Aufrufe der Quellseite",
-	"abusefilter-edit-builder-vars-movedto-views": "Aufrufe der Zielseite",
+	"abusefilter-edit-builder-vars-page-views": "Seitenaufrufe ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Aufrufe der Quellseite ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Aufrufe der Zielseite ($1)",
 	"action-hitcounter-exempt": "deine eigenen Seitenaufrufe aus der Statistik auszuschließen",
 	"right-hitcounter-exempt": "Deine eigenen Seitenaufrufe aus der Statistik ausschließen"
 }

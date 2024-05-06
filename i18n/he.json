@@ -17,9 +17,9 @@
 	"hitcounters-statistics-views-total-desc": "צפיות בדפים לא קיימים ובדפים מיוחדים אינן כלולות",
 	"hitcounters-statistics-views-peredit": "צפיות לכל עריכה",
 	"hitcounters-statistics-mostpopular": "הדפים הנצפים ביותר",
-	"abusefilter-edit-builder-vars-page-views": "צפיות בדף",
-	"abusefilter-edit-builder-vars-movedfrom-views": "צפיות בדף מקור",
-	"abusefilter-edit-builder-vars-movedto-views": "צפיות בדף היעד",
+	"abusefilter-edit-builder-vars-page-views": "צפיות בדף ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "צפיות בדף מקור ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "צפיות בדף היעד ($1)",
 	"action-hitcounter-exempt": "לא לכלול את הצפיות שלך בדפים בסטטיסטיקה",
 	"right-hitcounter-exempt": "לא לכלול את הצפיות שלך בדפים בסטטיסטיקה"
 }
