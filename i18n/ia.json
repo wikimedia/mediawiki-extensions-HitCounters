@@ -16,9 +16,9 @@
 	"hitcounters-statistics-views-total-desc": "Le visitas de paginas non existente e de paginas special non es includite",
 	"hitcounters-statistics-views-peredit": "Visitas per modification",
 	"hitcounters-statistics-mostpopular": "Paginas le plus visitate",
-	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Visitas del pagina de origine",
-	"abusefilter-edit-builder-vars-movedto-views": "Visitas del pagina de destination",
+	"abusefilter-edit-builder-vars-page-views": "Visitas de pagina ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Visitas del pagina de origine ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Visitas del pagina de destination ($1)",
 	"action-hitcounter-exempt": "excluder tu visitas de paginas del statisticas",
 	"right-hitcounter-exempt": "Excluder tu visitas de paginas del statisticas"
 }
