@@ -22,5 +22,5 @@
 	"hitcounters-statistics-mostpopular": "Páginas más vistas",
 	"abusefilter-edit-builder-vars-page-views": "Vistas de página ($1)",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Páginas vistas de la fuente",
-	"abusefilter-edit-builder-vars-movedto-views": "Páginas de destino"
+	"abusefilter-edit-builder-vars-movedto-views": "Vistas de páginas de destino ($1)"
 }

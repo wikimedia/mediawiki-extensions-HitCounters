@@ -4,7 +4,7 @@
 			"Bjankuloski06"
 		]
 	},
-	"hitcounters-extensionname": "Бројач на посети",
+	"hitcounters-extensionname": "Бројачи на посети",
 	"hitcounters-desc": "Дава статистики за посети на страници",
 	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|посета|посети}}",
 	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|посета|посети}} &mdash; {{PLURAL:$2|1 знак|$2 знаци}}",
@@ -17,9 +17,9 @@
 	"hitcounters-statistics-views-total-desc": "Не се вброени посетите на непостоечки и службени страници",
 	"hitcounters-statistics-views-peredit": "Посети по уредување",
 	"hitcounters-statistics-mostpopular": "Најпосетувани страници",
-	"abusefilter-edit-builder-vars-page-views": "Посети",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Посети на изворната страница",
-	"abusefilter-edit-builder-vars-movedto-views": "Посети на целната страница",
+	"abusefilter-edit-builder-vars-page-views": "Посети ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Посети на изворната страница ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Посети на целната страница ($1)",
 	"action-hitcounter-exempt": "изземање на вашите посети на страници од статистиката",
 	"right-hitcounter-exempt": "Изземање на вашите посети на страници од статистиката"
 }
