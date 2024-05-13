@@ -4,7 +4,7 @@
 			"Bjankuloski06"
 		]
 	},
-	"hitcounters-extensionname": "Бројач на посети",
+	"hitcounters-extensionname": "Бројачи на посети",
 	"hitcounters-desc": "Дава статистики за посети на страници",
 	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|посета|посети}}",
 	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|посета|посети}} &mdash; {{PLURAL:$2|1 знак|$2 знаци}}",
