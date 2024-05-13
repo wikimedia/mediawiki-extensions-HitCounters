@@ -18,9 +18,9 @@
 	"hitcounters-statistics-views-total-desc": "Ogledi neobstoječih strani in posebnih strani niso vključeni",
 	"hitcounters-statistics-views-peredit": "Ogledi na urejanje",
 	"hitcounters-statistics-mostpopular": "Najbolj obiskane strani",
-	"abusefilter-edit-builder-vars-page-views": "Ogledi strani",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Ogledi izvorne strani",
-	"abusefilter-edit-builder-vars-movedto-views": "Ogledi ciljne strani",
+	"abusefilter-edit-builder-vars-page-views": "Ogledi strani ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Ogledi izvorne strani ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Ogledi ciljne strani ($1)",
 	"action-hitcounter-exempt": "izključitev lastnih ogledov strani iz statistike",
 	"right-hitcounter-exempt": "Izključitev lastnih ogledov strani iz statistike"
 }
