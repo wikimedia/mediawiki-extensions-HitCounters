@@ -44,4 +44,11 @@ class HCUpdater extends DatabaseUpdater {
 		);
 		return $updater->getCoreUpdateList();
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function getInitialUpdateKeys() {
+		return [];
+	}
 }
