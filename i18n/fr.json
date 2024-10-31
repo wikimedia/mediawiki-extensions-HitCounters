@@ -3,7 +3,9 @@
 		"authors": [
 			"Gomoko",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Funkytoast",
+			"Mahabarata"
 		]
 	},
 	"hitcounters-extensionname": "Hit Counters",
@@ -21,5 +23,7 @@
 	"hitcounters-statistics-mostpopular": "Pages les plus consultées",
 	"abusefilter-edit-builder-vars-page-views": "Consultations de pages",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Consultations de pages sources",
-	"abusefilter-edit-builder-vars-movedto-views": "Consultations de pages cibles"
+	"abusefilter-edit-builder-vars-movedto-views": "Consultations de pages cibles",
+	"action-hitcounter-exempt": "exclure vos pages vues des statistiques",
+	"right-hitcounter-exempt": "Exclure vos pages vues des statistiques"
 }
