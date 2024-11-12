@@ -4,7 +4,8 @@
 			"Funkytoast",
 			"Gomoko",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Mahabarata"
 		]
 	},
 	"hitcounters-extensionname": "Hit Counters",
@@ -22,5 +23,7 @@
 	"hitcounters-statistics-mostpopular": "Pages les plus consultées",
 	"abusefilter-edit-builder-vars-page-views": "Affichage de pages ($1)",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Consultations de pages sources ($1)",
-	"abusefilter-edit-builder-vars-movedto-views": "Consultations de pages cibles ($1)"
+	"abusefilter-edit-builder-vars-movedto-views": "Consultations de pages cibles ($1)",
+	"action-hitcounter-exempt": "exclure vos pages vues des statistiques",
+	"right-hitcounter-exempt": "Exclure vos pages vues des statistiques"
 }
