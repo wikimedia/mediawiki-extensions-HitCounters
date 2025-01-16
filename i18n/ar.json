@@ -21,5 +21,7 @@
 	"hitcounters-statistics-mostpopular": "الصفحات الأكثر مشاهدة",
 	"abusefilter-edit-builder-vars-page-views": "عدد مشاهدات الصفحة",
 	"abusefilter-edit-builder-vars-movedfrom-views": "مشاهدات مصدر الصفحة",
-	"abusefilter-edit-builder-vars-movedto-views": "مشاهدات الصفحة الهدف"
+	"abusefilter-edit-builder-vars-movedto-views": "مشاهدات الصفحة الهدف",
+	"action-hitcounter-exempt": "استبعاد عدد مرات مشاهدة صفحتك من الإحصائيات",
+	"right-hitcounter-exempt": "استبعاد عدد مرات مشاهدة صفحتك من الإحصائيات"
 }
