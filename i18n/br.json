@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Huñvreüs",
 			"Y-M D"
 		]
 	},
 	"popularpages": "Pajennoù sellet ar muiañ",
-	"abusefilter-edit-builder-vars-page-views": "Pajennoù gwelet"
+	"abusefilter-edit-builder-vars-page-views": "Gweladennoù ar bajennoù ($1)"
 }
