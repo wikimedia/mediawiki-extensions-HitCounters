@@ -1,0 +1,23 @@
+[
+	{
+		"name": "hit_counter_extension",
+		"columns": [
+			{
+				"name": "hc_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [],
+		"table_options": [
+			"ENGINE=MEMORY",
+			"DEFAULT CHARSET=utf8",
+			"MAX_ROWS=25000"
+		]
+	}
+]

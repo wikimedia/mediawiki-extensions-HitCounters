@@ -9,25 +9,22 @@ class HCUpdater extends DatabaseUpdater {
 	public static function getDBUpdates( DatabaseUpdater $updater ): void {
 		// Use $sqlDirBase for DBMS-independent patches and $base for
 		// DBMS-dependent patches
-		$base = $sqlDirBase = __DIR__ . '/../sql/';
-		switch ( $updater->getDB()->getType() ) {
-			case 'postgres':
-				$base = __DIR__ . '/../sql/postgres/';
-				break;
-		}
+		$sqlDirBase = dirname( __DIR__ ) . '/sql';
+		$dbType = $updater->getDB()->getType();
+		$base = "$sqlDirBase/$dbType";
 
 		/* This is an ugly abuse to rename a table. */
 		$updater->modifyExtensionField(
-			'hitcounter', 'hc_id', $base . 'rename_table.sql'
+			'hitcounter', 'hc_id', "$base/rename_table.sql"
 		);
 		$updater->addExtensionTable(
-			'hit_counter_extension', $base . 'hit_counter_extension.sql'
+			'hit_counter_extension', "$base/hit_counter_extension.sql"
 		);
 		$updater->addExtensionTable(
-			'hit_counter', $base . 'page_counter.sql'
+			'hit_counter', "$base/hit_counter.sql"
 		);
 		$updater->dropExtensionField(
-			'page', 'page_counter', $sqlDirBase . 'drop_field.sql'
+			'page', 'page_counter', "$sqlDirBase/drop_field.sql"
 		);
 	}
 

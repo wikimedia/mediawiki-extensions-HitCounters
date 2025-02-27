@@ -1,0 +1,35 @@
+[
+	{
+		"name": "hit_counter",
+		"columns": [
+			{
+				"name": "page_id",
+				"type": "integer",
+				"options": {
+					"length": 8,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "page_counter",
+				"type": "bigint",
+				"options": {
+					"length": 20,
+					"unsigned": true,
+					"notnull": true,
+					"default": 0
+				}
+			}
+		],
+		"indexes": [
+			{
+				"name": "page_counter",
+				"columns": [ "page_counter" ],
+				"unique": false
+			}
+		],
+		"pk": [ "page_id" ]
+	}
+]

@@ -2,4 +2,4 @@
 -- Source: extensions/HitCounters/sql/hit_counter_extension.json
 -- Do not modify this file directly.
 -- See https://www.mediawiki.org/wiki/Manual:Schema_changes
-CREATE TABLE hit_counter_extension (hc_id INT NOT NULL);
+CREATE TABLE /*_*/hit_counter_extension (hc_id INTEGER UNSIGNED NOT NULL);
