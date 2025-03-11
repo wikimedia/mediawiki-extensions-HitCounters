@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Harriv"
+			"Harriv",
+			"Samoasambia"
 		]
 	},
 	"popularpages": "Suositut sivut",
-	"abusefilter-edit-builder-vars-page-views": "Sivulatauksia"
+	"abusefilter-edit-builder-vars-page-views": "Sivun katselukertoja ($1)"
 }
