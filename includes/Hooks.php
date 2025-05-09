@@ -103,7 +103,7 @@ class Hooks {
 	/**
 	 * @param array &$variableIDs
 	 */
-	public static function onMagicWordwgVariableIDs( array &$variableIDs ) {
+	public static function onGetMagicVariableIDs( array &$variableIDs ): void {
 		$variableIDs = array_merge( $variableIDs, array_keys( self::getMagicWords() ) );
 	}
 

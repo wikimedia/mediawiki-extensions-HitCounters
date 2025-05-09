@@ -27,7 +27,7 @@
 	"Hooks": {
 		"SpecialStatsAddExtra": "HitCounters\\Hooks::onSpecialStatsAddExtra",
 		"LoadExtensionSchemaUpdates": "HitCounters\\Hooks::onLoadExtensionSchemaUpdates",
-		"MagicWordwgVariableIDs": "HitCounters\\Hooks::onMagicWordwgVariableIDs",
+		"GetMagicVariableIDs": "HitCounters\\Hooks::onGetMagicVariableIDs",
 		"ParserGetVariableValueSwitch": "HitCounters\\Hooks::onParserGetVariableValueSwitch",
 		"ParserFirstCallInit": "HitCounters\\Hooks::onParserFirstCallInit",
 		"PageViewUpdates": "HitCounters\\Hooks::onPageViewUpdates",
