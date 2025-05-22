@@ -13,5 +13,7 @@
 	"hitcounters-statistics-mostpopular": "Najposećenije stranice",
 	"abusefilter-edit-builder-vars-page-views": "Pregledi stranice",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Pregledi izvorne stranice",
-	"abusefilter-edit-builder-vars-movedto-views": "Pregledi ciljane stranice"
+	"abusefilter-edit-builder-vars-movedto-views": "Pregledi ciljane stranice",
+	"action-hitcounter-exempt": "izuzmete svoje preglede iz statistika",
+	"right-hitcounter-exempt": "izuzimanje sopstvenih pregleda stranica iz statistika"
 }
