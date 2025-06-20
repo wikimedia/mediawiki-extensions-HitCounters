@@ -1,9 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Farras"
+			"Farras",
+			"Rex"
 		]
 	},
+	"hitcounters-desc": "Menyediakan statistik kunjungan per halaman",
+	"hitcounters-pop-page-line": "$1 kunjungan",
+	"hitcounters-pop-page-line-len": "$1 kunjungan &ndash; $2 karakter",
+	"hitcounters-pop-page-line-len-id": "id: $3 &ndash; $1 kunjungan &ndash; $2 karakter",
+	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 kunjungan",
 	"popularpages": "Halaman populer",
-	"abusefilter-edit-builder-vars-page-views": "Kunjungan halaman"
+	"hitcounters-pageinfo-views": "Jumlah kunjungan",
+	"hitcounters-statistics-header-views": "Statistik kunjungan",
+	"hitcounters-statistics-views-total": "Total kunjungan",
+	"hitcounters-statistics-views-total-desc": "Tidak termasuk jumlah kunjungan ke halaman yang tidak tersedia dan ke halaman khusus",
+	"hitcounters-statistics-views-peredit": "Kunjungan per suntingan",
+	"hitcounters-statistics-mostpopular": "Halaman paling sering dikunjungi",
+	"abusefilter-edit-builder-vars-page-views": "Jumlah kunjungan ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Jumlah kunjungan halaman sumber ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Jumlah kunjungan halaman target ($1)",
+	"action-hitcounter-exempt": "kecualikan kunjungan Anda dari statistik",
+	"right-hitcounter-exempt": "Kecualikan kunjungan Anda dari statistik"
 }
