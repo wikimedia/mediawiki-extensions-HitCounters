@@ -10,7 +10,7 @@
 
 namespace HitCounters;
 
-use Maintenance;
+use MediaWiki\Maintenance\Maintenance;
 
 # Stolen from WebStart.php, assuming you're running this in root
 $IP = getenv( 'MW_INSTALL_PATH' );

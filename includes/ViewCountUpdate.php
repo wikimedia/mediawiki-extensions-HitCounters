@@ -22,10 +22,10 @@
 
 namespace HitCounters;
 
-use DeferrableUpdate;
+use MediaWiki\Deferred\DeferrableUpdate;
+use MediaWiki\Deferred\TransactionRoundAwareUpdate;
 use MediaWiki\MediaWikiServices;
 use MWExceptionHandler;
-use TransactionRoundAwareUpdate;
 use Wikimedia\Rdbms\DBError;
 
 /**

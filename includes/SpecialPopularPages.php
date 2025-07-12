@@ -29,12 +29,12 @@
 
 namespace HitCounters;
 
-use Html;
-use Linker;
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\Linker;
 use MediaWiki\MediaWikiServices;
-use QueryPage;
+use MediaWiki\SpecialPage\QueryPage;
+use MediaWiki\Title\Title;
 use Skin;
-use Title;
 
 class SpecialPopularPages extends QueryPage {
 	/**
@@ -67,7 +67,7 @@ class SpecialPopularPages extends QueryPage {
 	 * Suppressed because we can't choose the params
 	 * @SuppressWarnings(PHPMD.UnusedFormalParameter)
 	 */
-	public function formatResult( $skin, $result ) {
+	protected function formatResult( $skin, $result ) {
 		$enableAddTextLength = $this->getConfig()->get( 'EnableAddTextLength' );
 		$enableAddPageId = $this->getConfig()->get( 'EnableAddPageId' );
 

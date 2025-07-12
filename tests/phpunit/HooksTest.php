@@ -2,9 +2,9 @@
 
 namespace HitCounters;
 
+use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
 use Skin;
-use Title;
 
 /**
  * @coversDefaultClass HitCounters\Hooks

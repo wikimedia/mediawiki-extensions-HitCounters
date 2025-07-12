@@ -2,12 +2,12 @@
 
 namespace HitCounters;
 
-use BagOStuff;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
+use MediaWiki\Title\Title;
 use ObjectCache;
-use Parser;
-use PPFrame;
-use Title;
+use Wikimedia\ObjectCache\BagOStuff;
 
 class HitCounters {
 	protected static ?int $mViews;
