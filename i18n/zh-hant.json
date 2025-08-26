@@ -18,9 +18,9 @@
 	"hitcounters-statistics-views-total-desc": "檢視次數不包含不存在頁面與特殊頁面",
 	"hitcounters-statistics-views-peredit": "每次編輯檢視次數",
 	"hitcounters-statistics-mostpopular": "被最多人檢查的頁面",
-	"abusefilter-edit-builder-vars-page-views": "頁面檢視次數",
-	"abusefilter-edit-builder-vars-movedfrom-views": "來源頁面檢視次數",
-	"abusefilter-edit-builder-vars-movedto-views": "目標頁面檢視次數",
+	"abusefilter-edit-builder-vars-page-views": "頁面檢視次數（$1）",
+	"abusefilter-edit-builder-vars-movedfrom-views": "來源頁面檢視次數（$1）",
+	"abusefilter-edit-builder-vars-movedto-views": "目標頁面檢視次數（$1）",
 	"action-hitcounter-exempt": "從統計資料中排除您的頁面瀏覽量",
 	"right-hitcounter-exempt": "從統計資料中排除您的頁面檢視次數"
 }
