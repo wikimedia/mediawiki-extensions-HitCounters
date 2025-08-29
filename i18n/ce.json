@@ -5,6 +5,6 @@
 		]
 	},
 	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|хьажар}}",
-	"popularpages": "ГӀараяьлла агӀонаш",
-	"abusefilter-edit-builder-vars-page-views": "АгӀонашка хьовсийна"
+	"popularpages": "ГӀарайевлла агӀонаш",
+	"abusefilter-edit-builder-vars-page-views": "АгӀонаш хьажар ($1)"
 }
