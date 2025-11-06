@@ -6,7 +6,8 @@
 			"Hedda",
 			"Joseph",
 			"MuratTheTurkish",
-			"Watermelon juice"
+			"Watermelon juice",
+			"Eleman"
 		]
 	},
 	"hitcounters-desc": "Sayfa görüntüleme istatistiklerini sağlar",
@@ -21,7 +22,9 @@
 	"hitcounters-statistics-views-total-desc": "Var olmayan sayfalara ve özel sayfalara görünümler dahil değildir",
 	"hitcounters-statistics-views-peredit": "Düzenleme başına görüntüler",
 	"hitcounters-statistics-mostpopular": "En çok görüntülenen sayfalar",
-	"abusefilter-edit-builder-vars-page-views": "Sayfa görüntülenmesi",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Kaynak sayfa görünümleri",
-	"abusefilter-edit-builder-vars-movedto-views": "Hedef sayfa görüntülemeleri"
+	"abusefilter-edit-builder-vars-page-views": "Sayfa görüntülenmesi sayısı ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Kaynak sayfa görüntülemesi sayısı ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Hedef sayfa görüntülemesi sayısı ($1)",
+	"action-hitcounter-exempt": "sayfa görüntülemelerinizi istatistiklerin dışında bırak",
+	"right-hitcounter-exempt": "Sayfa görüntülemelerinizi istatistikleri dışında bırak"
 }
