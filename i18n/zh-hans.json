@@ -21,7 +21,7 @@
 	"hitcounters-statistics-mostpopular": "最多查看页面",
 	"abusefilter-edit-builder-vars-page-views": "页面浏览量（$1）",
 	"abusefilter-edit-builder-vars-movedfrom-views": "来源页面浏览量（$1）",
-	"abusefilter-edit-builder-vars-movedto-views": "目标页面浏览量（$1）",
+	"abusefilter-edit-builder-vars-movedto-views": "移动目标页面的浏览量（$1）",
 	"action-hitcounter-exempt": "从统计数据中排除您的页面浏览量",
 	"right-hitcounter-exempt": "从统计数据中排除您的页面浏览量"
 }
