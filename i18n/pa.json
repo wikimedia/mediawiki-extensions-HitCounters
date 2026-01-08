@@ -4,6 +4,21 @@
 			"Cabal"
 		]
 	},
-	"popularpages": "ਮਸ਼ਹੂਰ ਸਫ਼ੇ",
-	"abusefilter-edit-builder-vars-page-views": "($1) ਵਾਰ ਸਫ਼ੇ ਵੇਖੇ"
+	"hitcounters-desc": "ਹਰ ਵਰਕੇ ਦੀਆਂ ਝਾਤਾਂ ਦੇ ਅੰਕੜੇ ਦੱਸਦਾ ਏ",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|ਝਾਤ|ਝਾਤਾਂ}}",
+	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|ਝਾਤ|ਝਾਤਾਂ}} – {{PLURAL:$2|1 ਅੱਖਰ|$2 ਅੱਖਰ}}",
+	"hitcounters-pop-page-line-len-id": "ਪਛਾਣ: $3 – $1 {{PLURAL:$1|ਝਾਤ|ਝਾਤਾਂ}} – {{PLURAL:$2|1 ਅੱਖਰ|$2 ਅੱਖਰ}}",
+	"hitcounters-pop-page-line-id": "ਪਛਾਣ: $3 – $1 {{PLURAL:$1|ਝਾਤ|ਝਾਤਾਂ}}",
+	"popularpages": "ਮਸ਼ਹੂਰ ਵਰਕੇ",
+	"hitcounters-pageinfo-views": "ਝਾਤਾਂ ਦੀ ਗਿਣਤੀ",
+	"hitcounters-statistics-header-views": "ਅੰਕੜੇ ਵਿਖਾਓ",
+	"hitcounters-statistics-views-total": "ਕੁੱਲ ਝਾਤਾਂ",
+	"hitcounters-statistics-views-total-desc": "ਗੈਰ-ਮੌਜੂਦ ਵਾਲੇ ਵਰਕਿਆਂ ਅਤੇ ਖ਼ਾਸ ਵਰਕਿਆਂ ਦੀਆਂ ਝਾਤਾਂ ਸ਼ਾਮਲ ਨਹੀਂ ਨੇ",
+	"hitcounters-statistics-views-peredit": "ਹਰ ਸੋਧ ਪਿੱਛੇ ਝਾਤਾਂ",
+	"hitcounters-statistics-mostpopular": "ਸਭ ਤੋਂ ਵੱਧ ਵੇਖੇ ਗਏ ਵਰਕੇ",
+	"abusefilter-edit-builder-vars-page-views": "($1) ਵਾਰ ਵੇਖੇ ਵਰਕੇ",
+	"abusefilter-edit-builder-vars-movedfrom-views": "ਸਰੋਤ ਵਰਕਾ ਝਾਤਾਂ ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "ਟੀਚਾ ਵਰਕਾ ਝਾਤਾਂ ($1)",
+	"action-hitcounter-exempt": "ਅੰਕੜਿਆਂ ਵਿੱਚੋਂ ਆਪਣੀਆਂ ਵਰਕਾ ਝਾਤਾਂ ਬਾਹਰ ਰੱਖੋ",
+	"right-hitcounter-exempt": "ਅੰਕੜਿਆਂ ਵਿੱਚੋਂ ਆਪਣੀਆਂ ਵਰਕਾ ਝਾਤਾਂ ਬਾਹਰ ਰੱਖੋ"
 }

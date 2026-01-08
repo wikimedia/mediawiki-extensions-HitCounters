@@ -3,14 +3,25 @@
 		"authors": [
 			"Ainali",
 			"Sabelöga",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Stefan2255"
 		]
 	},
+	"hitcounters-desc": "Ger per sida visnings-statistik",
+	"hitcounters-pop-page-line": "$1 {{PLURAL:$1|visning|visningar}}",
 	"hitcounters-pop-page-line-len": "$1 {{PLURAL:$1|visning|visningar}} &ndash; {{PLURAL:$2|1 tecken|$2 tecken}}",
 	"hitcounters-pop-page-line-len-id": "id: $3 &ndash; $1 {{PLURAL:$1|visning|visningar}} &ndash; {{PLURAL:$2|1 tecken|$2 tecken}}",
 	"hitcounters-pop-page-line-id": "id: $3 &ndash; $1 {{PLURAL:$1|visning|visningar}}",
 	"popularpages": "Populära sidor",
-	"abusefilter-edit-builder-vars-page-views": "Sidvisningar",
-	"abusefilter-edit-builder-vars-movedfrom-views": "Visningar för källsida",
-	"abusefilter-edit-builder-vars-movedto-views": "Visningar för målsidan"
+	"hitcounters-pageinfo-views": "Antal visningar",
+	"hitcounters-statistics-header-views": "Visnings statistik",
+	"hitcounters-statistics-views-total": "Totalt antal visningar",
+	"hitcounters-statistics-views-total-desc": "Visningar till sidor som inte finns och specialsidor ingår inte.",
+	"hitcounters-statistics-views-peredit": "Visningar per redigering",
+	"hitcounters-statistics-mostpopular": "Mest besökta sidor",
+	"abusefilter-edit-builder-vars-page-views": "Sidvisningar ($1)",
+	"abusefilter-edit-builder-vars-movedfrom-views": "Källsidvisningar ($1)",
+	"abusefilter-edit-builder-vars-movedto-views": "Mål sidvisningar ($1)",
+	"action-hitcounter-exempt": "exkludera dina sidvisningar från statistiken",
+	"right-hitcounter-exempt": "Exkludera dina sidvisningar från statistiken"
 }
