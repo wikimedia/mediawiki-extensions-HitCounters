@@ -37,13 +37,15 @@
 		"mediawiki/minus-x": "1.1.3",
 		"php-parallel-lint/php-console-highlighter": "^1.0",
 		"php-parallel-lint/php-parallel-lint": "1.4.0",
-		"vimeo/psalm": "^5.15"
+		"vimeo/psalm": "^4.30"
 	},
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor --exclude node_modules",
-			"minus-x check .",
-			"npm i && npm test",
+			"@phpcs",
+			"minus-x check ."
+		],
+		"test-parser": [
 			"test ! -f \"$MW_INSTALL_PATH/LocalSettings.php\" || php \"$MW_INSTALL_PATH/tests/parser/parserTests.php\" --file tests/parser/hitcounters.txt"
 		],
 		"error-format-test": [
