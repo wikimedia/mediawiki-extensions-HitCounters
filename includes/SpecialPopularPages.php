@@ -100,6 +100,7 @@ class SpecialPopularPages extends QueryPage {
 				 ->numParams( $result->value )
 				 ->numParams( $result->length )
 				 ->numParams( $title->getArticleID() )
+				 ->parse()
 		);
 	}
 
