@@ -21,7 +21,7 @@
 			"role": "developer"
 		}
 	],
-	"suppport": {
+	"support": {
 		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-hitcounters/",
 		"email": "mediawiki-l@lists.wikimedia.org",
 		"chat": "https://matrix.to/#/!MBxZoWJjBazjKVexqQ:matrix.org"
