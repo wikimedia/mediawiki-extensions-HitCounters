@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Wizzard"
 		]
 	},
 	"popularpages": "Populárne stránky",
-	"abusefilter-edit-builder-vars-page-views": "Zobrazenia stránky"
+	"abusefilter-edit-builder-vars-page-views": "Zobrazenia stránky ($1)"
 }
