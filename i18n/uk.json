@@ -4,6 +4,7 @@
 			"AS",
 			"DDPAT",
 			"Ice bulldog",
+			"Movses",
 			"Piramidion",
 			"Ата"
 		]
@@ -23,5 +24,7 @@
 	"hitcounters-statistics-mostpopular": "Сторінки, які найчастіше переглядають",
 	"abusefilter-edit-builder-vars-page-views": "Переглядів сторінки ($1)",
 	"abusefilter-edit-builder-vars-movedfrom-views": "Перегляди вихідної сторінки ($1)",
-	"abusefilter-edit-builder-vars-movedto-views": "Перегляди цільової сторінки ($1)"
+	"abusefilter-edit-builder-vars-movedto-views": "Перегляди цільової сторінки ($1)",
+	"action-hitcounter-exempt": "виключення переглядів сторінок зі статистики",
+	"right-hitcounter-exempt": "Виключити перегляди сторінок зі статистики"
 }
